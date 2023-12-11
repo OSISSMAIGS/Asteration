@@ -1,0 +1,52 @@
+section.coming-soon{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+div.logo-cs{
+    --size: 25rem;
+    margin-top: 3rem;
+    height: var(--size);
+    width: var(--size);
+    background-image: url(../img/logo/asteration.png);
+    background-position: center;
+    background-size: cover;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.content h1{
+    font-weight: bold;
+    margin-top: 0.5rem;
+    font-size: 4rem;
+}
+
+div.content p {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.text-shadow{
+    text-shadow: 0px 0px 18px white;
+}
+
+@media screen and (max-width : 740px) {
+    div.logo-cs {
+        --size: 20rem;
+    }
+
+    div.content h1 {
+        font-size: 3.5rem;
+    }
+
+    div.content p {
+        font-size: 1.1rem;
+    }
+}

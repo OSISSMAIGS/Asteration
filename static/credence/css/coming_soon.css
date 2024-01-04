@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container h1 {
+    font-weight: bold;
+}

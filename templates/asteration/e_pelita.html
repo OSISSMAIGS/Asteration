@@ -1,0 +1,96 @@
+{% extends "asteration/layout.html" %}
+
+{% block css_js %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/e_pelita.css') }}">
+{% endblock css_js %}
+
+{% block title %}Pelita{% endblock title %}
+
+{% block main %}
+<section class="banner">
+	<img src="{{ url_for('static', filename='asteration/img/banner/pelita.png') }}" alt="">
+	<section class="gradient-banner">
+	
+	</section>
+</section>
+
+<section class="about">
+	<h1 class="hidden">About Pelita</h1>
+	<p class="hidden">
+		PELITA merupakan kepanjangan dari <span>Penuntun menuju lintasan terang</span> yang memiliki arti guru yang membimbing murid muridnya menuju keberhasilan. Acara PELITA ini memperingati hari Guru Nasional dimana para guru mengikuti berbagai kegiatan menarik seperti lomba lomba.
+	</p>
+	<div class="kewa hidden">
+		<div class="kepan">
+			<p><b>Ketua Panitia</b></p>
+			<p>Renata Brigitta</p>
+		</div>
+		<div class="kepan">
+			<p><b>Ketua Acara</b></p>
+			<p>Felicia Griselda</p>
+		</div>
+	</div>
+</section>
+
+<section class="content">
+
+	<div class="performance">
+		<h1 class="hidden">Performance</h1>
+		<div class="lists">
+			<div class="list hidden">
+				<i class='bx bx-tada bxs-group' ></i>
+				<p>Traditional Dance Performance</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-book-heart'></i>
+				<p>Poetry</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-microphone' ></i>
+				<p>Singing Performance</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-music' ></i>
+				<p>Orchestra Performance</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="performance">
+		<h1 class="hidden">Competition</h1>
+		<div class="lists">
+			<div class="list hidden">
+				<i class='bx bx-tada bx-basketball'></i>
+				<p>Freethrow</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-user-voice'></i>
+				<p>Guess The Words</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-universal-access' ></i>
+				<p>Guess The Style</p>
+			</div>
+			<div class="list hidden">
+				<i class='bx bx-tada bx-image' ></i>
+				<p>Imitate The Picture</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="performance">
+		<h1 class="hidden">Winners</h1>
+		<div class="gambar">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227624299769896/20231125_140503.jpg?ex=65804af3&is=656dd5f3&hm=d9a622b0d73b32a068122ad1afc9fe284616e94ad8e72ca5b9296a2f38e5da99&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227624824053810/MG_6614.JPG?ex=65804af3&is=656dd5f3&hm=d76139c96e035741a40bd79513ea1b71184f67bb6b1555e24f83348db3836e5b&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227625360936970/MG_6625.JPG?ex=65804af4&is=656dd5f4&hm=32228910db103643fbbdb2ca8d34e5ae8859d8a099c5e5d5025de6826aad5dc7&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227626430476368/IMG_3336.JPG?ex=65804af4&is=656dd5f4&hm=546866bccbfd488f77cf9e0802e89c28d6cc7be182b78e4dc304f831e5e70f19&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227627848146964/IMG_3368.JPG?ex=65804af4&is=656dd5f4&hm=799138c03cf938c8c9b80139f83476b8bc0e12f847851b5b3a1562be05621a14&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227629458763846/IMG_3382.JPG?ex=65804af5&is=656dd5f5&hm=6b5d8e65f460f67ec85f69cfe133f1238eb7ab2e4c9f1c987046a22d3f077d18&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227630805131294/IMG_3375.JPG?ex=65804af5&is=656dd5f5&hm=fe1e5e7539127052a7949d3c6e422008460df2be24e9030092831abc5ebf1643&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227632659025980/IMG_3388.JPG?ex=65804af5&is=656dd5f5&hm=986f954bf53646bfe9eea03722fcc36f2378b0bc5534b3193d1c8713a76d12b0&">
+			<img class="hidden" src="https://cdn.discordapp.com/attachments/1174164611499569313/1181227633615319081/20231125_135422.jpg?ex=65804af6&is=656dd5f6&hm=a3c6fa251764d89f59ba467590ce54e0f7e48374964dcf91a76b2589f6976731&">
+		</div>
+	</div>
+
+</section>
+{% endblock main %}

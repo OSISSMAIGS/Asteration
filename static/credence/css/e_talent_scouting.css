@@ -1,0 +1,155 @@
+:root {
+    --darker-color : rgb(84, 19, 9);
+	--bg-color: rgba(166, 42, 23, 1);
+	--accent-color: rgba(255, 192, 0,1);
+}
+
+html, body {
+	background-color: var(--bg-color);
+	color: white;
+}
+
+
+header nav {
+
+	background: linear-gradient(to right, var(--darker-color) 20%, var(--bg-color));
+}
+
+header nav ul li a:hover{
+	color: var(--accent-color);
+	text-decoration: none;
+	animation: nav-hover2 0.2s linear;
+}
+
+header nav .logo img{
+    filter: drop-shadow(0 0 1rem white);
+}
+
+header nav .logo h1{
+    text-shadow: 0 0 1rem white;
+}
+
+header nav ul li a{
+    color: white;
+    text-shadow: 0 0 1rem white;
+}
+
+@keyframes nav-hover2 {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+.title {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.title img{
+    width: 80%;
+    filter: drop-shadow(0px 0px 10px var(--darker-color));
+}
+
+.title .title-hp{
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.content h1{
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-top: 5rem;
+    text-shadow: 0px 0px 5px var(--darker-color);
+}
+
+.content p{
+    text-shadow: 0px 0px 5px var(--darker-color);
+}
+
+.content .photo-collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.content .photo-collection img{
+    width: 40%;
+    margin: 1rem;
+    box-shadow: 0px 0px 10px var(--darker-color);
+}
+
+@keyframes footer-hover {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+footer {
+	background-color: var(--darker-color);
+}
+
+footer .gradient {
+	background: linear-gradient(var(--bg-color), var(--darker-color));
+}
+
+footer .footer-content a{
+	color: white;
+	text-decoration: none;
+}
+
+footer .footer-content a:hover{
+	color: var(--accent-color);
+	animation: footer-hover 0.2s linear;
+}
+
+footer .column2 a h1{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .column3 a h2{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .copyright {
+	color: var(--darker-color);
+}
+
+@media screen and (max-width : 850px) {
+    .content .photo-collection img{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 590px) {
+	.title .title-full {
+        display: none;
+    }
+    .title .title-hp {
+        display: block;
+    }
+
+    .content .photo-collection img{
+        width: 80%;
+    }
+}

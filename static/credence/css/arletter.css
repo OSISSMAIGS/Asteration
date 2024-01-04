@@ -1,0 +1,137 @@
+/* section.gradient-header {
+	position: inherit;
+	z-index: 11;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	height: 1.5rem;
+	background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), transparent);
+} */
+/* div {
+    overflow: hidden;
+} */
+
+.title h1{
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.description {
+    text-align: center;
+    margin: 0 1rem;
+}
+
+.notes {
+    text-align: center;
+    margin: 0 1rem;
+    display: none;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.book img{
+    width: 30vw;
+    height: calc(30vw / 21 * 29.7);
+}
+
+.book {
+    position: relative;
+    width: 30vw;
+    height: calc(30vw / 21 * 29.7);
+    transition: transform 0.5s;
+}
+
+
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.backs {
+    /* background-color: white; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    /* border-left: 3px solid powderblue; */
+}
+
+.backs {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .backs {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 10px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button i {
+    margin: 0 1rem;
+    font-size: 3vw;
+    color: var(--white);
+}
+
+button i:hover {
+    color: var(--blue);
+    animation: book-btn-hover ease-in-out 0.3s;
+}
+
+@keyframes book-btn-hover {
+    0% {color: var(--white);}
+    100% {color: var(--blue);}
+}
+
+@media screen and (max-width : 590px) {
+    .notes {
+        display: flex;
+    }
+}

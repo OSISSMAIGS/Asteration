@@ -1,0 +1,109 @@
+{% extends "asteration/layout.html" %}
+
+{% block css_js %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/index.css') }}">
+{% endblock css_js %}
+
+{% block glider %}
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/glider.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/glider.min.css') }}">
+	<script src="{{ url_for('static', filename='asteration/js/glider.js') }}"></script>
+	<script src="{{ url_for('static', filename='asteration/js/glider.min.js') }}"></script>
+	<script>
+		window.addEventListener('load',function(){
+			document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
+				var glider = Glider(this);
+				console.log('Slide Visible %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
+				console.log('Slide Hidden %s', event.detail.slide)
+			});
+			document.querySelector('.glider').addEventListener('glider-refresh', function(event){
+				console.log('Refresh')
+			});
+			document.querySelector('.glider').addEventListener('glider-loaded', function(event){
+				console.log('Loaded')
+			});
+
+			window._ = new Glider(document.querySelector('.glider'), {
+				slidesToShow: 1, //'auto',
+				slidesToScroll: 1,
+				itemWidth: 150,
+				draggable: true,
+				scrollLock: false,
+				dots: '#dots',
+				rewind: true,
+				arrows: {
+					prev: '.glider-prev',
+					next: '.glider-next'
+				},
+				responsive: [
+					{
+						breakpoint: 800,
+						settings: {
+							slidesToScroll: 'auto',
+							itemWidth: 300,
+							slidesToShow: 'auto',
+							exactWidth: true
+						}
+					},
+					{
+						breakpoint: 700,
+						settings: {
+							slidesToScroll: 4,
+							slidesToShow: 4,
+							dots: false,
+							arrows: false,
+						}
+					},
+					{
+						breakpoint: 600,
+						settings: {
+							slidesToScroll: 3,
+							slidesToShow: 3
+						}
+					},
+					{
+						breakpoint: 500,
+						settings: {
+							slidesToScroll: 2,
+							slidesToShow: 2,
+							dots: false,
+							arrows: false,
+							scrollLock: true
+						}
+					}
+				]
+			});
+		});
+	</script>
+{% endblock glider %}
+
+{% block title %}Asteration | OSIS SMA IGS{% endblock title %}
+
+{% block main %}
+	<section class="main">
+		<div class="glider-contain">
+			<div class="glider">
+				<a href="{{ url_for('e_litioree') }}"><img id="litioree" src="{{ url_for('static', filename='asteration/img/banner/litioree.png') }}"></a>
+				<a href="{{ url_for('e_armone') }}"><img id="armone" src="{{ url_for('static', filename='asteration/img/banner/armone.png') }}"></a>
+				<a href="{{ url_for('e_pelita') }}"><img id="pelita" src="{{ url_for('static', filename='asteration/img/banner/pelita.png') }}"></a>
+				<a href="{{ url_for('e_aksara') }}"><img id="aksara" src="{{ url_for('static', filename='asteration/img/banner/aksara.png') }}"></a>
+			</div>
+			<button class="glider-prev">&laquo;</button>
+			<button class="glider-next">&raquo;</button>
+			<div id="dots"></div>
+		</div>
+	</section>
+
+	<section class="about">
+		<div class="about-text">
+			<h1>Asteration</h1>
+			<p>
+				Asteration (Per Aspera Ad Astra Generation) merupakan nama kabinet OSIS SMA IGS periode 2023/2024. Asteration berarti "to the stars through hardships" yang menggambarkan OSIS sebagai generasi yang akan berkerja keras melewati tantangan dan memiliki semangat juang yang tinggi untuk meraih bintang yaitu membangun IGS menjadi lebih terdepan.
+			</p>
+		</div>
+		<img src="{{ url_for('static', filename='asteration/img/logo/asteration.png') }}">
+			
+	</section>
+{% endblock main %}

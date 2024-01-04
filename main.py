@@ -46,5 +46,9 @@ def asteration_about():
 def credence():
     return render_template("credence/index.html")
 
+@app.route("/Credence/About")
+def credence_about():
+    return render_template("credence/about.html")
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -48,8 +48,6 @@
     transition: transform 0.5s;
 }
 
-
-
 .paper {
     position: absolute;
     width: 100%;
@@ -103,6 +101,7 @@
 
 /* Controller Buttons */
 button {
+    z-index: 1;
     border: none;
     background-color: transparent;
     cursor: pointer;

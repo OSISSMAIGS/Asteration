@@ -23,56 +23,6 @@ html, body {
 	overflow-x: hidden;
 }
 
-/* Snow Animation */
-@-webkit-keyframes snowfall01 {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 150px 600px;
-    }
-}
-@-webkit-keyframes snowfall02 {
-    0% {
-        background-position: 0 -200px;
-    }
-    100% {
-        background-position: 0 600px;
-    }
-}
-@-webkit-keyframes snowfall03 {
-    0% {
-        background-position: 0 200px;
-    }
-    100% {
-        background-position: 300px 600px;
-    }
-}
-@keyframes snowfall01 {
-    0% {
-        background-position: 0 0;
-    }
-    100% {
-        background-position: 150px 600px;
-    }
-}
-@keyframes snowfall02 {
-    0% {
-        background-position: 0 -200px;
-    }
-    100% {
-        background-position: 0 600px;
-    }
-}
-@keyframes snowfall03 {
-    0% {
-        background-position: 0 200px;
-    }
-    100% {
-        background-position: 300px 600px;
-    }
-}
-
 @keyframes toggle-animation {
 	0%{
 		opacity: 0;
@@ -81,24 +31,6 @@ html, body {
 	100%{
 		opacity: 1;
 	}
-}
-
-.back {
-    background: url(../img/foto/snow.png) repeat;
-    -webkit-animation: snowfall01 20s linear infinite;
-    animation: snowfall01 20s linear infinite;
-}
-
-.back2 {
-    background: url(../img/foto/snow2.png) repeat;
-    -webkit-animation: snowfall02 20s linear infinite;
-    animation: snowfall02 20s linear infinite;
-}
-
-.back3 {
-    background: url(../img/foto/snow3.png) repeat ;
-    -webkit-animation: snowfall03 20s linear infinite;
-    animation: snowfall03 20s linear infinite;
 }
 
 /* Header */

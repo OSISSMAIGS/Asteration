@@ -7,7 +7,7 @@ app = Flask(__name__)
 def asteration():
     return render_template("asteration/index.html")
 
-#EVENTS
+#EVENTS - ASTERATION'S
 @app.route("/Asteration/Events")
 def asteration_events():
     return render_template("asteration/events.html")
@@ -28,7 +28,7 @@ def e_pelita():
 def e_aksara():
     return render_template("asteration/e_aksara.html")
 
-#OTHERS
+#OTHER
 @app.route("/Asteration/Updates")
 def asteration_updates():
     return render_template("asteration/updates.html")
@@ -45,6 +45,56 @@ def asteration_about():
 @app.route("/Credence")
 def credence():
     return render_template("credence/index.html")
+
+@app.route("/Credence/Events")
+def credence_events():
+    return render_template("credence/events.html")
+
+#EVENTS - CREDENCE'S
+@app.route("/Credence/Events/Altarma")
+def e_altarma():
+    return render_template("credence/e_altarma.html")
+
+@app.route("/Credence/Events/Cakrawala")
+def e_cakrawala():
+    return render_template("credence/e_cakrawala.html")
+
+@app.route("/Credence/Events/Compation")
+def e_compation():
+    return render_template("credence/e_compation.html")
+
+@app.route("/Credence/Events/Moration")
+def e_moration():
+    return render_template("credence/e_moration.html")
+
+@app.route("/Credence/Events/Noach")
+def e_noach():
+    return render_template("credence/e_noach.html")
+
+@app.route("/Credence/Events/NoxSalvatoris")
+def e_nox_salvatoris():
+    return render_template("credence/e_nox_salvatoris.html")
+
+@app.route("/Credence/Events/Remoderma")
+def e_remoderma():
+    return render_template("credence/e_remoderma.html")
+
+@app.route("/Credence/Events/Renaissance")
+def e_renaissance():
+    return render_template("credence/e_renaissance.html")
+
+@app.route("/Credence/Events/Revoir")
+def e_revoir():
+    return render_template("credence/e_revoir.html")
+
+@app.route("/Credence/Events/TalentScouting")
+def e_talent_scouting():
+    return render_template("credence/e_talent_scouting.html")
+
+#OTHER
+@app.route("/Credence/Arletter")
+def credence_arletter():
+    return render_template("credence/arletter.html")
 
 @app.route("/Credence/About")
 def credence_about():

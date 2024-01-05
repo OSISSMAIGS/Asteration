@@ -24,19 +24,18 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 	<!-- Favicon Logo -->
-	<link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='credence/img/favicon/favicon.ico') }}">
 
 	<!-- CSS & JS-->
 
-	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/layout.css') }}">
 
-	<script src="./js/toggle.js"></script>
-    <script src="./js/cabinet.js"></script>
+	<script src="{{ url_for('static', filename='credence/js/toggle.js') }}"></script>
+    <script src="{{ url_for('static', filename='credence/js/cabinet.js') }}"></script>
+	<script src="{{ url_for('static', filename='credence/js/index.js') }}"></script>
 
-    <link rel="stylesheet" type="text/css" href="./css/arletter.css">
-
-    <script src="./js/arletter.js"></script>
-    <script src="./js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/arletter.css') }}">
+    <script src="{{ url_for('static', filename='credence/js/arletter.js') }}"></script>
 
 	<!-- Title -->
 
@@ -47,22 +46,22 @@
     <header>
         <nav>
             <div class="logo">
-				<div class="credence">
-					<img src="./img/logo/credence.png">
-					<h1>Credence</h1>
-				</div>
-				<div class="asteration">
-					<a href="../asteration/index.html">
-						<img src="../asteration/img/logo/asteration.png">
-						<h1>Asteration</h1>
-					</a>
-				</div>
+                <div class="credence">
+                    <img src="{{ url_for('static', filename='credence/img/logo/credence.png') }}">
+                    <h1>Credence</h1>
+                </div>
+                <div class="asteration">
+                    <a href="{{ url_for('asteration') }}">
+                        <img src="{{ url_for('static', filename='asteration/img/logo/asteration.png') }}">
+                        <h1>Asteration</h1>
+                    </a>
+                </div>
             </div>
             <ul class="nav-item menu-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./events.html">Events</a></li>
-				<li><a href="./arletter.html">Arletter</a></li>
-                <li><a href="./about.html">About Us</a></li>
+                <li><a href="{{ url_for('credence') }}">Home</a></li>
+                <li><a href="{{ url_for('credence_events') }}">Events</a></li>
+                <li><a href="{{ url_for('credence_arletter') }}">Arletter</a></li>
+                <li><a href="{{ url_for('credence_about') }}">About Us</a></li>
             </ul>
 
             <div class="nav-item menu-toggle">
@@ -400,7 +399,7 @@
 
         <div class="footer-content">
             <div class="column1">
-                <img src="./img/logo/credence.png">
+                <img src="{{ url_for('static', filename='credence/img/logo/credence.png') }}">
                 <div class="footer-text">
                     <h5>Credence</h5>
                     <p>Kabinet OSIS SMA Ignatius Global School periode 2022/2023</p>

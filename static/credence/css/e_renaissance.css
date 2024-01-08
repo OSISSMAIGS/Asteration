@@ -23,6 +23,7 @@ header nav {
 	position: absolute;
 	width: 100vw;
 	z-index: 200;
+	top: 0;
 }
 
 header nav .logo h1{

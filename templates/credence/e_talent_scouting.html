@@ -1,216 +1,95 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "credence/layout.html" %}
 
-	<!-- META TAG -->
+{% block css_js %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/e_talent_scouting.css')}}">
+{% endblock css_js%}
 
-	<meta name="description" content="Official Website for OSIS SMA IGS"/>
-    <meta name="robots" content="OSIS, Credence, OSIS Website, Ignatius Global School, OSIS IGS, OSIS SMA IGS, OSIS Ignatius Global School, Web Osis IGS, Website OSIS IGS, Web OSIS Igantius Global School, Website OSIS Ignatius Global School"/>
-    <meta name="googlebot" content="Official Website for OSIS SMA IGS"/>
-    <meta name="robots" content="OSIS, Credence, OSIS Website, Ignatius Global School, OSIS IGS, OSIS SMA IGS, OSIS Ignatius Global School, Web Osis IGS, Website OSIS IGS, Web OSIS Igantius Global School, Website OSIS Ignatius Global School"/>
-    <meta name="googlebot" content="notranslate"/>
-	
-	<!-- Bootstrap 5.1 -->
+{% block title%}Talent Scouting{% endblock title %}
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{% block main %}
+<div class="title">  
+    <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006430380092/logo.png" alt="" class="title-full">
+    <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006858178601/logohp.png" alt="" class="title-hp">
+</div>
 
-	<!-- Bootstrap Icon -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
-	<!-- Favicon Logo -->
-	<link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+<section class="content">
+    <h1>About Talent Scouting</h1>
+    <p>
+        Talent Scouting is a weekly activity carried out by SMA Ignatius Global School students, where students get the opportunity to showcase their talents, both in the arts and sports. besides that in this activity there are also several additional sequences such as birthday greetings and the announcement of the winner.
+    </p>
 
-	<!-- CSS & JS-->
+    <h1>Previous Talent Scouting</h1>
 
-	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+    <p>Every talent scouting, we always start with a flag ceremony to show appreciation to our country.</p>
 
-	<script src="./js/toggle.js"></script>
-    <script src="./js/cabinet.js"></script>
-    
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267285690884106/DSC06381.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267287293120572/DSC06390.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268627712966656/IMG_1172.jpg?width=884&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267286580080660/DSC06383.JPG?width=1178&height=662" alt="">
+    </div>
 
-    <link rel="stylesheet" type="text/css" href="./css/e_talent_scouting.css">
+    <p>After the ceremony, we start our main event with the grandest opening by our masters of ceremony.</p>
 
-    <script src="./js/index.js"></script>
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628107243540/IMG_1191.jpg?width=884&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267288098414592/DSC06391.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267317680836648/IMG_1381.JPG?width=994&height=662" alt="">
+    </div>
 
-	<!-- Title -->
+    <p>We have held a lot of performances over the months, including singing performances...</p>
 
-	<title>Talent Scouting</title>
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267289100865546/DSC06396.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267289683861604/DSC06397.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267290472394762/DSC06398.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267292376608909/DSC06412.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267347166797835/IMG_2671.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267349238788106/IMG_2735.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267350488699003/IMG_2785.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628929323090/IMG_1214.jpg?width=884&height=662" alt="">
+    </div>
 
-</head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-				<div class="credence">
-					<img src="./img/logo/credence.png">
-					<h1>Credence</h1>
-				</div>
-				<div class="asteration">
-					<a href="../asteration/index.html">
-						<img src="../asteration/img/logo/asteration.png">
-						<h1>Asteration</h1>
-					</a>
-				</div>
-            </div>
-            <ul class="nav-item menu-nav">
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./events.html">Events</a></li>
-				<li><a href="./arletter.html">Arletter</a></li>
-                <li><a href="./about.html">About Us</a></li>
-            </ul>
+    <p>... dances and flashmob ...</p>
 
-            <div class="nav-item menu-toggle">
-                <span class="menu-toggle-item"></span>
-                <span class="menu-toggle-item"></span>
-                <span class="menu-toggle-item"></span>
-            </div>
-        </nav>
-    </header>
-
-    <section class="gradient-header">
-        
-    </section>
-
-    <div class="title">  
-        <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006430380092/logo.png" alt="" class="title-full">
-        <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006858178601/logohp.png" alt="" class="title-hp">
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267319807348767/IMG_2567.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267321984192653/IMG_2591.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267373330858034/IMG_4897.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267373871935528/IMG_4899.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267374392025148/IMG_4904.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267375516102728/IMG_4956.JPG?width=994&height=662" alt="">
     </div>
     
+    <p>... band and musical instruments performances ...</p>
 
-    <section class="content">
-        <h1>About Talent Scouting</h1>
-        <p>
-            Talent Scouting is a weekly activity carried out by SMA Ignatius Global School students, where students get the opportunity to showcase their talents, both in the arts and sports. besides that in this activity there are also several additional sequences such as birthday greetings and the announcement of the winner.
-        </p>
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267291139297290/DSC06399.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267303227277422/DSC06423.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267304523317338/DSC06433.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267345740734484/IMG_2649.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267347972108348/IMG_2682.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267348588679269/IMG_2700.JPG?width=994&height=662" alt="">
+    </div>
+    
+    <p>... and even self defense.</p>
 
-        <h1>Previous Talent Scouting</h1>
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267317198508083/IMG_1237.png?width=1424&height=662" alt="">
+    </div>
 
-        <p>Every talent scouting, we always start with a flag ceremony to show appreciation to our country.</p>
+    <p>We also occasionally have motivation speeches and other surprises.</p>
 
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267285690884106/DSC06381.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267287293120572/DSC06390.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268627712966656/IMG_1172.jpg?width=884&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267286580080660/DSC06383.JPG?width=1178&height=662" alt="">
-        </div>
+    <div class="photo-collection">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628547633223/IMG_1205.jpg?width=884&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267319115284540/IMG_2544.JPG?width=994&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267305940987924/DSC06436.JPG?width=1178&height=662" alt="">
+        <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267351096860702/IMG_2796.JPG?width=994&height=662" alt="">
+    </div>
 
-        <p>After the ceremony, we start our main event with the grandest opening by our masters of ceremony.</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628107243540/IMG_1191.jpg?width=884&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267288098414592/DSC06391.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267317680836648/IMG_1381.JPG?width=994&height=662" alt="">
-        </div>
-
-        <p>We have held a lot of performances over the months, including singing performances...</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267289100865546/DSC06396.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267289683861604/DSC06397.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267290472394762/DSC06398.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267292376608909/DSC06412.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267347166797835/IMG_2671.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267349238788106/IMG_2735.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267350488699003/IMG_2785.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628929323090/IMG_1214.jpg?width=884&height=662" alt="">
-        </div>
-
-        <p>... dances and flashmob ...</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267319807348767/IMG_2567.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267321984192653/IMG_2591.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267373330858034/IMG_4897.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267373871935528/IMG_4899.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267374392025148/IMG_4904.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267375516102728/IMG_4956.JPG?width=994&height=662" alt="">
-        </div>
-        
-        <p>... band and musical instruments performances ...</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267291139297290/DSC06399.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267303227277422/DSC06423.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267304523317338/DSC06433.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267345740734484/IMG_2649.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267347972108348/IMG_2682.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267348588679269/IMG_2700.JPG?width=994&height=662" alt="">
-        </div>
-        
-        <p>... and even self defense.</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267317198508083/IMG_1237.png?width=1424&height=662" alt="">
-        </div>
-
-        <p>We also occasionally have motivation speeches and other surprises.</p>
-
-        <div class="photo-collection">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107268628547633223/IMG_1205.jpg?width=884&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267319115284540/IMG_2544.JPG?width=994&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267305940987924/DSC06436.JPG?width=1178&height=662" alt="">
-            <img src="https://media.discordapp.net/attachments/1107266099071959120/1107267351096860702/IMG_2796.JPG?width=994&height=662" alt="">
-        </div>
-
-        <h1 style="text-align: center;">Interested in showcasing your talents?</h1>
-        <h1 style="text-align: center;">Contact us and be in the next</h1>
-        <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006430380092/logo.png" alt="" style="width: 80%;">
-    </section>
-
-
-    <footer>
-        <div class="gradient"></div>
-        
-
-        <div class="footer-content">
-            <div class="column1">
-                <img src="./img/logo/credence.png">
-                <div class="footer-text">
-                    <h5>Credence</h5>
-                    <p>Kabinet OSIS SMA Ignatius Global School periode 2022/2023</p>
-                </div>
-            </div>
-            <div class="column2">
-                <a href="https://goo.gl/maps/cwoy62J6eiJ6P22TA">
-                    <h1><i class="bi bi-geo-alt-fill"></i></h1>
-                    <p>Jl. Mayor Ruslan No. 118, 20 Ilir I, Kec. Ilir Timur I, Palembang</p>
-                </a>
-            </div>
-            <div class="column3">
-                <a href="https://www.instagram.com/osis.smaigs/">
-                    <h2><i class="bi bi-instagram"></i></h2>
-                    <p>Instagram</p>
-                </a>
-                <a href="https://twitter.com/osis_smaigs?t=L-SgwLESUY_a6ViBCYIlTw&s=09">
-                    <h2><i class="bi bi-twitter"></i></h2>
-                    <p>Twitter</p>
-                </a>
-                <a href="https://www.tiktok.com/@osis.smaigs">
-                    <h2><i class="bi bi-tiktok"></i></h2>
-                    <p>Tiktok</p>
-                </a>
-                <a href="https://line.me/R/ti/p/@053dzdrl?from=page">
-                    <h2><i class="bi bi-line"></i></h2>
-                    <p>Line</p>
-                </a>
-                <a href="https://www.youtube.com/channel/UCJcG1VCjXHNig5JIDEgYH7w">
-                    <h2><i class="bi bi-youtube"></i></h2>
-                    <p>Youtube</p>
-                </a>
-                <a href="#">
-                    <h2><i class="bi bi-envelope-fill"></i></h2>
-                    <p>Email</p>
-                </a>
-            </div>
-        </div>
-
-        <div class="copyright">
-            <p>Copyright © <span id="currentYear"></span> Sekbid Multimedia Website Credence</p>
-        </div>
-    </footer>
-	
-</body>
-</html>
+    <h1 style="text-align: center;">Interested in showcasing your talents?</h1>
+    <h1 style="text-align: center;">Contact us and be in the next</h1>
+    <img src="https://cdn.discordapp.com/attachments/1107266099071959120/1107272006430380092/logo.png" alt="" style="width: 80%;">
+</section>
+{% endblock main %}

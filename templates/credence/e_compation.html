@@ -1,1601 +1,1480 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+{% extends "credence/layout.html" %}
 
-	<!-- META TAG -->
+{% block css_js %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/e_compation2.css')}}">
+{% endblock css_js%}
 
-	<meta name="description" content="Official Website for OSIS SMA IGS"/>
-    <meta name="robots" content="OSIS, Credence, OSIS Website, Ignatius Global School, OSIS IGS, OSIS SMA IGS, OSIS Ignatius Global School, Web Osis IGS, Website OSIS IGS, Web OSIS Igantius Global School, Website OSIS Ignatius Global School"/>
-    <meta name="googlebot" content="Official Website for OSIS SMA IGS"/>
-    <meta name="robots" content="OSIS, Credence, OSIS Website, Ignatius Global School, OSIS IGS, OSIS SMA IGS, OSIS Ignatius Global School, Web Osis IGS, Website OSIS IGS, Web OSIS Igantius Global School, Website OSIS Ignatius Global School"/>
-    <meta name="googlebot" content="notranslate"/>
-	
-	<!-- Bootstrap 5.1 -->
+{% block title%}Compation{% endblock title %}
 
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+{% block main %}
+<section class="banner">
+    <section class="gradient-banner">
+    
+    </section>
+</section>
 
-	<!-- Bootstrap Icon -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+<section class="about">
+    <h1>Tentang Compation</h1>
+    <p>
+        COMPATION merupakan kepanjangan dari Competitive in Competition, yang di mana di harapkan untuk memenangkan lomba yang telah di selenggarakan secara kompetitif. Dengan adanya COMPATION di acara class meeting kali ini, semua siswa/siswi Ignatius Global School di harapkan untuk mengikut sertakan masing-masing kelas ke setiap lomba. Selamat bertanding warga IGS!
+    </p>
+</section>
 
-	<!-- Favicon Logo -->
-	<link rel="icon" type="image/x-icon" href="./img/favicon/favicon.ico">
+<section class="jadwal">
+    <h1>Jadwal Kegiatan</h1>
+    <section class="tabel">
+        <table>
+            <tr class="table-back">
+                <th colspan="3">DAY-1</th>
+            </tr>
+            <tr class="table-back">
+                <th>WAKTU</th>
+                <th>KEGIATAN</th>
+                <th>TEMPAT</th>
+            </tr>
+            <tr>
+                <td>06.00 - 07.00</td>
+                <td>OPEN GATE</td>
+            </tr>
 
-	<!-- CSS & JS-->
+            <tr class="table-back">
+                <td colspan="3"><b>OPENING</b></td>
+            </tr>
+            <tr>
+                <td rowspan="2">07.10 - 07.20</td>
+                <td style="text-align: left;"> Performance</td>
+                <td rowspan="5">Hall</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Opening MC</td>
+            </tr>
+            <tr>
+                <td>07.20 - 07.30</td>
+                <td style="text-align: left;">Kata Sambutan Kepala Sekolah</td>
+            </tr>
+            <tr>
+                <td>07.30 - 07.35</td>
+                <td style="text-align: left;">Performance</td>
+            </tr>
+            <tr>
+                <td>07.35 - 07.40</td>
+                <td style="text-align: left;">Performance</td>
+            </tr>
 
-	<link rel="stylesheet" type="text/css" href="./css/layout.css">
+            <tr class="table-back">
+                <td colspan="3"><b>PERSIAPAN LOMBA</b></td>
+            </tr>
 
-	<script src="./js/toggle.js"></script>
-    <script src="./js/cabinet.js"></script>
+            <tr>
+                <td rowspan="5">08.00 - 12.00</td>
+                <td style="text-align: left;">Badminton (4 jam)</td>
+                <td>Hall</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">E-Sport (3 jam)</td>
+                <td>Kelas Lecture & Tutorial</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Basket (3 jam)</td>
+                <td>Lapangan</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Catur (2 jam)</td>
+                <td>Kelas Tutorial</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Whisper Challenge (2 jam 40 menit)</td>
+                <td>Depan Lobby</td>
+            </tr>
 
-    <link rel="stylesheet" type="text/css" href="./css/e_compation2.css">
+            <tr class="table-back">
+                <td colspan="3"><b>BREAK</b></td>
+            </tr>
 
-    <script src="./js/index.js"></script>
+            <tr>
+                <td rowspan="3">13.00 - 15.30</td>
+                <td style="text-align: left;">Cooking Batch 1 (2 jam)</td>
+                <td>Pinggir Lapangan</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Estafet Sarung (1 jam 10 menit)</td>
+                <td>Depan Lobby</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Design Komik (2 jam)</td>
+                <td>MZ</td>
+            </tr>
+            <tr class="table-back">
+                <td colspan="3"><b>OPEN GATE - 15.20</b></td>
+            </tr>
+        </table>
 
-	<!-- Title -->
+        <table>
+            <tr class="table-back">
+                <th colspan="3">DAY-2</th>
+            </tr>
+            <tr class="table-back">
+                <th>WAKTU</th>
+                <th>KEGIATAN</th>
+                <th>TEMPAT</th>
+            </tr>
+            <tr>
+                <td>06.00 - 07.00</td>
+                <td>OPEN GATE</td>
+            </tr>
 
-	<title>Compation</title>
+            <tr class="table-back">
+                <td colspan="3"><b>PERSIAPAN LOMBA</b></td>
+            </tr>
+            <tr>
+                <td rowspan="5">07.30 - 11.00</td>
+                <td style="text-align: left;">Badminton Final (3 jam 30 menit)</td>
+                <td>Hall</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">E-Sport Final (2 jam 30 menit)</td>
+                <td>Kelas Lecture & Tutorial</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Basket Final (2 jam 30 menit)</td>
+                <td>Lapangan</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Make-Up (1 jam 30 menit)</td>
+                <td>Kelas Lecture & Tutorial</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Talent Show (3 jam 30 menit)</td>
+                <td>Lobby</td>
+            </tr>
 
-</head>
-<body>
-	<header>
-		<nav>
-			<div class="logo">
-				<div class="credence">
-					<img src="./img/logo/credence.png">
-					<h1>Credence</h1>
-				</div>
-				<div class="asteration">
-					<a href="../asteration/index.html">
-						<img src="../asteration/img/logo/asteration.png">
-						<h1>Asteration</h1>
-					</a>
-				</div>
-			</div>
-			<ul class="nav-item menu-nav">
-				<li><a href="./index.html">Home</a></li>
-                <li><a href="./events.html">Events</a></li>
-				<li><a href="./arletter.html">Arletter</a></li>
-                <li><a href="./about.html">About Us</a></li>
-			</ul>
+            <tr class="table-back">
+                <td colspan="3"><b>BREAK</b></td>
+            </tr>
 
-			<div class="nav-item menu-toggle">
-                <span class="menu-toggle-item"></span>
-                <span class="menu-toggle-item"></span>
-                <span class="menu-toggle-item"></span>
-            </div>
-		</nav>
-        <div class="gradient">
-            
-        </div>
-	</header>
+            <tr>
+                <td rowspan="2">11.45 - 13.45</td>
+                <td style="text-align: left;">Cooking Batch 2 (1 jam 30 menit)</td>
+                <td>Pinggir Lapangan</td>
+            </tr>
+            <tr>
+                <td style="text-align: left;">Fashion Show (1 jam 30 menit)</td>
+                <td>Depan Lobby</td>
+            </tr>
 
-	<section class="gradient-header">
-		
-	</section>
+            <tr class="table-back">
+                <td colspan="3"><b>CLOSING</b></td>
+            </tr>
+            <tr>
+                <td>13.45 - 13.50</td>
+                <td style="text-align: left;">Performance</td>
+                <td rowspan="6">Hall</td>
+            </tr>
+            <tr>
+                <td>13.50 - 13.55</td>
+                <td style="text-align: left;">Opening MC</td>
+            </tr>
+            <tr>
+                <td>13.55 - 14.00</td>
+                <td style="text-align: left;">Performance</td>
+            </tr>
+            <tr>
+                <td>14.00 - 14.30</td>
+                <td style="text-align: left;">Pengumuman Pemenang</td>
+            </tr>
+            <tr>
+                <td>14.30 - 14.35</td>
+                <td style="text-align: left;">Closing MC</td>
+            </tr>
+            <tr>
+                <td>14.35 - 15.30</td>
+                <td style="text-align: left;">Sesi Foto</td>
+            </tr>
 
-	<section class="banner">
-        <section class="gradient-banner">
+            <tr class="table-back">
+                <td colspan="3"><b>OPEN GATE - 15.20</b></td>
+            </tr>
+        </table>
+    </section>
+</section>
+
+<section class="kegiatan">
+    <h1>Kegiatan Lomba</h1>
+    <div class="daftar-isi">
         
-        </section>
-	</section>
-
-	<section class="about">
-		<h1>Tentang Compation</h1>
-		<p>
-			COMPATION merupakan kepanjangan dari Competitive in Competition, yang di mana di harapkan untuk memenangkan lomba yang telah di selenggarakan secara kompetitif. Dengan adanya COMPATION di acara class meeting kali ini, semua siswa/siswi Ignatius Global School di harapkan untuk mengikut sertakan masing-masing kelas ke setiap lomba. Selamat bertanding warga IGS!
-        </p>
-	</section>
-
-    <section class="jadwal">
-		<h1>Jadwal Kegiatan</h1>
-        <section class="tabel">
-            <table>
-                <tr class="table-back">
-                    <th colspan="3">DAY-1</th>
-                </tr>
-                <tr class="table-back">
-                    <th>WAKTU</th>
-                    <th>KEGIATAN</th>
-                    <th>TEMPAT</th>
-                </tr>
-                <tr>
-                    <td>06.00 - 07.00</td>
-                    <td>OPEN GATE</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>OPENING</b></td>
-                </tr>
-                <tr>
-                    <td rowspan="2">07.10 - 07.20</td>
-                    <td style="text-align: left;"> Performance</td>
-                    <td rowspan="5">Hall</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Opening MC</td>
-                </tr>
-                <tr>
-                    <td>07.20 - 07.30</td>
-                    <td style="text-align: left;">Kata Sambutan Kepala Sekolah</td>
-                </tr>
-                <tr>
-                    <td>07.30 - 07.35</td>
-                    <td style="text-align: left;">Performance</td>
-                </tr>
-                <tr>
-                    <td>07.35 - 07.40</td>
-                    <td style="text-align: left;">Performance</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>PERSIAPAN LOMBA</b></td>
-                </tr>
-
-                <tr>
-                    <td rowspan="5">08.00 - 12.00</td>
-                    <td style="text-align: left;">Badminton (4 jam)</td>
-                    <td>Hall</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">E-Sport (3 jam)</td>
-                    <td>Kelas Lecture & Tutorial</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Basket (3 jam)</td>
-                    <td>Lapangan</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Catur (2 jam)</td>
-                    <td>Kelas Tutorial</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Whisper Challenge (2 jam 40 menit)</td>
-                    <td>Depan Lobby</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>BREAK</b></td>
-                </tr>
-
-                <tr>
-                    <td rowspan="3">13.00 - 15.30</td>
-                    <td style="text-align: left;">Cooking Batch 1 (2 jam)</td>
-                    <td>Pinggir Lapangan</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Estafet Sarung (1 jam 10 menit)</td>
-                    <td>Depan Lobby</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Design Komik (2 jam)</td>
-                    <td>MZ</td>
-                </tr>
-                <tr class="table-back">
-                    <td colspan="3"><b>OPEN GATE - 15.20</b></td>
-                </tr>
-            </table>
-
-            <table>
-                <tr class="table-back">
-                    <th colspan="3">DAY-2</th>
-                </tr>
-                <tr class="table-back">
-                    <th>WAKTU</th>
-                    <th>KEGIATAN</th>
-                    <th>TEMPAT</th>
-                </tr>
-                <tr>
-                    <td>06.00 - 07.00</td>
-                    <td>OPEN GATE</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>PERSIAPAN LOMBA</b></td>
-                </tr>
-                <tr>
-                    <td rowspan="5">07.30 - 11.00</td>
-                    <td style="text-align: left;">Badminton Final (3 jam 30 menit)</td>
-                    <td>Hall</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">E-Sport Final (2 jam 30 menit)</td>
-                    <td>Kelas Lecture & Tutorial</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Basket Final (2 jam 30 menit)</td>
-                    <td>Lapangan</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Make-Up (1 jam 30 menit)</td>
-                    <td>Kelas Lecture & Tutorial</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Talent Show (3 jam 30 menit)</td>
-                    <td>Lobby</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>BREAK</b></td>
-                </tr>
-
-                <tr>
-                    <td rowspan="2">11.45 - 13.45</td>
-                    <td style="text-align: left;">Cooking Batch 2 (1 jam 30 menit)</td>
-                    <td>Pinggir Lapangan</td>
-                </tr>
-                <tr>
-                    <td style="text-align: left;">Fashion Show (1 jam 30 menit)</td>
-                    <td>Depan Lobby</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>CLOSING</b></td>
-                </tr>
-                <tr>
-                    <td>13.45 - 13.50</td>
-                    <td style="text-align: left;">Performance</td>
-                    <td rowspan="6">Hall</td>
-                </tr>
-                <tr>
-                    <td>13.50 - 13.55</td>
-                    <td style="text-align: left;">Opening MC</td>
-                </tr>
-                <tr>
-                    <td>13.55 - 14.00</td>
-                    <td style="text-align: left;">Performance</td>
-                </tr>
-                <tr>
-                    <td>14.00 - 14.30</td>
-                    <td style="text-align: left;">Pengumuman Pemenang</td>
-                </tr>
-                <tr>
-                    <td>14.30 - 14.35</td>
-                    <td style="text-align: left;">Closing MC</td>
-                </tr>
-                <tr>
-                    <td>14.35 - 15.30</td>
-                    <td style="text-align: left;">Sesi Foto</td>
-                </tr>
-
-                <tr class="table-back">
-                    <td colspan="3"><b>OPEN GATE - 15.20</b></td>
-                </tr>
-            </table>
-        </section>
-	</section>
-
-	<section class="kegiatan">
-        <h1>Kegiatan Lomba</h1>
-		<div class="daftar-isi">
-			
-			<ul>
-                <h5><b>Lomba Wajib</b></h5>
-                <li><a href="#cooking">Lomba Cooking</a></li>
-                <li><a href="#vlogging">Lomba Vlogging</a></li>
-                <li><a href="#komik">Lomba Design Komik</a></li>
-                <li><a href="#whisper">Lomba Whisper Challenge</a></li>
-                <li><a href="#sarung">Lomba Estafet Sarung</a></li>
-                <li><a href="#mufs">Lomba Make-up & Fashion Show</a></li>
-                <li><a href="#talent">Lomba Talent Show</a></li>
-                <br>
-                <h5><b>Lomba Tidak Wajib</b></h5>
-				<li><a href="#catur">Lomba Catur</a></li>
-                <li><a href="#esport">Lomba Esport</a></li>
-                <li><a href="#basket">Lomba Basket 3x3</a></li>
-                <li><a href="#badmin">Lomba Badminton</a></li>
-			</ul>
-		</div>
-
-        <div class="content">
-            
-
-            <div class="content-isi" id="cooking">
-                <div class="top">
-                    <img src="./img/foto/compation/cooking2.JPG">
-                    <div class="top-text">
-                        <h2>Lomba Cooking</h2>
-                        <p>Memasak adalah salah satu hal yang tidak bisa lepas dari hidup kita. Banyak sekali orang orang yang hobi memasak, kamu pasti salah satunya! Lomba masak kali ini dilaksanakan dua hari lho. Hari pertama untuk kelas 10 dan hari kedua untuk kelas 11. Let's make perfect dishes!</p>
-                        <br>
-                        <a href="https://forms.gle/67BJ8NXgQJnUqYCz9">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-cooking" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-cooking">
-                        <div class="card card-body">
-                            <h5><b>TEMA</b></h5>
-                            <ol>
-                                <b>Aneka gorengan dengan bahan dasar kulit lumpia</b>
-                            </ol>
-
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Lomba akan berjalan selama 90menit (1 jam 30 menit) dan hanya akan ada 1 babak.
-                                </li>
-                                <li>
-                                    Panitia akan menyediakan 1 meja untuk 2 tim.
-                                </li>
-                                <li>
-                                    Peserta bisa memulai lomba ketika sudah diberikan aba-aba "MULAI" dari MC.
-                                </li>
-                                <li>
-                                    Waktu yang tersisa akan diberitahukan oleh MC per 15 menit yang sudah dipakai.
-                                </li>
-                                <li>
-                                    Setelah waktu dinyatakan telah habis maka semua peserta <b>WAJIB BERHENTI</b> melakukan apapun.
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap kelas <b>wajib</b> mengirimkan 1 tim berisi 3 orang.
-                                </li>
-                                <li>
-                                    Semua peserta <b>wajib</b> sudah berada di lapangan 20 menit sebelum lomba dimulai (untuk absen dan pengaturan meja).
-                                </li>
-                                <li>
-                                    Peserta diwajibkan membawa bahan dan juga alat sendiri (<b>TIDAK BOLEH</b> saling pinjam dengan tim lain).
-                                </li>
-                                <li>
-                                    Kompor disediakan dari pihak sekolah
-                                </li>
-                                <li>
-                                    Peserta dilarang membawa bumbu jadi/ bumbu instan.
-                                </li>
-                                <li>
-                                    Tidak diperbolehkan untuk mencuri start sebelum aba-aba.
-                                </li>
-                                <li>
-                                    Jika ketahuan mencuri start maupun memperpanjang waktu sendiri maka akan diberikan sanksi berupa <b>DISKUALIFIKASI</b>.
-                                </li>
-                                <li>
-                                    Toleransi keterlembatan dari waktu mulai lomba hanya 10 MENIT, lewat dari itu akan <b>DIDISKUALIFIKASI</b>.
-                                </li>
-                                <li>
-                                    Semua alat dan bahan yang dibawa oleh setiap tim merupakan tanggung jawab tim masing-masing. Panitia tidak bertanggung jawab atas hilang maupun rusaknya barang yang dibawa oleh peserta.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Rasa: 50 poin (keseimbangan antar rasa)
-                                </li>
-                                <li>
-                                    Kerapian: 35 poin (sisa makanan tidak berserakan di pinggir piring)
-                                </li>
-                                <li>
-                                    Keindahan: 15 poin (ex= tomat dan timun yang dibentuk seperti bunga)
-                                </li>
-                                <p>
-                                    <b>*Total poin penuh = 100 poin</b>
-                                </p>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-cooking-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-cooking-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPA 5</p>
-                                <p>Khansa, M. Ricky, Malika</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932624643399770/01_cooking_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPS 2</p>
-                                <p>Filye, Valencia Acta, Samuel Keane</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932625041870968/01_cooking_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>11 IPA 4</p>
-                                <p>Florencia, Fererin, Grimonia</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932625679388702/01_cooking_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="vlogging">
-                <div class="top">
-                    <img src="./img/foto/compation/vlogging.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Vlogging</h2>
-                        <p>Vlogging, lomba baru yang akan dilombakan pada class meeting nantinya. Waktunya untuk tunjukkan bakat kamu dalam membuat video!</p>
-                        <br>
-                        <a href="https://forms.gle/28SEeyxPRePSwv2BA">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-vlogging" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-vlogging">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Peserta akan membuat video vlog yang berisi keseruan class meeting day 1
-                                </li>
-                                <li>
-                                    Peserta akan mengedit dan memberi caption sekreatif mungkin
-                                </li>
-                                <li>
-                                    Hasil video peserta akan di upload di tiktok melalui akun masing masing dengan hastag yang telah diberikan dan <b>wajib</b> tag <a href="https://www.tiktok.com/@osis.smaigs">TikTok OSIS SMA IGS</a>
-                                </li>
-                                <li>
-                                    Juara umum akan dinilai berdasarkan penilaian juri
-                                </li>
-                                <li>
-                                    Pengumpulan like akan dilihat pada classmeeting day 2 jam 12.00 dan menjadi juara favorit
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Video <b>tidak boleh</b> mengandung SARA, rasisme, dll
-                                </li>
-                                <li>
-                                    Video memiliki durasi minimal 1,5 menit dan maksimal 3 menit
-                                </li>
-                                <li>
-                                    Batas waktu penguploadan vidio adalah jam 23.59 pada classmeeting day 1
-                                </li>
-                                <li>
-                                    Keputusan juri tidak dapat di ganggu gugat
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Kreativitas
-                                </li>
-                                <li>
-                                    Editing Video
-                                </li>
-                                <li>
-                                    Isi konten
-                                </li>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-vlogging-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-vlogging-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara Umum</h3>
-                                <p>11 IPS 3</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932626992222218/02_vlogging_umum.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara Favorit</h3>
-                                <p>11 IPS 2</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932626115600445/02_vlogging_favorit.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="komik">
-                <div class="top">
-                    <img src="./img/foto/compation/design_komik2.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Design Komik</h2>
-                        <p>Biasanya kalo ngga lomba menggambar, pasti ada lomba melukis. Tapi class meeting kali ini beda, OSIS berinisiatif mengadakan lomba design komik untuk kalian yang punya bakat menggambar nih.</p>
-                        <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtHwxlQvUq-6fzroDuchcygo3qJkVoCyw2IFJezpf7zjBtgw/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-komik" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-komik">
-                        <div class="card card-body">
-                            <h5><b>TEMA</b></h5>
-                            <ol>
-                                <b>VACATION</b>
-                            </ol>
-
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Peserta mempersiapkan kertas gambar sendiri berukuran A4 (29.7 x 21 cm)
-                                </li>
-                                <li>
-                                    Peserta melakukan registrasi, pengumpulan HP sebelum lomba dimulai
-                                </li>
-                                <li>
-                                    Proses pengerjaan berlangsung selama 2 jam
-                                </li>
-                                <li>
-                                    Saat waktu pengerjaan habis, peserta akan mengumpulkan karya dan wajib mendata kembali kehadirannya serta mengambil HP dengan tertib
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Peserta membuat karya berdasarkan pada tema yang telah ditentukan
-                                </li>
-                                <li>
-                                    Peserta lomba adalah perorangan, masing - masing kelas mengirimkan maksimal 2 orang untuk berpartisipasi
-                                </li>
-                                <li>
-                                    Lomba komik bersifat manual dan oneshot
-                                </li>
-                                <li>
-                                    Ukuran kertas A4 (29.7 x 21 cm)  (dibawa secara mandiri) 
-                                </li>
-                                <li>
-                                    Diperbolehkan menggunakan spidol, pensil warna, krayon, cat air, dan cat akrilik
-                                </li>
-                                <li>
-                                    Jumlah panel minimal 4 panel
-                                </li>
-                                <li>
-                                    Diperbolehkan membawa referensi yang telah diprint (tidak boleh memakai HP)
-                                </li>
-                                <li>
-                                    Karya komik original, dilarang menjiplak karya milik orang lain
-                                </li>
-                                <li>
-                                    Karya lomba dilarang menggunakan unsur SARA, sadisme, pornografi, dll.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Kesesuaian dengan tema
-                                </li>
-                                <li>
-                                    Alur dan isi cerita
-                                </li>
-                                <li>
-                                    Originalitas, presentasi visual dan kreatifitas karya
-                                </li>
-                                <li>
-                                    Kontras warna, kebersihan, kerapian
-                                </li>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-komik-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-komik-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>10.9</p>
-                                <p>Alena Handi</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932627445190686/03_komik_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPS 4</p>
-                                <p>Cavin Deetra Marzuki</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932627877208134/03_komik_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>10.2</p>
-                                <p>Farelito Reino Hanjaya Putra</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932628246319104/03_komik_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="whisper">
-                <div class="top">
-                    <img src="./img/foto/compation/whisper.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Whisper Challenge</h2>
-                        <p>Lomba ini adalah lomba paling viral pada zamannya, dan masih eksis hingga sekarang. Whisper Challenge tidak membutuhkan bakat ataupun semacamnya untuk memenangkannya, yang dibutuhkan hanyalah kerja sama dan chemistry tim yang kuat.</p>
-                        <br>
-                        <a href="https://forms.gle/17fzRmAfjUMCawac9">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-whisper" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-whisper">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Satu tim terdiri dari 5 orang.
-                                </li>
-                                <li>
-                                    Panitia akan memberikan kalimat yang terdiri dari 8 kata kepada orang yang paling belakang kemudian orang tersebut harus menyampaikan kalimat yang dia dapat kepada orang di depannya.
-                                </li>
-                                <li>
-                                    Kemudian orang kedua mengulangi kalimat yang dia dapat dari orang pertama sebanyak 2 kali kepada orang di depannya, dan orang ketiga hanya boleh menebak 1 kali lalu lanjut ke orang selanjutnya.
-                                </li>
-                                <li>
-                                    Kalimat diteruskan dengan metode yang sama sampai ke orang paling depan.
-                                </li>
-                                <li>
-                                    Setelah kalimat sampai ke orang paling depan orang tersebut harus menghadap kepada panitia yang mengawas dan mengangkat tangan, kemudian timer dimatikan. Setelah itu  orang paling depan mengetikkan kalimat yang dia dapat di hp panitia.
-                                </li>
-                                <li>
-                                    Masing-masing kelompok diberi waktu maksimal 10 menit.
-                                </li>
-                                <p>
-                                    <b>NB : Panitia akan menunjukkan kalimatnya melalui kertas yang berisi kalimat dan sudah diprint, saat panitia menunjukkan kalimat timernya sudah dinyalakan.</b>
-                                </p>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Peserta tidak boleh berteriak saat menyampaikan kalimat
-                                </li>
-                                <li>
-                                    Orang yang menerima kalimat hanya boleh mengulangkan kalimat yang dia dapat dari orang sebelum nya selama 1 kali.
-                                </li>
-                                <li>
-                                    Peserta tidak boleh mendeskripsikan kata-kata menggunakan anggota tubuh lainnya selain mulut.
-                                </li>
-                                <li>
-                                    Jarak antara satu peserta dengan yang lainnya akan di tentukan panitia, dan mereka tidak boleh bergerak dari jarak yang sudah di tentukan tersebut.
-                                </li>
-                                <li>
-                                    Peserta harus datang maksimal 10 menit sebelum game dimulai, jika saat absen sudah di panggil selama 3x dan peserta tidak ada di tempat, maka akan langsung didiskualifikasi.
-                                </li>
-                                <li>
-                                    Peserta paling depan tidak boleh menerima bantuan dari siapapun selama mengetikkan kalimat yang dia dapat.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Per 1 kata yang benar mendapatkan 10 poin.
-                                </li>
-                                <li>
-                                    Pengurangan 10 poin tiap keterlembatan 1 menit (poin tertinggi 120 poin dan poin terendah 60 poin).
-                                </li>
-                                <li>
-                                    Jika melanggar peraturan nomor 1,2,3,4,6 maka poin akan di minus 10.
-                                </li>
-                                <li>
-                                    Final diambil dari 6 tim dengan poin tertinggi.
-                                </li>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-whisper-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-whisper-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPA 5</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932628686704751/04_whisper_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPS 3</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932629122928650/04_whisper_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>11 IPA 6</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932684873601108/04_whisper_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="sarung">
-                <div class="top">
-                    <img src="./img/foto/compation/sarung.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Estafet Sarung</h2>
-                        <p>Lomba ini biasanya dilombakan pada 17 agustus tapi kali ini akan dilombakan pada class meeting karena 17 agustus masih lama hihihi. Estafet sarung, juga sama halnya dengan whisper challenge, tidak membutuhkan bakat ataupun semacamnya untuk memenangkannya, yang dibutuhkan hanyalah kerja sama dan chemistry tim yang kuat.</p>
-                        <br>
-                        <a href="https://forms.gle/tf7KQvhgikoU9Utj8">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sarung" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-sarung">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap kelompok akan baris menjadi satu barisan bergandengan tangan
-                                </li>
-                                <li>
-                                    Pemindahan tidak boleh menggunakan bantuan alat maupun tangan
-                                </li>
-                                <li>
-                                    Peserta paling depan akan mencoba untuk memindahkan sarung dari tangannya ke tangan peserta kedua
-                                </li>
-                                <li>
-                                    Peserta kedua akan mencoba untuk melakukan hal yang sama dan seterusnya sampai peserta terakhir
-                                </li>
-                                <li>
-                                    Setelah sarung sampai ke peserta terakhir, peserta harus mencoba untuk memindahkan sarung dari peserta terakhir sampai ke peserta pertama dengan cara yang sama
-                                </li>
-                                <li>
-                                    Kelompok tercepat akan menjadi pemenang.
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap kelompok terdiri dari 7 anggota (bebas perempuan atau laki laki)
-                                </li>
-                                <li>
-                                    Setiap kelompok wajib menyediakan satu sarung bebas
-                                </li>
-                                <li>
-                                    Selama lomba, anggota yang melakukan estafet harus selalu berpegangan tangan, jika terlepas maka sarung harus dipindahkan kembali ke anggota pertama dan mengulang estafet.
-                                </li>
-                                <li>
-                                    Siswa siswi yang tidak terlibat dalam lomba, dilarang ikut campur dan mengganggu peserta lomba.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <p>3 tim tercepat akan menjadi juara 1, 2 dan 3</p>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sarung-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-sarung-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPA 4</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932685590831164/05_estafet_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPA 5</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932686056394783/05_estafet_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>11 IPS 1</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932686639411241/05_estafet_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="mufs">
-                <div class="top">
-                    <img src="./img/foto/compation/mufs.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Make-up & Fashion Show</h2>
-                        <p>Lomba ini bisa jadi ajang talenta buat kamu yang mau jadi model atau stylist nih. Yuk tunjukin bakat kamu lewat lomba ini!</p>
-                        <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPPMRqiqAGXPQopdmd3lpqNRnHuXe6Sjt9uUZSaBDWp3g5yQ/viewform?usp=pp_url">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-mufs">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <p><b>Make-up</b></p>
-                                <li>
-                                    Tema : Impersonate Your Homeroom Teacher
-                                </li>
-                                <li>
-                                    Terdiri dari 2 peserta make up, 1 peserta model.
-                                </li>
-                                <li>
-                                    Peserta make up dan model dibebaskan gender nya. Ex : bisa perempuan maupun laki-laki.
-                                </li>
-                                <li>
-                                    Semua produk make-up boleh digunakan dengan syarat menggunakan milik pribadi.
-                                </li>
-                                <li>
-                                    Make-up hanya diberi waktu selama 45 menit tanpa melibatkan pihak lain maupun tim lawan.
-                                </li>
-                            </ol>
-
-                            <ol>
-                                <p><b>Fashion Show</b></p>
-                                <li>
-                                    Diharapkan dapat menggunakan pakaian yang bebas pantas dan semirip mungkin dengan wali kelas.
-                                </li>
-                                <li>
-                                    Runway bersama akan dilakukan oleh setiap model secara individu selama kurang lebih 10 menit.
-                                </li>
-                                <li>
-                                    Catwalk harus dilakukan oleh model dan wali kelas selama 1,5 menit.  
-                                </li>
-                                <li>
-                                    Model dan wali kelas akan di berikan mic dengan tujuan meng-impersonate wali kelas semirip-mirip mungkin saat pertengahan catwalk.
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    1 tim terdiri dari 3 orang (2 peserta make up, 1 model).
-                                </li>
-                                <li>
-                                    Tidak diperbolehkan melakukan pergantian peserta.
-                                </li>
-                                <li>
-                                    Tidak diizinkan menggunakan alat makeup maupun properti dari luar tim.
-                                </li>
-                                <li>
-                                    Jika melanggar ketentuan maka tim dianggap gugur.
-                                </li>
-                                <li>
-                                    Peserta harus hadir 20 menit sebelum lomba di mulai.
-                                </li>
-                                <li>
-                                    Segala bentuk kecurangan akan di diskualifikasi.
-                                </li>
-                                <li>
-                                    Jika nama tim telah di panggil sebanyak 3 kali dan masih tidak hadir, tim akan di diskualifikasi.
-                                </li>
-                                <li>
-                                    Saat makeup maupun fashion show tidak boleh mengandung SARA.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Kreatifitas
-                                </li>
-                                <li>
-                                    Kekompakan
-                                </li>
-                                <li>
-                                    Sesuai tema
-                                </li>
-                                <li>
-                                    Chemistry
-                                </li>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-mufs-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPA 6</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932687054639114/06_MUFS_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPA 3</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932687750901810/06_MUFS_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>11 IPA 4</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932688275185735/06_MUFS_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="talent">
-                <div class="top">
-                    <img src="./img/foto/compation/talent_show.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Talent Show</h2>
-                        <p>Lomba ini ditujukan bagi mereka yang ingin menampilkan talentanya, seperti menyanyi, bermain alat musik, dan sebainya. Ayo daftar sekarang dan tunjukkan talentamu!</p>
-                        <br>
-                        <a href="https://forms.gle/HSy2w8D4mpJgcj6R6">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-mufs">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Peserta merupakan siswa/i aktif SMA IGS.
-                                </li>
-                                <li>
-                                    Peserta boleh Individu dan Kelompok/Grup.
-                                </li>
-                                <li>
-                                    Peserta Kelompok/Grup harus berasal dari satu kelas yang sama.
-                                </li>
-                                <li>
-                                    Peserta Grup/Kelompok beranggotakan maksimal 3 orang.
-                                </li>
-                                <li>
-                                    Dalam satu kelas hanya boleh mengirimkan 1 individu atau 1 kelompok.
-                                </li>
-                                <li>
-                                    Peserta harus Mendaftar di gform sebelum tanggal 7 Juni 2023.
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap kelas wajib mengirimkan perwakilan dari kelas nya masing masing (tidak ada kelas gabungan).
-                                </li>
-                                <li>
-                                    Talenta yg akan di tampilkan tidak mengandung unsur SARA.
-                                </li>
-                                <li>
-                                    Peserta lomba tidak boleh datang terlambat, apabila terlambat maka peserta yg mengikuti lomba akan di didiskualifikasi.
-                                </li>
-                                <li>
-                                    Peserta tidak dapat mengganggu gugat keputusan serta ketetapan penilaian dari dewan juri dan juga panitia.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Dapat tampil dengan percaya diri atas kemampuan yang dimiliki.
-                                </li>
-                                <li>
-                                    Kreativitas dalam menampilkan sebuah performa.
-                                </li>
-                                <li>
-                                    Dapat menampilkan kemampuan stage presence yang dimiliki.
-                                </li>
-                                <li>
-                                    Dapat menampilkan Ekspresi wajah yang sesuai berdasarkan tema lagu.
-                                </li>
-                                <li>
-                                    Respon dari para audience juga termasuk dalam penilaian.
-                                </li>
-                                <li>
-                                    Karya harus orisinal dan tidak ada unsur plagiarisme.
-                                </li>
-                                <li>
-                                    Karya tidak mengandung unsur rasisme, sara, pornografi dan tidak bertentangan dengan norma yang berlaku.
-                                </li>
-                            </ol>
-
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-mufs-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPS 1</p>
-                                <p>Dita Michaela</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932689155993700/07_talent_1.webp?width=994&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPS 2</p>
-                                <p>Vellisya Priscilla N</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932689667690566/07_talent_2.webp?width=994&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>10 IPS 1</p>
-                                <p>M. Raafi Masyur, Chandrika Wijayani S.P, Clarissa Gabriella Sutedja</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932690875650068/07_talent_3.webp?width=994&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="catur">
-                <div class="top">
-                    <img src="./img/foto/compation/catur.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Catur</h2>
-                        <p>Catur, olahraga yang populer akhir-akhir ini, akan dilombakan pada class meeting kali ini. Setiap kelas yang ingin mengikuti lomba dapat mengirimkan 1 perwakilan ya! Let's rack our brains</p>
-                        <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLScvdxQc66UiUGxk1nT-FRhAaU8RR-qyF_uJw8eg48ExKxGiNQ/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-catur" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-catur">
-                        <div class="card card-body">
-                            <h5><b>Pendaftaran</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap kelas hanya boleh mengirimkan 1 peserta untuk dijadikan perwakilan, maka dari itu silakan didiskusikan terlebih dahulu dengan anggota kelas
-                                </li>
-                                <li>
-                                    Untuk pertanyaan lebih lanjut dapat menghubungi : Alya Azzahra (Line : alyaazrra)
-                                </li>
-                            </ol>
-
-                            <h5><b>Permainan</b></h5>
-                            <ol>
-                                <li>
-                                    Akan diadakan beberapa babak (disesuaikan dengan jumlah pemain) dalam pertandingan ini, yang nantinya setiap peserta wajib bermain dalam beberapa tahap sesuai dengan jumlah peserta dengan lawan yang berbeda.
-                                </li>
-                                <li>
-                                    Pemain yang mengumpulkan poin terbanyak, maka dialah pemenangnya dengan penilaian : setiap kemenangan diberikan (1poin), seimbang (1/2 poin), dan kalah (0 poin).
-                                </li>
-                                <li>
-                                    Waktu yang disediakan untuk setiap permainan adalah 10 menit dengan total tiap sesi 20 menit.
-                                </li>
-                                <li>
-                                    Sistem akan dijalankan menggunakan platform catur yang memiliki mekanisme yang sesuai dengan permainan yang dilakukan secara manual bernama "Swiss Gravy".
-                                </li>
-                            </ol>
-
-                            <h5><b>Pelanggaran</b></h5>
-                            <ol>
-                                <li>
-                                    Pegang jalan, jika buah yang dipegang dikembalikan ke posisi sebelumnya, maka akan diberi peringatan 1 kali.
-                                </li>
-                                <li>
-                                    Jika terdapat 2 kali illegal move maka akan dianggap kalah.
-                                </li>
-                                <li>
-                                    Illegal Move akan dinilai oleh pengawas secara langsung sehingga keputusan pelanggaran bersifat mutlak.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ol>
-                                <li>
-                                    Menang(win) : +1 poin
-                                </li>
-                                <li>
-                                    Seri(draw) : +0.5 poin
-                                </li>
-                                <li>
-                                    Kalah(lose) : 0 poin
-                                </li>
-                                <p>
-                                    <b>*Pemenang didasarkan pada torehan poin tertinggi</b>
-                                </p>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-catur-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-catur-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>10.1</p>
-                                <p>Richard Evan</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932713663307806/08_catur_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>11 IPA 6</p>
-                                <p>Christian Dustin Efendy</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932714141462528/08_catur_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>10.6</p>
-                                <p>Michael Chan</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932714556706866/08_catur_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="esport">
-                <div class="top">
-                    <img src="./img/foto/compation/esport.JPG">
-                    <div class="top-text">
-                        <h2>Lomba E-sport</h2>
-                        <p>Buat kamu khususnya para gamer, yuk ikutan lomba pas class meeting nanti. Game yang dilombakan hanya Mobile Legends : Bang Bang ya.</p>
-                        <br>
-                        <a href="https://forms.gle/xehEEauYQAk3VcJg9">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-esport" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-esport">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <p>Mekanisme yang digunakan adalah sistem bracket</p>
-                            <ol>
-                                <p><b>Sistem Penyisihan 1</b></p>
-                                <li>
-                                    Babak ini akan dilaksanakan daring dan melalui aplikasi discord
-                                </li>
-                                <li>
-                                    Setiap tim akan diundi terlebih dahulu untuk memperoleh sebanyak ((tim yang daftar-16)* 2).
-                                </li>
-                                <li>
-                                    Tim tersebut akan bertanding sebanyak 1 match, pemenang dari setiap pertandingan akan langsung memasuki bracket tournament.
-                                </li>
-                                <li>
-                                    Tim yang kalah akan diberi kesempatan lagi untuk bertanding dengan tim yang belum dapat kesempatan untuk bertanding sebanyak 1 match.
-                                </li>
-                                <li>
-                                    Tim akan diundi lagi dan ditandingi lagi sehingga memperoleh banyak tim yang diperlukan untuk mengisi bracket yaitu 16 tim.
-                                </li>
-                            </ol>
-
-                            <ol>
-                                <p><b>Sistem Bracket (Penyisihan 2 sampai Grand Final)</b></p>
-                                <li>
-                                    Setiap tim akan melawan tim yang telah ditentukan melalui bracket yang akan diundi terlebih dahulu dan akan disampaikan hasilnya di group chat
-                                </li>
-                                <li>
-                                    Tim yang posisi atas di bracket akan first pick terlebih dahulu.
-                                </li>
-                                <li>
-                                    Jika tim telah memperoleh banyak point yang diperlukan untuk menang maka tim tersebut akan lanjut ke babak berikutnya sampai dapat pemenang.
-                                </li>
-                            </ol>
-
-                            <ol>
-                                <p><b>Tata cara Matching Offline</b></p>
-                                <li>
-                                    Semua peserta lomba sudah harus berada di ruangan yang akan ditentukan 10 menit sebelum waktu lomba mulai
-                                </li>
-                                <li>
-                                    Semua perserta akan diarahkan ke meja yang telah ditentukan oleh panitia
-                                </li>
-                                <li>
-                                    Semua peserta tim harus sudah berada di lobby game 5 menit sebelum waktu match yang telah ditentukan
-                                </li>
-                                <li>
-                                    Jika tim sudah menang sebanyak jumlah match yang ditentukan maka akan dinyatakan menang
-                                </li>
-                                <li>
-                                    Tim yang kalah akan keluar dari ruangan lomba
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Satu tim hanya berisi 6 anggota: 5 pemain utama dan 1 cadangan
-                                </li>
-                                <li>
-                                    Cadangan bersifat opsional tetapi tim tidak diperbolehkan untuk tiba-tiba menambah cadangan saat hari pertandingan
-                                </li>
-                                <li>
-                                    Setiap kelas hanya diperbolekan untuk mengirim satu tim
-                                </li>
-                                <li>
-                                    Nama Tim tidak diperbolehkan untuk mengandung unsur SARA, ejekan, kata-kata sensitif, dll.
-                                </li>
-                                <li>
-                                    Peserta disarankan untuk membawa modem sendiri ketika turnamen offline.
-                                </li>
-                                <li>
-                                    Jika terjadi masalah selain koneksi pada game bisa chat all “p” untuk menghentikan permainan selama maksimal 3 menit. Pause hanya bisa asalkan alasan yang diberi pantas untuk di pause.
-                                </li>
-                                <li>
-                                    Apabila player terdiskonek atau gangguan koneksi akan ditanggung sendiri-sendiri.
-                                </li>
-                                <li>
-                                    Peserta tidak diizinkan untuk taunting ke tim lain via quick chat atau chat, peserta diizinkan untuk recall-recall ataupun emote.
-                                </li>
-                                <li>
-                                    Setiap Tim hanya bisa mengirimkan player-player yang telah diisi di g-form.
-                                </li>
-                                <li>
-                                    Player yang ketahuan <b>CHEAT ATAU TINDAKAN YANG MELANGGAR ATURAN LANGSUNG DIDISKUALIFIKASI.</b>
-                                </li>
-                                <li>
-                                    Peserta dihimbau untuk membawa charging terminal sendiri.
-                                </li>
-                                <li>
-                                    Lobby akan dibuat oleh panitia dan yang boleh spectate hanya panitia, panitia akan membuat lobby 10 menit sebelum waktu yang dijanjikan dua tim, apabila anggota tim tidak lengkap selama waktu yang diberi maka tim tersebut akan didiskualifikasi.
-                                </li>
-                                <li>
-                                    Jika kedua pihak setuju akan penundaan waktu match, maka waktu akan diundur maksimal 10 menit.
-                                </li>
-                                <li>
-                                    Peserta diperbolehkan membawa peralatan-peralatan yang diperlukan dalam bermain game, misalnya earphone, modem, dll.
-                                </li>
-                            </ol>
-
-                            <h5><b>Kriteria Penilaian</b></h5>
-                            <ul>
-                                <p>Penilaian akan berbasis Best of. (BO)</p>
-                                <li>
-                                    Match BO1: tim hanya perlu 1 poin untuk menang, berlaku untuk penyisihan 1 dan 2                                    
-                                </li>
-                                <li>
-                                    Match BO3: tim hanya perlu 2 poin untuk menang, berlaku untuk quarterfinal dan semifinal
-                                </li>
-                                <li>
-                                    Match BO5: tim hanya perlu 3 poin untuk menang, berlaku untuk grand final
-                                </li>
-                                <li>
-                                    Tim akan dinyatakan memperoleh 1 poin  jika base musuh telah hancur
-                                </li>
-                                <li>
-                                    Tim akan dinyatakan menang game jika telah mencapai poin tertentu yang telah terdapat di bagian penilaian
-                                </li>
-                            </ul>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-esport-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-esport-winner">
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>10.6</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932715039043604/09_esport_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>10.8</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932715500425256/09_esport_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>11 IPA 1</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932716167307314/09_esport_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="basket">
-                <div class="top">
-                    <img src="./img/foto/compation/basket.png">
-                    <div class="top-text">
-                        <h2>Lomba Basket 3x3</h2>
-                        <p>Panggilan untuk seluruh siswa yang jago bermain basket, ayo tunjukan bakat kamu dalam lomba kali ini.</p>
-                        <br>
-                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo1YF-SX4j1Skjr4gyICNjbApID-0Hqkhe1c9wRhWUR5HOLw/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-basket" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-basket">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <p>Awal Permainan</p>
-                            <ol>
-                                <li>
-                                    Setiap tim terdiri dari 4 pemain (3 pemain di lapangan dan 1 pemain pengganti).
-                                </li>
-                                <li>
-                                    Kedua tim akan melakukan pemanasan secara bersamaan sebelum pertandingan (2-5 menit).
-                                </li>
-                                <li>
-                                    Sebuah lemparan koin akan menentukan tim mana yang mendapat  penguasaan bola pertama.
-                                </li>
-                                <li>
-                                    Permainan harus dimulai dengan tiga pemain di lapangan.
-                                </li>
-                            </ol>
-                            
-                            <p>Perhitungan Skor</p>
-                            <ol>
-                                <li>
-                                    Setiap tembakan yang berhasil di dalam garis 3 angka akan diberikan satu 1 poin.
-                                </li>
-                                <li>
-                                    Setiap tembakan yang berhasil di belakang garis 3 angka akan diberikan 2 poin.
-                                </li>
-                                <li>
-                                    Setiap lemparan bebas/freethrow yang berhasil akan diberikan 1 poin.
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap tim terdiri dari 4 anggota (3 pemain inti, 1 pemain pengganti)
-                                </li>
-                                <li>
-                                    Permainan berjalan selama 10 menit.
-                                </li>
-                                <li>
-                                    Pertandingan dipimpin 1 wasit.
-                                </li>
-                                <li>
-                                    Penentuan bola pertama menggunakan coin flip atau suit.
-                                </li>
-                                <li>
-                                    <ol>
-                                        <li>
-                                            Menembak bola didalam garis three poin dihitung 1 poin, 
-                                        </li>
-                                        <li>   
-                                            Tembakan di luar garis three poin dihitung 2 poin,
-                                        </li>
-                                        <li>
-                                            dan tembakan free throw dihitung 1 poin .
-                                        </li>
-                                    </ol>
-                                </li>
-                                <li>
-                                    Personal Foul Pemain yang telah melakukan 5 kali foul dinyatakan Foul Out
-                                </li>
-                                <li>
-                                    Foul pada saat melakukan tembakan akan mendapatkan 1 tembakan free throw apabila foul terjadi di dalam garis three poin, dan 2 tembakan free throw apabila terjadi di luar garis three poin
-                                </li>
-                                <li>
-                                    Foul yang terjadi pada saat pemain tidak dalam posisi melakukan tembakan, dan salah satu tim sudah dalam posisi Team Foul maka akan diberikan 1 kali tembakan Free Throw
-                                </li>
-                                <li>
-                                    Suatu tim harus melakukan usaha tembakan untuk mencetak angka dalam waktu 10 detik
-                                <li>
-                                    Mengulur-ngulur waktu dan tidak bermain secara aktif dinyatakan pelanggaran Setiap tembakan yang masuk atau free throw terakhir. Bola harus di bawa keluar garis 3 point terlebih dahulu.
-                                </li>
-                                <li>
-                                    Setiap tembakan yang gagal atau free throw terakhir Apabila tim mendapatkan rebound ofensif boleh langsung memasukan bola tanpa harus membawa atau mengoper bola keluargaris three point. Apabila tim mendapatkan rebound defensif, bola harus keluar garis tiga poin terlebih dahulu
-                                </li>
-                                <li>
-                                    Setiap tim wajib memiliki seragam satu warna, dan harus berbeda dari tim yang lain. Tidak boleh ada yang sama
-                                </li>
-                            </ol>
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-basket-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-basket-winner">
-                        <p>WE'LL NEVER KNOW TILL WE TRY!</p>
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>11 IPA 4</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932716486078474/10_basket_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>10 IPS 4</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932717018751088/10_basket_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>10 IPS 3</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932717589188732/10_basket_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="content-isi" id="badmin">
-                <div class="top">
-                    <img src="./img/foto/compation/badmin.jpg">
-                    <div class="top-text">
-                        <h2>Lomba Badminton</h2>
-                        <p>Siapa disini yang suka badminton? yuk tunjukin bakat kamu lewat lomba ini.</p>
-                        <br>
-                        <a href="https://forms.gle/zuWTEXShwzh6Qqjw7">Klik disini untuk mendaftar!</a>
-                    </div>
-                </div>
-
-                <div class="bottom">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-badmin" aria-expanded="false" aria-controls="collapseExample">
-                        Peraturan & Mekanisme
-                    </button>
-                    <div class="collapse" id="collapse-badmin">
-                        <div class="card card-body">
-                            <h5><b>Mekanisme</b></h5>
-                            <ol>
-                                <li>
-                                    Lomba ini merupakan ganda campuran, jadi setiap tim harus terdiri dari 1 orang laki-laki dan 1 orang perempuan yang berasal dari kelas yang sama.
-                                </li>
-                                <li>
-                                    Lomba terdiri dari 4 babak yaitu, penyisihan, quarter final, semifinal, dan final.
-                                </li>
-                                <li>
-                                    Perlombaan akan dilakukan dengan bermain 2 set dengan 21 poin di setiap babak.
-                                </li>
-                                <li>
-                                    Penyisihan dan quarter final akan dilakukan pada hari pertama, semifinal dan final akan dilakukan pada hari kedua
-                                </li>
-                                <li>
-                                    Lomba ini bersifat tidak wajib, sehingga setiap kelas tidak diwajibkan untuk mengirim perwakilan
-                                </li>
-                            </ol>
-
-                            <h5><b>Peraturan</b></h5>
-                            <ol>
-                                <li>
-                                    Setiap peserta diwajibkan untuk menggunakan pakaian olahraga dan menggunakan sepatu pada saat pertandingan
-                                </li>
-                                <li>
-                                    Setiap peserta lomba akan nantinya akan dipanggil sebanyak maksimal 3 kali, jika peserta belum datang maka akan didiskualifikasi. Toleransi terlambat hanya 10 menit
-                                </li>
-                                <li>
-                                    Setiap peserta diharapkan dapat membawa raket beserta kok masing-masing. Para peserta maupun supporter dilarang untuk membawa makanan dan minuman ke dalam hall
-                                </li>
-                                <li>
-                                    Setiap peserta yang mengikuti lomba wajib mengikuti peraturan yang berlaku, jika diketahui melakukan kecurangan selama perlombaan, maka peserta akan langsung di diskualifikasi
-                                </li>
-                                <li>
-                                    Keputusan wasit adalah mutlak dan tidak dapat diganggu gugat
-                                </li>
-                                <li>
-                                    Setiap peserta lomba harus dalam keadaan fisik dan mental yang sehat
-                                </li>
-                                <li>
-                                    Lomba tidak wajib untuk diikuti dan bersifat ganda campuran
-                                </li>
-                                <li>
-                                    Supporter setiap kelasnya maksimal 10 orang
-                                </li>
-                            </ol>
-
-                            
-                        </div>
-                    </div>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-badmin-winner" aria-expanded="false" aria-controls="collapseExample">
-                        Pemenang
-                    </button>
-                    <div class="collapse" id="collapse-badmin-winner">
-                        <p>WE'LL NEVER KNOW TILL WE TRY!</p>
-                        <div class="card card-body">
-                            <div class="winners-data">
-                                <h3>Juara 1</h3>
-                                <p>10 IPA 4</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932718079913994/11_badmin_1.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 2</h3>
-                                <p>10 IPA 1</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932721296953364/11_badmin_2.webp?width=1178&height=662" alt="">
-
-                            <div class="winners-data">
-                                <h3>Juara 3</h3>
-                                <p>10 IPS 3</p>
-                            </div>
-                            <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932721812832286/11_badmin_3.webp?width=1178&height=662" alt="">
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-
+        <ul>
+            <h5><b>Lomba Wajib</b></h5>
+            <li><a href="#cooking">Lomba Cooking</a></li>
+            <li><a href="#vlogging">Lomba Vlogging</a></li>
+            <li><a href="#komik">Lomba Design Komik</a></li>
+            <li><a href="#whisper">Lomba Whisper Challenge</a></li>
+            <li><a href="#sarung">Lomba Estafet Sarung</a></li>
+            <li><a href="#mufs">Lomba Make-up & Fashion Show</a></li>
+            <li><a href="#talent">Lomba Talent Show</a></li>
+            <br>
+            <h5><b>Lomba Tidak Wajib</b></h5>
+            <li><a href="#catur">Lomba Catur</a></li>
+            <li><a href="#esport">Lomba Esport</a></li>
+            <li><a href="#basket">Lomba Basket 3x3</a></li>
+            <li><a href="#badmin">Lomba Badminton</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
         
 
-	</section>
+        <div class="content-isi" id="cooking">
+            <div class="top">
+                <img src="./img/foto/compation/cooking2.JPG">
+                <div class="top-text">
+                    <h2>Lomba Cooking</h2>
+                    <p>Memasak adalah salah satu hal yang tidak bisa lepas dari hidup kita. Banyak sekali orang orang yang hobi memasak, kamu pasti salah satunya! Lomba masak kali ini dilaksanakan dua hari lho. Hari pertama untuk kelas 10 dan hari kedua untuk kelas 11. Let's make perfect dishes!</p>
+                    <br>
+                    <a href="https://forms.gle/67BJ8NXgQJnUqYCz9">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
 
-	<footer>
-		<div class="gradient"></div>
-		
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-cooking" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-cooking">
+                    <div class="card card-body">
+                        <h5><b>TEMA</b></h5>
+                        <ol>
+                            <b>Aneka gorengan dengan bahan dasar kulit lumpia</b>
+                        </ol>
 
-		<div class="footer-content">
-			<div class="column1">
-				<img src="./img/logo/credence.png">
-				<div class="footer-text">
-					<h5>Credence</h5>
-					<p>Kabinet OSIS SMA Ignatius Global School periode 2022/2023</p>
-				</div>
-			</div>
-			<div class="column2">
-				<a href="https://goo.gl/maps/cwoy62J6eiJ6P22TA">
-					<h1><i class="bi bi-geo-alt-fill"></i></h1>
-					<p>Jl. Mayor Ruslan No. 118, 20 Ilir I, Kec. Ilir Timur I, Palembang</p>
-				</a>
-			</div>
-			<div class="column3">
-				<a href="https://www.instagram.com/osis.smaigs/">
-					<h2><i class="bi bi-instagram"></i></h2>
-					<p>Instagram</p>
-				</a>
-				<a href="https://twitter.com/osis_smaigs?t=L-SgwLESUY_a6ViBCYIlTw&s=09">
-					<h2><i class="bi bi-twitter"></i></h2>
-					<p>Twitter</p>
-				</a>
-				<a href="https://www.tiktok.com/@osis.smaigs">
-					<h2><i class="bi bi-tiktok"></i></h2>
-					<p>Tiktok</p>
-				</a>
-				<a href="https://line.me/R/ti/p/@053dzdrl?from=page">
-					<h2><i class="bi bi-line"></i></h2>
-					<p>Line</p>
-				</a>
-				<a href="https://www.youtube.com/channel/UCJcG1VCjXHNig5JIDEgYH7w">
-					<h2><i class="bi bi-youtube"></i></h2>
-					<p>Youtube</p>
-				</a>
-				<a href="#">
-					<h2><i class="bi bi-envelope-fill"></i></h2>
-					<p>Email</p>
-				</a>
-			</div>
-		</div>
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Lomba akan berjalan selama 90menit (1 jam 30 menit) dan hanya akan ada 1 babak.
+                            </li>
+                            <li>
+                                Panitia akan menyediakan 1 meja untuk 2 tim.
+                            </li>
+                            <li>
+                                Peserta bisa memulai lomba ketika sudah diberikan aba-aba "MULAI" dari MC.
+                            </li>
+                            <li>
+                                Waktu yang tersisa akan diberitahukan oleh MC per 15 menit yang sudah dipakai.
+                            </li>
+                            <li>
+                                Setelah waktu dinyatakan telah habis maka semua peserta <b>WAJIB BERHENTI</b> melakukan apapun.
+                            </li>
+                        </ol>
 
-		<div class="copyright">
-			<p>Copyright © <span id="currentYear"></span> Sekbid Multimedia Website Credence</p>
-		</div>
-	</footer>	
-</body>
-</html>
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Setiap kelas <b>wajib</b> mengirimkan 1 tim berisi 3 orang.
+                            </li>
+                            <li>
+                                Semua peserta <b>wajib</b> sudah berada di lapangan 20 menit sebelum lomba dimulai (untuk absen dan pengaturan meja).
+                            </li>
+                            <li>
+                                Peserta diwajibkan membawa bahan dan juga alat sendiri (<b>TIDAK BOLEH</b> saling pinjam dengan tim lain).
+                            </li>
+                            <li>
+                                Kompor disediakan dari pihak sekolah
+                            </li>
+                            <li>
+                                Peserta dilarang membawa bumbu jadi/ bumbu instan.
+                            </li>
+                            <li>
+                                Tidak diperbolehkan untuk mencuri start sebelum aba-aba.
+                            </li>
+                            <li>
+                                Jika ketahuan mencuri start maupun memperpanjang waktu sendiri maka akan diberikan sanksi berupa <b>DISKUALIFIKASI</b>.
+                            </li>
+                            <li>
+                                Toleransi keterlembatan dari waktu mulai lomba hanya 10 MENIT, lewat dari itu akan <b>DIDISKUALIFIKASI</b>.
+                            </li>
+                            <li>
+                                Semua alat dan bahan yang dibawa oleh setiap tim merupakan tanggung jawab tim masing-masing. Panitia tidak bertanggung jawab atas hilang maupun rusaknya barang yang dibawa oleh peserta.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Rasa: 50 poin (keseimbangan antar rasa)
+                            </li>
+                            <li>
+                                Kerapian: 35 poin (sisa makanan tidak berserakan di pinggir piring)
+                            </li>
+                            <li>
+                                Keindahan: 15 poin (ex= tomat dan timun yang dibentuk seperti bunga)
+                            </li>
+                            <p>
+                                <b>*Total poin penuh = 100 poin</b>
+                            </p>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-cooking-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-cooking-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPA 5</p>
+                            <p>Khansa, M. Ricky, Malika</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932624643399770/01_cooking_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPS 2</p>
+                            <p>Filye, Valencia Acta, Samuel Keane</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932625041870968/01_cooking_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>11 IPA 4</p>
+                            <p>Florencia, Fererin, Grimonia</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932625679388702/01_cooking_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="vlogging">
+            <div class="top">
+                <img src="./img/foto/compation/vlogging.jpg">
+                <div class="top-text">
+                    <h2>Lomba Vlogging</h2>
+                    <p>Vlogging, lomba baru yang akan dilombakan pada class meeting nantinya. Waktunya untuk tunjukkan bakat kamu dalam membuat video!</p>
+                    <br>
+                    <a href="https://forms.gle/28SEeyxPRePSwv2BA">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-vlogging" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-vlogging">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Peserta akan membuat video vlog yang berisi keseruan class meeting day 1
+                            </li>
+                            <li>
+                                Peserta akan mengedit dan memberi caption sekreatif mungkin
+                            </li>
+                            <li>
+                                Hasil video peserta akan di upload di tiktok melalui akun masing masing dengan hastag yang telah diberikan dan <b>wajib</b> tag <a href="https://www.tiktok.com/@osis.smaigs">TikTok OSIS SMA IGS</a>
+                            </li>
+                            <li>
+                                Juara umum akan dinilai berdasarkan penilaian juri
+                            </li>
+                            <li>
+                                Pengumpulan like akan dilihat pada classmeeting day 2 jam 12.00 dan menjadi juara favorit
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Video <b>tidak boleh</b> mengandung SARA, rasisme, dll
+                            </li>
+                            <li>
+                                Video memiliki durasi minimal 1,5 menit dan maksimal 3 menit
+                            </li>
+                            <li>
+                                Batas waktu penguploadan vidio adalah jam 23.59 pada classmeeting day 1
+                            </li>
+                            <li>
+                                Keputusan juri tidak dapat di ganggu gugat
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Kreativitas
+                            </li>
+                            <li>
+                                Editing Video
+                            </li>
+                            <li>
+                                Isi konten
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-vlogging-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-vlogging-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara Umum</h3>
+                            <p>11 IPS 3</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932626992222218/02_vlogging_umum.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara Favorit</h3>
+                            <p>11 IPS 2</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932626115600445/02_vlogging_favorit.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="komik">
+            <div class="top">
+                <img src="./img/foto/compation/design_komik2.jpg">
+                <div class="top-text">
+                    <h2>Lomba Design Komik</h2>
+                    <p>Biasanya kalo ngga lomba menggambar, pasti ada lomba melukis. Tapi class meeting kali ini beda, OSIS berinisiatif mengadakan lomba design komik untuk kalian yang punya bakat menggambar nih.</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdtHwxlQvUq-6fzroDuchcygo3qJkVoCyw2IFJezpf7zjBtgw/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-komik" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-komik">
+                    <div class="card card-body">
+                        <h5><b>TEMA</b></h5>
+                        <ol>
+                            <b>VACATION</b>
+                        </ol>
+
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Peserta mempersiapkan kertas gambar sendiri berukuran A4 (29.7 x 21 cm)
+                            </li>
+                            <li>
+                                Peserta melakukan registrasi, pengumpulan HP sebelum lomba dimulai
+                            </li>
+                            <li>
+                                Proses pengerjaan berlangsung selama 2 jam
+                            </li>
+                            <li>
+                                Saat waktu pengerjaan habis, peserta akan mengumpulkan karya dan wajib mendata kembali kehadirannya serta mengambil HP dengan tertib
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Peserta membuat karya berdasarkan pada tema yang telah ditentukan
+                            </li>
+                            <li>
+                                Peserta lomba adalah perorangan, masing - masing kelas mengirimkan maksimal 2 orang untuk berpartisipasi
+                            </li>
+                            <li>
+                                Lomba komik bersifat manual dan oneshot
+                            </li>
+                            <li>
+                                Ukuran kertas A4 (29.7 x 21 cm)  (dibawa secara mandiri) 
+                            </li>
+                            <li>
+                                Diperbolehkan menggunakan spidol, pensil warna, krayon, cat air, dan cat akrilik
+                            </li>
+                            <li>
+                                Jumlah panel minimal 4 panel
+                            </li>
+                            <li>
+                                Diperbolehkan membawa referensi yang telah diprint (tidak boleh memakai HP)
+                            </li>
+                            <li>
+                                Karya komik original, dilarang menjiplak karya milik orang lain
+                            </li>
+                            <li>
+                                Karya lomba dilarang menggunakan unsur SARA, sadisme, pornografi, dll.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Kesesuaian dengan tema
+                            </li>
+                            <li>
+                                Alur dan isi cerita
+                            </li>
+                            <li>
+                                Originalitas, presentasi visual dan kreatifitas karya
+                            </li>
+                            <li>
+                                Kontras warna, kebersihan, kerapian
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-komik-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-komik-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>10.9</p>
+                            <p>Alena Handi</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932627445190686/03_komik_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPS 4</p>
+                            <p>Cavin Deetra Marzuki</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932627877208134/03_komik_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>10.2</p>
+                            <p>Farelito Reino Hanjaya Putra</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932628246319104/03_komik_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="whisper">
+            <div class="top">
+                <img src="./img/foto/compation/whisper.jpg">
+                <div class="top-text">
+                    <h2>Lomba Whisper Challenge</h2>
+                    <p>Lomba ini adalah lomba paling viral pada zamannya, dan masih eksis hingga sekarang. Whisper Challenge tidak membutuhkan bakat ataupun semacamnya untuk memenangkannya, yang dibutuhkan hanyalah kerja sama dan chemistry tim yang kuat.</p>
+                    <br>
+                    <a href="https://forms.gle/17fzRmAfjUMCawac9">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-whisper" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-whisper">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Satu tim terdiri dari 5 orang.
+                            </li>
+                            <li>
+                                Panitia akan memberikan kalimat yang terdiri dari 8 kata kepada orang yang paling belakang kemudian orang tersebut harus menyampaikan kalimat yang dia dapat kepada orang di depannya.
+                            </li>
+                            <li>
+                                Kemudian orang kedua mengulangi kalimat yang dia dapat dari orang pertama sebanyak 2 kali kepada orang di depannya, dan orang ketiga hanya boleh menebak 1 kali lalu lanjut ke orang selanjutnya.
+                            </li>
+                            <li>
+                                Kalimat diteruskan dengan metode yang sama sampai ke orang paling depan.
+                            </li>
+                            <li>
+                                Setelah kalimat sampai ke orang paling depan orang tersebut harus menghadap kepada panitia yang mengawas dan mengangkat tangan, kemudian timer dimatikan. Setelah itu  orang paling depan mengetikkan kalimat yang dia dapat di hp panitia.
+                            </li>
+                            <li>
+                                Masing-masing kelompok diberi waktu maksimal 10 menit.
+                            </li>
+                            <p>
+                                <b>NB : Panitia akan menunjukkan kalimatnya melalui kertas yang berisi kalimat dan sudah diprint, saat panitia menunjukkan kalimat timernya sudah dinyalakan.</b>
+                            </p>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Peserta tidak boleh berteriak saat menyampaikan kalimat
+                            </li>
+                            <li>
+                                Orang yang menerima kalimat hanya boleh mengulangkan kalimat yang dia dapat dari orang sebelum nya selama 1 kali.
+                            </li>
+                            <li>
+                                Peserta tidak boleh mendeskripsikan kata-kata menggunakan anggota tubuh lainnya selain mulut.
+                            </li>
+                            <li>
+                                Jarak antara satu peserta dengan yang lainnya akan di tentukan panitia, dan mereka tidak boleh bergerak dari jarak yang sudah di tentukan tersebut.
+                            </li>
+                            <li>
+                                Peserta harus datang maksimal 10 menit sebelum game dimulai, jika saat absen sudah di panggil selama 3x dan peserta tidak ada di tempat, maka akan langsung didiskualifikasi.
+                            </li>
+                            <li>
+                                Peserta paling depan tidak boleh menerima bantuan dari siapapun selama mengetikkan kalimat yang dia dapat.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Per 1 kata yang benar mendapatkan 10 poin.
+                            </li>
+                            <li>
+                                Pengurangan 10 poin tiap keterlembatan 1 menit (poin tertinggi 120 poin dan poin terendah 60 poin).
+                            </li>
+                            <li>
+                                Jika melanggar peraturan nomor 1,2,3,4,6 maka poin akan di minus 10.
+                            </li>
+                            <li>
+                                Final diambil dari 6 tim dengan poin tertinggi.
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-whisper-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-whisper-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPA 5</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932628686704751/04_whisper_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPS 3</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932629122928650/04_whisper_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>11 IPA 6</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932684873601108/04_whisper_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="sarung">
+            <div class="top">
+                <img src="./img/foto/compation/sarung.jpg">
+                <div class="top-text">
+                    <h2>Lomba Estafet Sarung</h2>
+                    <p>Lomba ini biasanya dilombakan pada 17 agustus tapi kali ini akan dilombakan pada class meeting karena 17 agustus masih lama hihihi. Estafet sarung, juga sama halnya dengan whisper challenge, tidak membutuhkan bakat ataupun semacamnya untuk memenangkannya, yang dibutuhkan hanyalah kerja sama dan chemistry tim yang kuat.</p>
+                    <br>
+                    <a href="https://forms.gle/tf7KQvhgikoU9Utj8">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sarung" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-sarung">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Setiap kelompok akan baris menjadi satu barisan bergandengan tangan
+                            </li>
+                            <li>
+                                Pemindahan tidak boleh menggunakan bantuan alat maupun tangan
+                            </li>
+                            <li>
+                                Peserta paling depan akan mencoba untuk memindahkan sarung dari tangannya ke tangan peserta kedua
+                            </li>
+                            <li>
+                                Peserta kedua akan mencoba untuk melakukan hal yang sama dan seterusnya sampai peserta terakhir
+                            </li>
+                            <li>
+                                Setelah sarung sampai ke peserta terakhir, peserta harus mencoba untuk memindahkan sarung dari peserta terakhir sampai ke peserta pertama dengan cara yang sama
+                            </li>
+                            <li>
+                                Kelompok tercepat akan menjadi pemenang.
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Setiap kelompok terdiri dari 7 anggota (bebas perempuan atau laki laki)
+                            </li>
+                            <li>
+                                Setiap kelompok wajib menyediakan satu sarung bebas
+                            </li>
+                            <li>
+                                Selama lomba, anggota yang melakukan estafet harus selalu berpegangan tangan, jika terlepas maka sarung harus dipindahkan kembali ke anggota pertama dan mengulang estafet.
+                            </li>
+                            <li>
+                                Siswa siswi yang tidak terlibat dalam lomba, dilarang ikut campur dan mengganggu peserta lomba.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <p>3 tim tercepat akan menjadi juara 1, 2 dan 3</p>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-sarung-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-sarung-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPA 4</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932685590831164/05_estafet_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPA 5</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932686056394783/05_estafet_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>11 IPS 1</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932686639411241/05_estafet_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="mufs">
+            <div class="top">
+                <img src="./img/foto/compation/mufs.jpg">
+                <div class="top-text">
+                    <h2>Lomba Make-up & Fashion Show</h2>
+                    <p>Lomba ini bisa jadi ajang talenta buat kamu yang mau jadi model atau stylist nih. Yuk tunjukin bakat kamu lewat lomba ini!</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdPPMRqiqAGXPQopdmd3lpqNRnHuXe6Sjt9uUZSaBDWp3g5yQ/viewform?usp=pp_url">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-mufs">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <p><b>Make-up</b></p>
+                            <li>
+                                Tema : Impersonate Your Homeroom Teacher
+                            </li>
+                            <li>
+                                Terdiri dari 2 peserta make up, 1 peserta model.
+                            </li>
+                            <li>
+                                Peserta make up dan model dibebaskan gender nya. Ex : bisa perempuan maupun laki-laki.
+                            </li>
+                            <li>
+                                Semua produk make-up boleh digunakan dengan syarat menggunakan milik pribadi.
+                            </li>
+                            <li>
+                                Make-up hanya diberi waktu selama 45 menit tanpa melibatkan pihak lain maupun tim lawan.
+                            </li>
+                        </ol>
+
+                        <ol>
+                            <p><b>Fashion Show</b></p>
+                            <li>
+                                Diharapkan dapat menggunakan pakaian yang bebas pantas dan semirip mungkin dengan wali kelas.
+                            </li>
+                            <li>
+                                Runway bersama akan dilakukan oleh setiap model secara individu selama kurang lebih 10 menit.
+                            </li>
+                            <li>
+                                Catwalk harus dilakukan oleh model dan wali kelas selama 1,5 menit.  
+                            </li>
+                            <li>
+                                Model dan wali kelas akan di berikan mic dengan tujuan meng-impersonate wali kelas semirip-mirip mungkin saat pertengahan catwalk.
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                1 tim terdiri dari 3 orang (2 peserta make up, 1 model).
+                            </li>
+                            <li>
+                                Tidak diperbolehkan melakukan pergantian peserta.
+                            </li>
+                            <li>
+                                Tidak diizinkan menggunakan alat makeup maupun properti dari luar tim.
+                            </li>
+                            <li>
+                                Jika melanggar ketentuan maka tim dianggap gugur.
+                            </li>
+                            <li>
+                                Peserta harus hadir 20 menit sebelum lomba di mulai.
+                            </li>
+                            <li>
+                                Segala bentuk kecurangan akan di diskualifikasi.
+                            </li>
+                            <li>
+                                Jika nama tim telah di panggil sebanyak 3 kali dan masih tidak hadir, tim akan di diskualifikasi.
+                            </li>
+                            <li>
+                                Saat makeup maupun fashion show tidak boleh mengandung SARA.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Kreatifitas
+                            </li>
+                            <li>
+                                Kekompakan
+                            </li>
+                            <li>
+                                Sesuai tema
+                            </li>
+                            <li>
+                                Chemistry
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-mufs-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPA 6</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932687054639114/06_MUFS_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPA 3</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932687750901810/06_MUFS_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>11 IPA 4</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932688275185735/06_MUFS_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="talent">
+            <div class="top">
+                <img src="./img/foto/compation/talent_show.jpg">
+                <div class="top-text">
+                    <h2>Lomba Talent Show</h2>
+                    <p>Lomba ini ditujukan bagi mereka yang ingin menampilkan talentanya, seperti menyanyi, bermain alat musik, dan sebainya. Ayo daftar sekarang dan tunjukkan talentamu!</p>
+                    <br>
+                    <a href="https://forms.gle/HSy2w8D4mpJgcj6R6">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-mufs">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Peserta merupakan siswa/i aktif SMA IGS.
+                            </li>
+                            <li>
+                                Peserta boleh Individu dan Kelompok/Grup.
+                            </li>
+                            <li>
+                                Peserta Kelompok/Grup harus berasal dari satu kelas yang sama.
+                            </li>
+                            <li>
+                                Peserta Grup/Kelompok beranggotakan maksimal 3 orang.
+                            </li>
+                            <li>
+                                Dalam satu kelas hanya boleh mengirimkan 1 individu atau 1 kelompok.
+                            </li>
+                            <li>
+                                Peserta harus Mendaftar di gform sebelum tanggal 7 Juni 2023.
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Setiap kelas wajib mengirimkan perwakilan dari kelas nya masing masing (tidak ada kelas gabungan).
+                            </li>
+                            <li>
+                                Talenta yg akan di tampilkan tidak mengandung unsur SARA.
+                            </li>
+                            <li>
+                                Peserta lomba tidak boleh datang terlambat, apabila terlambat maka peserta yg mengikuti lomba akan di didiskualifikasi.
+                            </li>
+                            <li>
+                                Peserta tidak dapat mengganggu gugat keputusan serta ketetapan penilaian dari dewan juri dan juga panitia.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Dapat tampil dengan percaya diri atas kemampuan yang dimiliki.
+                            </li>
+                            <li>
+                                Kreativitas dalam menampilkan sebuah performa.
+                            </li>
+                            <li>
+                                Dapat menampilkan kemampuan stage presence yang dimiliki.
+                            </li>
+                            <li>
+                                Dapat menampilkan Ekspresi wajah yang sesuai berdasarkan tema lagu.
+                            </li>
+                            <li>
+                                Respon dari para audience juga termasuk dalam penilaian.
+                            </li>
+                            <li>
+                                Karya harus orisinal dan tidak ada unsur plagiarisme.
+                            </li>
+                            <li>
+                                Karya tidak mengandung unsur rasisme, sara, pornografi dan tidak bertentangan dengan norma yang berlaku.
+                            </li>
+                        </ol>
+
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-mufs-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-mufs-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPS 1</p>
+                            <p>Dita Michaela</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932689155993700/07_talent_1.webp?width=994&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPS 2</p>
+                            <p>Vellisya Priscilla N</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932689667690566/07_talent_2.webp?width=994&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>10 IPS 1</p>
+                            <p>M. Raafi Masyur, Chandrika Wijayani S.P, Clarissa Gabriella Sutedja</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932690875650068/07_talent_3.webp?width=994&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="catur">
+            <div class="top">
+                <img src="./img/foto/compation/catur.jpg">
+                <div class="top-text">
+                    <h2>Lomba Catur</h2>
+                    <p>Catur, olahraga yang populer akhir-akhir ini, akan dilombakan pada class meeting kali ini. Setiap kelas yang ingin mengikuti lomba dapat mengirimkan 1 perwakilan ya! Let's rack our brains</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScvdxQc66UiUGxk1nT-FRhAaU8RR-qyF_uJw8eg48ExKxGiNQ/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-catur" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-catur">
+                    <div class="card card-body">
+                        <h5><b>Pendaftaran</b></h5>
+                        <ol>
+                            <li>
+                                Setiap kelas hanya boleh mengirimkan 1 peserta untuk dijadikan perwakilan, maka dari itu silakan didiskusikan terlebih dahulu dengan anggota kelas
+                            </li>
+                            <li>
+                                Untuk pertanyaan lebih lanjut dapat menghubungi : Alya Azzahra (Line : alyaazrra)
+                            </li>
+                        </ol>
+
+                        <h5><b>Permainan</b></h5>
+                        <ol>
+                            <li>
+                                Akan diadakan beberapa babak (disesuaikan dengan jumlah pemain) dalam pertandingan ini, yang nantinya setiap peserta wajib bermain dalam beberapa tahap sesuai dengan jumlah peserta dengan lawan yang berbeda.
+                            </li>
+                            <li>
+                                Pemain yang mengumpulkan poin terbanyak, maka dialah pemenangnya dengan penilaian : setiap kemenangan diberikan (1poin), seimbang (1/2 poin), dan kalah (0 poin).
+                            </li>
+                            <li>
+                                Waktu yang disediakan untuk setiap permainan adalah 10 menit dengan total tiap sesi 20 menit.
+                            </li>
+                            <li>
+                                Sistem akan dijalankan menggunakan platform catur yang memiliki mekanisme yang sesuai dengan permainan yang dilakukan secara manual bernama "Swiss Gravy".
+                            </li>
+                        </ol>
+
+                        <h5><b>Pelanggaran</b></h5>
+                        <ol>
+                            <li>
+                                Pegang jalan, jika buah yang dipegang dikembalikan ke posisi sebelumnya, maka akan diberi peringatan 1 kali.
+                            </li>
+                            <li>
+                                Jika terdapat 2 kali illegal move maka akan dianggap kalah.
+                            </li>
+                            <li>
+                                Illegal Move akan dinilai oleh pengawas secara langsung sehingga keputusan pelanggaran bersifat mutlak.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ol>
+                            <li>
+                                Menang(win) : +1 poin
+                            </li>
+                            <li>
+                                Seri(draw) : +0.5 poin
+                            </li>
+                            <li>
+                                Kalah(lose) : 0 poin
+                            </li>
+                            <p>
+                                <b>*Pemenang didasarkan pada torehan poin tertinggi</b>
+                            </p>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-catur-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-catur-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>10.1</p>
+                            <p>Richard Evan</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932713663307806/08_catur_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>11 IPA 6</p>
+                            <p>Christian Dustin Efendy</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932714141462528/08_catur_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>10.6</p>
+                            <p>Michael Chan</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932714556706866/08_catur_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="esport">
+            <div class="top">
+                <img src="./img/foto/compation/esport.JPG">
+                <div class="top-text">
+                    <h2>Lomba E-sport</h2>
+                    <p>Buat kamu khususnya para gamer, yuk ikutan lomba pas class meeting nanti. Game yang dilombakan hanya Mobile Legends : Bang Bang ya.</p>
+                    <br>
+                    <a href="https://forms.gle/xehEEauYQAk3VcJg9">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-esport" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-esport">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <p>Mekanisme yang digunakan adalah sistem bracket</p>
+                        <ol>
+                            <p><b>Sistem Penyisihan 1</b></p>
+                            <li>
+                                Babak ini akan dilaksanakan daring dan melalui aplikasi discord
+                            </li>
+                            <li>
+                                Setiap tim akan diundi terlebih dahulu untuk memperoleh sebanyak ((tim yang daftar-16)* 2).
+                            </li>
+                            <li>
+                                Tim tersebut akan bertanding sebanyak 1 match, pemenang dari setiap pertandingan akan langsung memasuki bracket tournament.
+                            </li>
+                            <li>
+                                Tim yang kalah akan diberi kesempatan lagi untuk bertanding dengan tim yang belum dapat kesempatan untuk bertanding sebanyak 1 match.
+                            </li>
+                            <li>
+                                Tim akan diundi lagi dan ditandingi lagi sehingga memperoleh banyak tim yang diperlukan untuk mengisi bracket yaitu 16 tim.
+                            </li>
+                        </ol>
+
+                        <ol>
+                            <p><b>Sistem Bracket (Penyisihan 2 sampai Grand Final)</b></p>
+                            <li>
+                                Setiap tim akan melawan tim yang telah ditentukan melalui bracket yang akan diundi terlebih dahulu dan akan disampaikan hasilnya di group chat
+                            </li>
+                            <li>
+                                Tim yang posisi atas di bracket akan first pick terlebih dahulu.
+                            </li>
+                            <li>
+                                Jika tim telah memperoleh banyak point yang diperlukan untuk menang maka tim tersebut akan lanjut ke babak berikutnya sampai dapat pemenang.
+                            </li>
+                        </ol>
+
+                        <ol>
+                            <p><b>Tata cara Matching Offline</b></p>
+                            <li>
+                                Semua peserta lomba sudah harus berada di ruangan yang akan ditentukan 10 menit sebelum waktu lomba mulai
+                            </li>
+                            <li>
+                                Semua perserta akan diarahkan ke meja yang telah ditentukan oleh panitia
+                            </li>
+                            <li>
+                                Semua peserta tim harus sudah berada di lobby game 5 menit sebelum waktu match yang telah ditentukan
+                            </li>
+                            <li>
+                                Jika tim sudah menang sebanyak jumlah match yang ditentukan maka akan dinyatakan menang
+                            </li>
+                            <li>
+                                Tim yang kalah akan keluar dari ruangan lomba
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Satu tim hanya berisi 6 anggota: 5 pemain utama dan 1 cadangan
+                            </li>
+                            <li>
+                                Cadangan bersifat opsional tetapi tim tidak diperbolehkan untuk tiba-tiba menambah cadangan saat hari pertandingan
+                            </li>
+                            <li>
+                                Setiap kelas hanya diperbolekan untuk mengirim satu tim
+                            </li>
+                            <li>
+                                Nama Tim tidak diperbolehkan untuk mengandung unsur SARA, ejekan, kata-kata sensitif, dll.
+                            </li>
+                            <li>
+                                Peserta disarankan untuk membawa modem sendiri ketika turnamen offline.
+                            </li>
+                            <li>
+                                Jika terjadi masalah selain koneksi pada game bisa chat all “p” untuk menghentikan permainan selama maksimal 3 menit. Pause hanya bisa asalkan alasan yang diberi pantas untuk di pause.
+                            </li>
+                            <li>
+                                Apabila player terdiskonek atau gangguan koneksi akan ditanggung sendiri-sendiri.
+                            </li>
+                            <li>
+                                Peserta tidak diizinkan untuk taunting ke tim lain via quick chat atau chat, peserta diizinkan untuk recall-recall ataupun emote.
+                            </li>
+                            <li>
+                                Setiap Tim hanya bisa mengirimkan player-player yang telah diisi di g-form.
+                            </li>
+                            <li>
+                                Player yang ketahuan <b>CHEAT ATAU TINDAKAN YANG MELANGGAR ATURAN LANGSUNG DIDISKUALIFIKASI.</b>
+                            </li>
+                            <li>
+                                Peserta dihimbau untuk membawa charging terminal sendiri.
+                            </li>
+                            <li>
+                                Lobby akan dibuat oleh panitia dan yang boleh spectate hanya panitia, panitia akan membuat lobby 10 menit sebelum waktu yang dijanjikan dua tim, apabila anggota tim tidak lengkap selama waktu yang diberi maka tim tersebut akan didiskualifikasi.
+                            </li>
+                            <li>
+                                Jika kedua pihak setuju akan penundaan waktu match, maka waktu akan diundur maksimal 10 menit.
+                            </li>
+                            <li>
+                                Peserta diperbolehkan membawa peralatan-peralatan yang diperlukan dalam bermain game, misalnya earphone, modem, dll.
+                            </li>
+                        </ol>
+
+                        <h5><b>Kriteria Penilaian</b></h5>
+                        <ul>
+                            <p>Penilaian akan berbasis Best of. (BO)</p>
+                            <li>
+                                Match BO1: tim hanya perlu 1 poin untuk menang, berlaku untuk penyisihan 1 dan 2                                    
+                            </li>
+                            <li>
+                                Match BO3: tim hanya perlu 2 poin untuk menang, berlaku untuk quarterfinal dan semifinal
+                            </li>
+                            <li>
+                                Match BO5: tim hanya perlu 3 poin untuk menang, berlaku untuk grand final
+                            </li>
+                            <li>
+                                Tim akan dinyatakan memperoleh 1 poin  jika base musuh telah hancur
+                            </li>
+                            <li>
+                                Tim akan dinyatakan menang game jika telah mencapai poin tertentu yang telah terdapat di bagian penilaian
+                            </li>
+                        </ul>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-esport-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-esport-winner">
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>10.6</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932715039043604/09_esport_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>10.8</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932715500425256/09_esport_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>11 IPA 1</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932716167307314/09_esport_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="basket">
+            <div class="top">
+                <img src="./img/foto/compation/basket.png">
+                <div class="top-text">
+                    <h2>Lomba Basket 3x3</h2>
+                    <p>Panggilan untuk seluruh siswa yang jago bermain basket, ayo tunjukan bakat kamu dalam lomba kali ini.</p>
+                    <br>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeo1YF-SX4j1Skjr4gyICNjbApID-0Hqkhe1c9wRhWUR5HOLw/viewform?usp=sf_link">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-basket" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-basket">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <p>Awal Permainan</p>
+                        <ol>
+                            <li>
+                                Setiap tim terdiri dari 4 pemain (3 pemain di lapangan dan 1 pemain pengganti).
+                            </li>
+                            <li>
+                                Kedua tim akan melakukan pemanasan secara bersamaan sebelum pertandingan (2-5 menit).
+                            </li>
+                            <li>
+                                Sebuah lemparan koin akan menentukan tim mana yang mendapat  penguasaan bola pertama.
+                            </li>
+                            <li>
+                                Permainan harus dimulai dengan tiga pemain di lapangan.
+                            </li>
+                        </ol>
+                        
+                        <p>Perhitungan Skor</p>
+                        <ol>
+                            <li>
+                                Setiap tembakan yang berhasil di dalam garis 3 angka akan diberikan satu 1 poin.
+                            </li>
+                            <li>
+                                Setiap tembakan yang berhasil di belakang garis 3 angka akan diberikan 2 poin.
+                            </li>
+                            <li>
+                                Setiap lemparan bebas/freethrow yang berhasil akan diberikan 1 poin.
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Setiap tim terdiri dari 4 anggota (3 pemain inti, 1 pemain pengganti)
+                            </li>
+                            <li>
+                                Permainan berjalan selama 10 menit.
+                            </li>
+                            <li>
+                                Pertandingan dipimpin 1 wasit.
+                            </li>
+                            <li>
+                                Penentuan bola pertama menggunakan coin flip atau suit.
+                            </li>
+                            <li>
+                                <ol>
+                                    <li>
+                                        Menembak bola didalam garis three poin dihitung 1 poin, 
+                                    </li>
+                                    <li>   
+                                        Tembakan di luar garis three poin dihitung 2 poin,
+                                    </li>
+                                    <li>
+                                        dan tembakan free throw dihitung 1 poin .
+                                    </li>
+                                </ol>
+                            </li>
+                            <li>
+                                Personal Foul Pemain yang telah melakukan 5 kali foul dinyatakan Foul Out
+                            </li>
+                            <li>
+                                Foul pada saat melakukan tembakan akan mendapatkan 1 tembakan free throw apabila foul terjadi di dalam garis three poin, dan 2 tembakan free throw apabila terjadi di luar garis three poin
+                            </li>
+                            <li>
+                                Foul yang terjadi pada saat pemain tidak dalam posisi melakukan tembakan, dan salah satu tim sudah dalam posisi Team Foul maka akan diberikan 1 kali tembakan Free Throw
+                            </li>
+                            <li>
+                                Suatu tim harus melakukan usaha tembakan untuk mencetak angka dalam waktu 10 detik
+                            <li>
+                                Mengulur-ngulur waktu dan tidak bermain secara aktif dinyatakan pelanggaran Setiap tembakan yang masuk atau free throw terakhir. Bola harus di bawa keluar garis 3 point terlebih dahulu.
+                            </li>
+                            <li>
+                                Setiap tembakan yang gagal atau free throw terakhir Apabila tim mendapatkan rebound ofensif boleh langsung memasukan bola tanpa harus membawa atau mengoper bola keluargaris three point. Apabila tim mendapatkan rebound defensif, bola harus keluar garis tiga poin terlebih dahulu
+                            </li>
+                            <li>
+                                Setiap tim wajib memiliki seragam satu warna, dan harus berbeda dari tim yang lain. Tidak boleh ada yang sama
+                            </li>
+                        </ol>
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-basket-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-basket-winner">
+                    <p>WE'LL NEVER KNOW TILL WE TRY!</p>
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>11 IPA 4</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932716486078474/10_basket_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>10 IPS 4</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932717018751088/10_basket_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>10 IPS 3</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932717589188732/10_basket_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-isi" id="badmin">
+            <div class="top">
+                <img src="./img/foto/compation/badmin.jpg">
+                <div class="top-text">
+                    <h2>Lomba Badminton</h2>
+                    <p>Siapa disini yang suka badminton? yuk tunjukin bakat kamu lewat lomba ini.</p>
+                    <br>
+                    <a href="https://forms.gle/zuWTEXShwzh6Qqjw7">Klik disini untuk mendaftar!</a>
+                </div>
+            </div>
+
+            <div class="bottom">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-badmin" aria-expanded="false" aria-controls="collapseExample">
+                    Peraturan & Mekanisme
+                </button>
+                <div class="collapse" id="collapse-badmin">
+                    <div class="card card-body">
+                        <h5><b>Mekanisme</b></h5>
+                        <ol>
+                            <li>
+                                Lomba ini merupakan ganda campuran, jadi setiap tim harus terdiri dari 1 orang laki-laki dan 1 orang perempuan yang berasal dari kelas yang sama.
+                            </li>
+                            <li>
+                                Lomba terdiri dari 4 babak yaitu, penyisihan, quarter final, semifinal, dan final.
+                            </li>
+                            <li>
+                                Perlombaan akan dilakukan dengan bermain 2 set dengan 21 poin di setiap babak.
+                            </li>
+                            <li>
+                                Penyisihan dan quarter final akan dilakukan pada hari pertama, semifinal dan final akan dilakukan pada hari kedua
+                            </li>
+                            <li>
+                                Lomba ini bersifat tidak wajib, sehingga setiap kelas tidak diwajibkan untuk mengirim perwakilan
+                            </li>
+                        </ol>
+
+                        <h5><b>Peraturan</b></h5>
+                        <ol>
+                            <li>
+                                Setiap peserta diwajibkan untuk menggunakan pakaian olahraga dan menggunakan sepatu pada saat pertandingan
+                            </li>
+                            <li>
+                                Setiap peserta lomba akan nantinya akan dipanggil sebanyak maksimal 3 kali, jika peserta belum datang maka akan didiskualifikasi. Toleransi terlambat hanya 10 menit
+                            </li>
+                            <li>
+                                Setiap peserta diharapkan dapat membawa raket beserta kok masing-masing. Para peserta maupun supporter dilarang untuk membawa makanan dan minuman ke dalam hall
+                            </li>
+                            <li>
+                                Setiap peserta yang mengikuti lomba wajib mengikuti peraturan yang berlaku, jika diketahui melakukan kecurangan selama perlombaan, maka peserta akan langsung di diskualifikasi
+                            </li>
+                            <li>
+                                Keputusan wasit adalah mutlak dan tidak dapat diganggu gugat
+                            </li>
+                            <li>
+                                Setiap peserta lomba harus dalam keadaan fisik dan mental yang sehat
+                            </li>
+                            <li>
+                                Lomba tidak wajib untuk diikuti dan bersifat ganda campuran
+                            </li>
+                            <li>
+                                Supporter setiap kelasnya maksimal 10 orang
+                            </li>
+                        </ol>
+
+                        
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-badmin-winner" aria-expanded="false" aria-controls="collapseExample">
+                    Pemenang
+                </button>
+                <div class="collapse" id="collapse-badmin-winner">
+                    <p>WE'LL NEVER KNOW TILL WE TRY!</p>
+                    <div class="card card-body">
+                        <div class="winners-data">
+                            <h3>Juara 1</h3>
+                            <p>10 IPA 4</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932718079913994/11_badmin_1.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 2</h3>
+                            <p>10 IPA 1</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932721296953364/11_badmin_2.webp?width=1178&height=662" alt="">
+
+                        <div class="winners-data">
+                            <h3>Juara 3</h3>
+                            <p>10 IPS 3</p>
+                        </div>
+                        <img src="https://media.discordapp.net/attachments/1120922881409437767/1120932721812832286/11_badmin_3.webp?width=1178&height=662" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</section>
+{% endblock main %}

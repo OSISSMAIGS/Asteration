@@ -16,6 +16,7 @@ html, body {
 header nav {
 	background: var(--bg-color);
 	position: absolute;
+	top: 0;
 	width: 100vw;
 	z-index: 200;
 }

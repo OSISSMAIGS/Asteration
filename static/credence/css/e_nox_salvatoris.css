@@ -1,0 +1,234 @@
+:root {
+    --bg-color: rgba(3,37,70,255);
+    --accent-color: rgba(89,145,189,255);
+}
+
+/* Snow Animation */
+@-webkit-keyframes snowfall01 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 150px 600px;
+    }
+}
+@-webkit-keyframes snowfall02 {
+    0% {
+        background-position: 0 -200px;
+    }
+    100% {
+        background-position: 0 600px;
+    }
+}
+@-webkit-keyframes snowfall03 {
+    0% {
+        background-position: 0 200px;
+    }
+    100% {
+        background-position: 300px 600px;
+    }
+}
+@keyframes snowfall01 {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 150px 600px;
+    }
+}
+@keyframes snowfall02 {
+    0% {
+        background-position: 0 -200px;
+    }
+    100% {
+        background-position: 0 600px;
+    }
+}
+@keyframes snowfall03 {
+    0% {
+        background-position: 0 200px;
+    }
+    100% {
+        background-position: 300px 600px;
+    }
+}
+
+.back {
+    background: url(../img/foto/snow.png) repeat;
+    -webkit-animation: snowfall01 20s linear infinite;
+    animation: snowfall01 20s linear infinite;
+}
+
+.back2 {
+    background: url(../img/foto/snow2.png) repeat;
+    -webkit-animation: snowfall02 20s linear infinite;
+    animation: snowfall02 20s linear infinite;
+}
+
+.back3 {
+    background: url(../img/foto/snow3.png) repeat ;
+    -webkit-animation: snowfall03 20s linear infinite;
+    animation: snowfall03 20s linear infinite;
+}
+
+html, body {
+	background-color: var(--bg-color);
+    color: white;
+}
+
+header nav {
+	background: var(--bg-color);
+}
+header nav ul li a{
+	color: white;
+}
+
+header nav ul li a:hover{
+	color: var(--accent-color);
+	text-decoration: none;
+	animation: hovering 0.2s linear;
+}
+
+p, li {
+    font-size: 110%;
+}
+
+@keyframes hovering {
+	0% {
+		color: white;
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+section.banner{
+	--size: 100vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://cdn.discordapp.com/attachments/798027620334960681/1056820003506225152/nox_salvatoris.png") center / cover no-repeat;
+}
+
+section.banner .gradient-banner {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	height: 10rem;
+	width: 100%;
+	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg-color));
+}
+
+section.about {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+}
+
+section.about h1 {
+	font-weight: 700;
+}
+
+section.about p {
+	margin-left: 2%;
+}
+
+section.content {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+}
+
+section.content h1 {
+	font-weight: 700;
+}
+
+section.content h4 {
+	font-weight: bold;
+	margin-left: 2%;
+}
+
+section.content > h5 {
+	margin-left: 2%;
+}
+
+section.content > p {
+	margin-left: 2%;
+}
+
+section.content > ul {
+	margin-left: 2%;
+}
+
+section.content img {
+	margin-left: 2%;
+	width: 50%;
+	margin-bottom: 1rem;
+}
+
+footer {
+	background-color: rgb(2, 24, 47);
+}
+
+footer .gradient {
+	background: linear-gradient(var(--bg-color), rgb(2, 24, 47));
+}
+
+section.kegiatan ul li a{
+	color: white;
+}
+
+footer .footer-content a{
+	color: white;
+	text-decoration: none;
+}
+
+footer .footer-content a:hover{
+	color: var(--accent-color);
+	animation: hovering 0.2s linear;
+}
+
+footer .column2 a h1{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .column3 a h2{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .copyright {
+	color: var(--bg-color);
+}
+
+@media screen and (max-width : 850px) {
+    p, li {
+        font-size: 100%;
+    }
+
+	section.banner .gradient-banner {
+		height: 5rem;
+	}
+}
+
+@media screen and (max-width : 590px) {
+	header nav ul.menu-nav{
+		background-color: rgb(2, 24, 47);
+	}
+
+	section.content img {
+		margin-left: 2%;
+		width: 90%;
+	}
+}

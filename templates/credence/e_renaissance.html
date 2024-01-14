@@ -1,0 +1,168 @@
+{% extends "credence/layout.html" %}
+
+{% block css_js %}
+<script src="{{ url_for('static', filename='credence/js/e_renaissance.js')}}"></script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/e_renaissance.css')}}">
+{% endblock css_js%}
+
+{% block title%}Renaissance{% endblock title %}
+
+{% block main %}
+<section class="banner">
+    <img src="{{ url_for('static', filename='credence/img/banner/renaissance.png')}}" alt="" class="hidden">
+    <section class="gradient-banner">
+    
+    </section>
+</section>
+
+<section class="about hidden">
+    <h1 class="hidden">About Renaissance</h1>
+    <p class="hidden">
+        Renaissance memiliki kepanjangan yaitu regeneration of a new alliance. Yang merupakan hal dimana terjadinya pergantian generasi dari generasi lama ke generasi selanjutnya, dengan terbentuknya aliansi baru, generasi ini tentunya akan membawa perubahan baru juga.
+    </p>
+</section>
+
+<section class="twibbon hidden">
+    <h1 class="hidden">Twibbon</h1>
+    <p class="hidden">
+        Download Twibbon <a href="https://twb.nz/igsrenaissance" target=”_blank”>Here!</a>
+    </p>
+    <img class="hidden" src="https://cdn.discordapp.com/attachments/798027620334960681/1123990393684512906/twibbon.jpg" alt="">
+</section>
+
+<section class="divider"></section>
+
+<section class="content">
+    
+    <div class="learning">
+        <h1 class="hidden">Activities</h1>
+        <h2 class="hidden">Learning</h2>
+        <div class="lists">
+            <div class="list hidden">
+                <i class='bx bxs-virus'></i>
+                <p>Pengenalan HIV & AIDS</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-error'></i>
+                <p>Pencegahan Bullying</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Sosialisasi Club & Olimpiade</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Sosialisasi BNN</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Pengukuhan & Sosialisasi Beasiswa</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Sosialisasi Tata Tertib Sekolah</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Sosialisasi Profil Sekolah & Pengenalan Kurikulum Pembelajaran</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-detail' ></i>
+                <p>Sosialisasi Program bahasa Asing</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bx-library'></i>
+                <p>Sosialisasi Moodle</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Latihan Baris-berbaris</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-user-voice' ></i>
+                <p>Psikotes</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="performance">
+        <h1 class="hidden">Activities</h1>
+        <h2 class="hidden">Performance</h2>
+        <div class="lists">
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Modern Dance Performance</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Traditional Dance Performance</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-microphone'></i>
+                <p>Singing Performance</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bx-album'></i>
+                <p>Violin Performance</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Wushu Performance</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-message-alt-add'></i>
+                <p>Performances from the new students</p>
+            </div>
+        </div>
+
+        <div class="performance">
+            <h1 class="hidden">Activities</h1>
+            <h2 class="hidden">Fun</h2>
+            <div class="lists">
+                <div class="list hidden">
+                    <i class='bx bxs-flag-checkered'></i>
+                    <p>Outdoor Games</p>
+                </div>
+                <div class="list hidden">
+                    <i class='bx bxs-edit-alt'></i>
+                    <p>Game Tanda Tangan OSIS</p>
+                </div>
+                <div class="list hidden">
+                    <i class='bx bxs-megaphone'></i>
+                    <p>Ice Breaking Games</p>
+                </div>
+                <div class="list hidden">
+                    <i class='bx bxs-group' ></i>
+                    <p>Senam</p>
+                </div>
+                <div class="list hidden">
+                    <i class='bx bxs-microphone-alt' ></i>
+                    <p>Karaoke</p>
+                </div>
+                <div class="list hidden">
+                    <i class='bx bxs-happy-alt'></i>
+                    <p>Other Exciting Games</p>
+                </div>
+            </div>
+    </div>
+
+    <div class="performance">
+        <h1 class="hidden">Activities</h1>
+        <h2 class="hidden">Competition</h2>
+        <div class="lists">
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Lomba Yel-Yel</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-group' ></i>
+                <p>Lomba Baris-berbaris</p>
+            </div>
+            <div class="list hidden">
+                <i class='bx bxs-trophy'></i>
+                <p>King & Queen MPLS</p>
+            </div>
+        </div>
+</div>
+</section>
+{% endblock main %}

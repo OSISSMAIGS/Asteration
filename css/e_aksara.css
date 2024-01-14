@@ -230,6 +230,14 @@ p#arabic {
   display: inline-block;
 }
 
+img#image{
+	width: 400px;
+	margin: 15px;
+	border-radius: 1rem;
+	box-shadow: 0px 0px 18px white;
+	
+}
+
 .overlay {
   position: absolute;
   top: 0;

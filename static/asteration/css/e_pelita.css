@@ -17,7 +17,7 @@ html, body {
 }
 
 header nav {
-	background: var(--bg-color);
+	background: linear-gradient(to right, #265a38 20%, var(--bg-color));
 	position: fixed;
 	top: 0;
 	width: 100vw;

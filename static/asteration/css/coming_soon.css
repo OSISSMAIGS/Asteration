@@ -11,7 +11,7 @@ div.logo-cs{
     margin-top: 3rem;
     height: var(--size);
     width: var(--size);
-    background-image: url(../img/logo/asteration.png);
+    background-image: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085664/Asteration/image/Logo/asteration_jottdw.png);
     background-position: center;
     background-size: cover;
 }

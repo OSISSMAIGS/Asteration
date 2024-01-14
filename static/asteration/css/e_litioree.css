@@ -63,19 +63,19 @@
 }
 
 .back {
-    background: url(../img/foto/snow.png) repeat;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085524/Asteration/image/Photo/snow_erll5l.png) repeat;
     -webkit-animation: snowfall01 20s linear infinite;
     animation: snowfall01 20s linear infinite;
 }
 
 .back2 {
-    background: url(../img/foto/snow2.png) repeat;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085524/Asteration/image/Photo/snow2_knnssq.png) repeat;
     -webkit-animation: snowfall02 20s linear infinite;
     animation: snowfall02 20s linear infinite;
 }
 
 .back3 {
-    background: url(../img/foto/snow3.png) repeat ;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085519/Asteration/image/Photo/snow3_dufjik.png) repeat ;
     -webkit-animation: snowfall03 20s linear infinite;
     animation: snowfall03 20s linear infinite;
 }

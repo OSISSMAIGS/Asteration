@@ -2,6 +2,7 @@
 
 {% block css_js %}
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/e_reveera.css') }}">
+    <script src="{{ url_for('static', filename='asteration/js/e_reveera.js') }}"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com"     crossorigin>
@@ -11,6 +12,9 @@
 {% block title %}Reveera{% endblock title %}
 
 {% block main %}
+
+<section class="stars"></section>
+
 <section class="banner">
 	<img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085480/Asteration/image/Banner/pelita_mmunl3.png" alt="banner">
 	<section class="gradient-banner">

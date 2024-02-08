@@ -6,8 +6,11 @@
 	--bg-color: #FAD0DC;
  	--bg-color2: #7f2645; 	
 
+	--decorator: #FFB2CC;
+
     --text-color2: #c75771;
     --text-color-1: #a01c2c;
+
 }
 
 *{
@@ -25,9 +28,28 @@ html, body {
     font-family: 'Dancing Script', cursive;
 }
 
-/* body{
-    font-family: 'Roboto', sans-serif;
-} */
+section.stars {
+	position: absolute;
+	/* top: calc((100vw/1.6) + 50px); */
+}
+
+section.stars img {
+	position: absolute;
+	width: 20px;
+	opacity: 0.5;
+	animation: srotate 5s linear infinite;
+}
+
+@keyframes srotate {
+	0% {transform: rotate(0deg) scale(0);}
+	50% {transform: rotate(180deg) scale(1.2); filter: drop-shadow(0 0 0.2rem var(--text-color2));}
+	100% {transform: rotate(360deg) scale(0);}
+}
+
+@keyframes sscale {
+	0% {transform: scale(1);}
+	100% {transform: scale(2);}
+}
 
 header nav {
 	background: linear-gradient(to right, var(--bg-color2) 20%, var(--text-color2));
@@ -181,6 +203,7 @@ section.content .lists {
 }
 
 section.content .list {
+	cursor: pointer;
 	width: 200px;
     height: 200px;
     background-color: var(--text-color2);
@@ -248,11 +271,13 @@ section.content .list p {
 }
 
 footer {
+	z-index: 999;
     margin-top: 0;
 	background-color: var(--bg);
 }
 
 footer .gradient {
+	z-index: 99;
 	background: linear-gradient(var(--bg-color), var(--bg));
 }
 

@@ -29,7 +29,8 @@ html, body {
 }
 
 section.stars {
-	position: absolute;
+	max-height: 100vh
+	/* position: absolute; */
 	/* top: calc((100vw/1.6) + 50px); */
 }
 
@@ -92,6 +93,7 @@ p, li {
 
 section.banner{
 	--size: 100vw;
+	z-index: 99;
 	position: relative;
 	width: var(--size);
 	height: calc(var(--size)/1.6);
@@ -334,6 +336,11 @@ img.footer-divider{
 }
 
 @media screen and (max-width : 590px) {
+	header nav{
+		position: fixed;
+		top: 0;
+		z-index: 999;
+	}
 	header nav ul.menu-nav{
 		background-color: var(--bg-color);
 	}
@@ -341,5 +348,14 @@ img.footer-divider{
 	.performance .gambar img{
 		width: 350px;
 		margin: 10px;
+	}
+
+	section.about p#about{
+		font-size: 1.3rem;
+		text-align: justify;
+	}
+
+	div.kewa p.nama{
+		font-size: 2rem;
 	}
 }

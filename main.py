@@ -36,10 +36,6 @@ def e_pelita():
 def e_aksara():
     return render_template("asteration/e_aksara.html")
 
-@app.route("/Asteration/Events/Lunerast")
-def e_lunerast():
-    return render_template("asteration/e_lunerast.html")
-
 #OTHER
 @app.route("/Asteration/Updates")
 def asteration_updates():

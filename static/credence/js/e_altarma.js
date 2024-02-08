@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", () => {
     starInterval = setInterval(() => {
         if (i < 200) {
             const star = document.createElement("img");
-            star.src = "./img/foto/altarma/star.png";
+            star.src = "https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702553/Credence/img/foto/altarma/star_vtpmja.png";
             star.classList.add(`star${i}`);
             star.style.top = `${Math.floor(Math.random()*docheight)-50}px`;
             star.style.left = `${Math.floor(Math.random()*docwidth)-50}px`;
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     starInterval = setInterval(() => {
         const star = document.createElement("img");
-        star.src = "./img/foto/altarma/star.png";
+        star.src = "https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702553/Credence/img/foto/altarma/star_vtpmja.png";
         star.classList.add(`star${i}`);
         star.style.top = `${Math.floor(Math.random()*docheight)-50}px`;
         star.style.left = `${Math.floor(Math.random()*docwidth)-50}px`;

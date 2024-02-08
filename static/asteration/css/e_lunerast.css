@@ -1,34 +1,31 @@
 :root {
-	--bg-color: rgb(175, 50, 25);
-	--gradient-color: rgb(225, 225, 0);
-	--accent-color: rgb(175, 75, 25);
+	--bg: rgb(200, 50, 25);
+	--gradient: rgb(225, 225, 0);
+	--accent: rgb(225, 75, 25);
+	--footer: rgb(150, 25, 0);
 }
 
-/* *{
-    text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.353); 
-} */
-
 html, body {
-	background-color: var(--bg-color);
+	background-color: var(--bg);
     color: white;
     width: 100vw;
 }
 
 header nav {
-	background: linear-gradient(to right, var(--bg-color) 20%, var(--accent-color));
+	background: linear-gradient(to right, var(--bg) 20%, var(--accent));
 	position: absolute;
 	width: 100vw;
 	z-index: 200;
 }
 
 header nav ul li a:hover{
-	color: var(--gradient-color);
+	color: var(--gradient);
 	text-decoration: none;
 	animation: hovering 0.2s linear;
 }
 
 header nav .logo .asteration:hover{
-	color: var(--gradient-color);
+	color: var(--gradient);
 	text-decoration: none;
 	animation: hovering 0.2s linear;
 }
@@ -47,7 +44,7 @@ p, li {
 	}
 
 	100% {
-		color: var(--gradient-color);
+		color: var(--gradient);
 	}
 }
 
@@ -61,7 +58,7 @@ section.banner{
 	align-items: center;
 	flex-direction: column;
 	margin-top: 50px;
-    background-color: var(--bg-color);
+    background-color: var(--bg);
 }
 
 section.banner img {
@@ -69,14 +66,14 @@ section.banner img {
     height: calc(100vw /1.6);
 }
 
-section.banner .gradient-banner {
+section.banner .gradient-banner{
 	position: absolute;
 	z-index: 10;
 	left: 0;
 	bottom: 0;
 	height: 10rem;
 	width: 100%;
-	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg-color));
+	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg));
 }
 
 section.about {
@@ -85,7 +82,7 @@ section.about {
 	flex-direction: column;
 	width: 90%;
     text-align: center;
-	color: var(--gradient-color);
+	color: var(--gradient);
 }
 
 section.about h1 {
@@ -108,20 +105,20 @@ section.about h1 {
 section.divider {
     width: 100vw;
     height: 5rem;
-    background: linear-gradient(var(--bg-color), var(--accent-color));
+    background: linear-gradient(var(--bg), var(--accent));
 }
 
 .footer-divider {
 	position: relative;
-	top	: 14rem;
-	width: 100%;
+	top: 9rem;
+	width: 115%;
 }
 
 section.content {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-    background-color: var(--accent-color);
+    background-color: var(--accent);
     padding: 2rem 5%;
     box-sizing: border-box;
     align-items: center;
@@ -130,13 +127,13 @@ section.content {
 
 section.content h1 {
 	font-weight: 700;
-    color: var(--gradient-color);
+    color: var(--gradient);
     margin: 0;
 }
 
 section.content h2 {
 	font-weight: 700;
-    color: var(--gradient-color);
+    color: var(--gradient);
 }
 
 section.content .lists {
@@ -149,10 +146,10 @@ section.content .lists {
 section.content .list {
     width: 200px;
     height: 200px;
-    background-color: var(--gradient-color);
+    background-color: var(--gradient);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px var(--gradient-color);
+    box-shadow: 0px 0px 10px var(--gradient);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -162,12 +159,12 @@ section.content .list {
 
 section.content .list i {
     font-size: 50pt;
-    color: var(--accent-color);
+    color: var(--accent);
 }
 
 section.content .list p {
     font-weight: bold;
-    color: var(--accent-color);
+    color: var(--accent);
     margin-bottom: 0;
 }
 
@@ -217,44 +214,44 @@ section.content .list p {
 }
 
 .overlay h5 b {
-  color: var(--accent-color);
+  color: var(--accent);
 }
 
 .overlay p b {
-	color: var(--gradient-color);
+	color: var(--gradient);
 }
 
 footer {
     margin-top: 0;
-	background-color: var(--bg-color);
+	background-color: var(--footer);
 }
 
 footer .gradient {
-	background: linear-gradient(var(--accent-color), var(--bg-color));
+	background: linear-gradient(var(--accent), var(--footer));
 }
 
 footer .footer-content a:hover{
-	color: var(--gradient-color);
+	color: var(--gradient);
 	animation: hovering 0.2s linear;
 }
 
 footer .column2 a h1{
 	margin: 0;
-	color: var(--gradient-color);
+	color: var(--gradient);
 }
 
 footer .column3 a h2{
 	margin: 0;
-	color: var(--gradient-color);
+	color: var(--gradient);
 }
 
 footer .copyright {
-	color: var(--bg-color);
+	color: var(--footer);
 }
 
 @media screen and (max-width : 1100px) {
 	.footer-divider {
-		top : 11rem;
+		top : 0;
 	}
 }
 
@@ -270,7 +267,7 @@ footer .copyright {
 
 @media screen and (max-width : 590px) {
 	header nav ul.menu-nav{
-		background-color: var(--gradient-color);
+		background-color: var(--gradient);
 	}
 
 	.event .gambar .image-container img {

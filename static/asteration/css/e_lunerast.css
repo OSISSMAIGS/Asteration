@@ -251,7 +251,7 @@ footer .copyright {
 
 @media screen and (max-width : 1100px) {
 	.footer-divider {
-		top : 0;
+		top : 5rem;
 	}
 }
 

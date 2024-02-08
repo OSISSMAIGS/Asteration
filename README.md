@@ -1,6 +1,6 @@
 # Asteration
 
-##Instalation
+## Instalation
 1. Clone the reposity:
 ```bash
 git clone https://github.com/OSISSMAIGS/Asteration.git

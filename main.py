@@ -12,6 +12,10 @@ def asteration():
 def asteration_events():
     return render_template("asteration/events.html")
 
+@app.route("/Asteration/Events/Reveera")
+def e_reveera():
+    return render_template("asteration/e_reveera.html")
+
 @app.route("/Asteration/Events/Lunerast")
 def e_lunerast():
     return render_template("asteration/e_lunerast.html")

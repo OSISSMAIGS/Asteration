@@ -20,7 +20,7 @@
 html, body {
 	background-color: var(--bg-color);
     color: white;
-    width: 100vw;
+    max-width: 100vw;
     
 }
 
@@ -29,15 +29,13 @@ html, body {
 }
 
 section.stars {
-	max-height: 100vh
-	/* position: absolute; */
-	/* top: calc((100vw/1.6) + 50px); */
+	position: absolute;
 }
 
 section.stars img {
 	position: absolute;
 	width: 20px;
-	opacity: 0.5;
+	opacity: 0.3;
 	animation: srotate 5s linear infinite;
 }
 
@@ -52,11 +50,12 @@ section.stars img {
 	100% {transform: scale(2);}
 }
 
+
 header nav {
 	background: linear-gradient(to right, var(--bg-color2) 20%, var(--text-color2));
 	position: fixed;
 	top: 0;
-	width: 100vw;
+	/* width: 100vw; */
 	z-index: 200;
 }
 
@@ -335,7 +334,17 @@ img.footer-divider{
 	}
 }
 
+@media screen and (max-width :768px){
+	body {
+		width: 100vw;
+	}
+}
+
 @media screen and (max-width : 590px) {
+	body{
+		max-width: 100vw;
+	}
+
 	header nav{
 		position: fixed;
 		top: 0;
@@ -351,11 +360,11 @@ img.footer-divider{
 	}
 
 	section.about p#about{
-		font-size: 1.3rem;
+		font-size: 1rem;
 		text-align: justify;
 	}
 
 	div.kewa p.nama{
-		font-size: 2rem;
+		font-size: 1.5rem;
 	}
 }

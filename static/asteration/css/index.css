@@ -2,7 +2,18 @@
 section.main {
     display: flex;
     justify-content: center;
-    margin: 7rem;
+    margin: 4.5rem;
+}
+
+section.main .carousel {
+    box-shadow: 0 0 1rem black;
+}
+
+section.main .carousel, section.main .carousel .carousel-item a img{
+    --size: 70vw;
+    width: var(--size);
+    height: calc(var(--size)*0.5625);
+    border: 2px solid rgb(193, 161, 127);
 }
 
 * {
@@ -72,7 +83,16 @@ section.about img {
     }
 
     section.main {
-        margin: 7rem;
+        margin: 3.3rem;
+    }
+
+    section.main .carousel, section.main .carousel .carousel-item a img{
+        --size: 100vw;
+        min-width: var(--size);
+        height: calc(var(--size)*0.5625);
+    }
+    section.main .carousel {
+        box-shadow: 0 10px 30px -6px black;
     }
 }
 

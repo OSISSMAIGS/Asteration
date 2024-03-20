@@ -1,11 +1,11 @@
 :root {
-	--bg-color: rgb(134, 9, 9);
-	--accent-color: rgb(252, 235, 235);	
+	--bg-color: rgba(230,68,101,1);
+	--accent-color: rgba(255,155,181,1);	
 }
 
 html, body {
 	background-color: var(--bg-color);
-	color: rgb(253, 240, 240);
+	color: rgb(82, 14, 28);
 }
 
 header nav {
@@ -21,29 +21,22 @@ header .gradient {
 }
 
 header nav ul li a{
-	color: var(--accent-color);
+	color: var(--white);
 }
 
 header nav ul li a:hover{
-	color: rgb(255, 255, 255);
+	color: var(--accent-color);
 	/* text-decoration: none; */
 	animation: hovering 0.2s linear;
 }
 
-header nav .logo h1 {
-	text-shadow: 0 0 2rem white;
-}
-
-.menu-toggle span{
-	background: white;
-}
 @keyframes hovering {
 	0% {
-		color: var(--accent-color);
+		color: var(--white);
 	}
 
 	100% {
-		color: rgb(255, 255, 255);
+		color: var(--accent-color);
 	}
 }
 
@@ -66,7 +59,7 @@ section.banner{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: gray url("https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702598/Credence/img/banner/cakrawala_c0nnt2.png") center / cover no-repeat;
+	background: gray url("https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702552/Credence/img/banner/compation_dosrx5.png") center / cover no-repeat;
 }
 
 section.banner .gradient-banner {
@@ -91,7 +84,39 @@ section.about h1 {
 	font-weight: 700;
 }
 
+section.jadwal {
+	display: flex;
+	margin-left: 5%;
+	flex-direction: column;
+	width: 90%;
+}
 
+section.jadwal h1 {
+	font-weight: 700;
+}
+
+section.jadwal .tabel {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.jadwal table {
+	border: 3px solid rgb(82, 14, 28);
+	background-color: var(--accent-color);
+	margin: 1rem;
+}
+
+section.jadwal table .table-back{
+	border: 2px solid rgb(82, 14, 28);
+	background-color: rgb(255, 118, 154);
+}
+
+
+section.jadwal table th, section.jadwal table tr, section.jadwal table td{
+	border: 1px solid rgb(82, 14, 28);
+	padding: 5px;
+	text-align: center;
+}
 
 section.kegiatan {
 	display: flex;
@@ -103,8 +128,7 @@ section.kegiatan {
 
 section.kegiatan .daftar-isi{
 	width: 100%;
-	border: 2px solid var(--accent-color);
-	padding: 3% 0;
+
 }
 
 section.kegiatan h1 {
@@ -123,7 +147,7 @@ section.kegiatan .daftar-isi ul {
 
 
 section.kegiatan ul li a{
-	color: rgb(255, 255, 255);
+	color: rgb(56, 10, 19);
 }
 
 section.kegiatan ul li a:hover{
@@ -134,7 +158,7 @@ section.kegiatan ul li a:hover{
 
 @keyframes kegiatan-hover {
 	0% {
-		color: rgb(255, 255, 255);
+		color: rgb(56, 10, 19);
 	}
 
 	100% {
@@ -180,18 +204,18 @@ section.kegiatan ul li a:hover{
 
 .kegiatan .content .content-isi .top-text h2{
 	font-weight: bold;
-	color: rgb(255, 255, 255);
+	color: rgb(82, 14, 28);
 	padding-top: 3%;
 }
 
 .kegiatan .content .content-isi .top-text p{
-	color: rgb(254, 233, 233);
+	color: rgb(82, 14, 28);
 	padding-left: 0;
 	padding-top:2%;
 }
 
 .kegiatan .content .content-isi .top-text a{
-	color: rgb(255, 234, 234);
+	color: rgb(82, 14, 28);
 }
 
 .kegiatan .content .content-isi .top-text a:hover{
@@ -210,14 +234,13 @@ section.kegiatan ul li a:hover{
     margin-bottom: 2%;
     margin-top: 2%;
     border: none;
-    background-color: rgb(255, 234, 234);
+    background-color: rgb(82, 14, 28);
     color: var(--bg-color);
 }
 
-
 .kegiatan .content .content-isi .bottom button:hover{
     background-color: var(--accent-color);
-    color: rgb(174, 38, 38);
+    color: rgb(82, 14, 28);
 }
 
 .card, .card-body {
@@ -255,22 +278,18 @@ section.kegiatan ul li a:hover{
 	align-items: center;
 }
 
-.btn-check:focus+.btn-primary, .btn-primary:focus {
-    box-shadow: 0 0 0 0.25rem rgb(221, 101, 101);
-}
-
 @keyframes footer-hover {
 	0% {color: var(--accent-color);}
-	100% {color: rgb(255, 235, 235);}
+	100% {color: var(--bg-color);}
 }
 
 footer {
-	background-color: rgb(89, 0, 0);
+	background-color: rgb(154, 35, 59);
 	color: var(--accent-color);
 }
 
 footer .gradient {
-	background: linear-gradient(var(--bg-color), rgb(89, 0, 0));
+	background: linear-gradient(var(--bg-color), rgb(154, 35, 59));
 }
 
 footer .footer-content a{
@@ -279,7 +298,7 @@ footer .footer-content a{
 }
 
 footer .footer-content a:hover{
-	color: rgb(204, 139, 139);
+	color: var(--bg-color);
 	animation: footer-hover 0.2s linear;
 }
 
@@ -294,7 +313,6 @@ footer .column3 a h2{
 }
 
 footer .copyright {
-	background-color: rgb(249, 200, 200);
 	color: var(--bg-color);
 }
 
@@ -335,7 +353,7 @@ footer .copyright {
 
 @media screen and (max-width : 590px) {
 	header nav ul.menu-nav{
-		background-color: rgb(95, 18, 18)
+		background-color: rgb(154, 35, 59)
 	}
 
 	.kegiatan .content .content-isi .top-text{

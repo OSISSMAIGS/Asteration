@@ -4,96 +4,51 @@
 	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/index.css') }}">
 {% endblock css_js %}
 
-{% block glider %}
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/glider.css') }}">
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/glider.min.css') }}">
-	<script src="{{ url_for('static', filename='asteration/js/glider.js') }}"></script>
-	<script src="{{ url_for('static', filename='asteration/js/glider.min.js') }}"></script>
-	<script>
-		window.addEventListener('load',function(){
-			document.querySelector('.glider').addEventListener('glider-slide-visible', function(event){
-				var glider = Glider(this);
-				console.log('Slide Visible %s', event.detail.slide)
-			});
-			document.querySelector('.glider').addEventListener('glider-slide-hidden', function(event){
-				console.log('Slide Hidden %s', event.detail.slide)
-			});
-			document.querySelector('.glider').addEventListener('glider-refresh', function(event){
-				console.log('Refresh')
-			});
-			document.querySelector('.glider').addEventListener('glider-loaded', function(event){
-				console.log('Loaded')
-			});
 
-			window._ = new Glider(document.querySelector('.glider'), {
-				slidesToShow: 1, //'auto',
-				slidesToScroll: 1,
-				itemWidth: 150,
-				draggable: true,
-				scrollLock: false,
-				dots: '#dots',
-				rewind: true,
-				arrows: {
-					prev: '.glider-prev',
-					next: '.glider-next'
-				},
-				responsive: [
-					{
-						breakpoint: 800,
-						settings: {
-							slidesToScroll: 'auto',
-							itemWidth: 300,
-							slidesToShow: 'auto',
-							exactWidth: true
-						}
-					},
-					{
-						breakpoint: 700,
-						settings: {
-							slidesToScroll: 4,
-							slidesToShow: 4,
-							dots: false,
-							arrows: false,
-						}
-					},
-					{
-						breakpoint: 600,
-						settings: {
-							slidesToScroll: 3,
-							slidesToShow: 3
-						}
-					},
-					{
-						breakpoint: 500,
-						settings: {
-							slidesToScroll: 2,
-							slidesToShow: 2,
-							dots: false,
-							arrows: false,
-							scrollLock: true
-						}
-					}
-				]
-			});
-		});
-	</script>
-{% endblock glider %}
-
-{% block title %}Asteration | OSIS SMA IGS{% endblock title %}
+{% block title %}Asteration{% endblock title %}
 
 {% block main %}
 	<section class="main">
-		<div class="glider-contain">
-			<div class="glider">
-				<a href="{{ url_for('e_litioree') }}"><img id="litioree" src="{{ url_for('static', filename='asteration/img/banner/litioree.png') }}"></a>
-				<a href="{{ url_for('e_armone') }}"><img id="armone" src="{{ url_for('static', filename='asteration/img/banner/armone.png') }}"></a>
-				<a href="{{ url_for('e_pelita') }}"><img id="pelita" src="{{ url_for('static', filename='asteration/img/banner/pelita.png') }}"></a>
-				<a href="{{ url_for('e_aksara') }}"><img id="aksara" src="{{ url_for('static', filename='asteration/img/banner/aksara.png') }}"></a>
+		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+			<div class="carousel-indicators">
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+			<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
 			</div>
-			<button class="glider-prev">&laquo;</button>
-			<button class="glider-next">&raquo;</button>
-			<div id="dots"></div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<a href="{{ url_for('e_reveera') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1707915121/Asteration/Reveera/Banner_valentine_3_zvoyzk.png" class="d-block w-100" alt="..."></a>
+				</div>
+				<div class="carousel-item">
+					<a href="{{ url_for('e_lunerast') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1707373085/Asteration/image/Banner/Lunerast_ctf78y.png" class="d-block w-100" alt="..."></a>
+				</div>
+				<div class="carousel-item">
+					<a href="{{ url_for('e_litioree') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085480/Asteration/image/Banner/litioree_vzov8r.png" class="d-block w-100" alt="..."></a>
+				</div>
+				<div class="carousel-item">
+					<a href="{{ url_for('e_armone') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085475/Asteration/image/Banner/armone_no3toa.png"" class="d-block w-100" alt="..."></a>
+				</div>
+				<div class="carousel-item">
+					<a href="{{ url_for('e_pelita') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085480/Asteration/image/Banner/pelita_mmunl3.png" class="d-block w-100" alt="..."></a>
+				</div>
+				<div class="carousel-item">
+					<a href="{{ url_for('e_aksara') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085484/Asteration/image/Banner/aksara_krhuy3.png" class="d-block w-100" alt="..."></a>
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+			</button>
 		</div>
+		
+		
 	</section>
 
 	<section class="about">
@@ -103,7 +58,7 @@
 				Asteration (Per Aspera Ad Astra Generation) merupakan nama kabinet OSIS SMA IGS periode 2023/2024. Asteration berarti "to the stars through hardships" yang menggambarkan OSIS sebagai generasi yang akan berkerja keras melewati tantangan dan memiliki semangat juang yang tinggi untuk meraih bintang yaitu membangun IGS menjadi lebih terdepan.
 			</p>
 		</div>
-		<img src="{{ url_for('static', filename='asteration/img/logo/asteration.png') }}">
+		<img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085664/Asteration/image/Logo/asteration_jottdw.png">
 			
 	</section>
 {% endblock main %}

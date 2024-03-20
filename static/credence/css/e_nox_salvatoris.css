@@ -54,19 +54,19 @@
 }
 
 .back {
-    background: url(../img/foto/snow.png) repeat;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702573/Credence/img/foto/snow_yfwldg.png) repeat;
     -webkit-animation: snowfall01 20s linear infinite;
     animation: snowfall01 20s linear infinite;
 }
 
 .back2 {
-    background: url(../img/foto/snow2.png) repeat;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702573/Credence/img/foto/snow2_hyezb4.png) repeat;
     -webkit-animation: snowfall02 20s linear infinite;
     animation: snowfall02 20s linear infinite;
 }
 
 .back3 {
-    background: url(../img/foto/snow3.png) repeat ;
+    background: url(https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702574/Credence/img/foto/snow3_vltabk.png) repeat ;
     -webkit-animation: snowfall03 20s linear infinite;
     animation: snowfall03 20s linear infinite;
 }
@@ -112,7 +112,7 @@ section.banner{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	background: gray url("https://cdn.discordapp.com/attachments/798027620334960681/1056820003506225152/nox_salvatoris.png") center / cover no-repeat;
+	background: gray url("https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702596/Credence/img/banner/nox_salvatoris_rvt2xo.png") center / cover no-repeat;
 }
 
 section.banner .gradient-banner {

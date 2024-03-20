@@ -21,7 +21,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
 
 	<!-- Favicon Logo -->
-	<link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='asteration/img/favicon/favicon.ico') }}">
+	<link rel="icon" type="image/x-icon" href="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705246874/Asteration/image/Favicon/favicon_ghzw2s.png">
 
 	<!-- BoxIcon -->
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -38,30 +38,27 @@
 
     {% block css_js %}{% endblock css_js %}
 
-	<!-- Glider -->
-    {% block glider %}{% endblock glider%}
-
 	<!-- Title -->
-	<title>{% block title %}{% endblock title %}</title>
+	<title>{% block title %}{% endblock title %} | OSIS SMA IGS</title>
 
 </head>
 <body>
 	<div class="intro" id="splash">
 		<div class="logo-header"id="splash" >
-		  <img class="logo" id="splash" src="{{ url_for('static', filename='asteration/img/logo/logo.png') }}" alt="Logo Asteration"><br>
+		  <img class="logo" id="splash" src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085662/Asteration/image/Logo/logo_dqymdn.png" alt="Logo Asteration"><br>
 		</div>
 	</div>
 	<script src="{{ url_for('static', filename='asteration/js/splash.js') }}"></script>
 	<header>
-		<nav>
+		<nav class="fixed-top">
 			<div class="logo">
 				<div class="asteration">
-					<img src="{{ url_for('static', filename='asteration/img/logo/asteration.png') }}">
+					<img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085664/Asteration/image/Logo/asteration_jottdw.png">
 					<h1>Asteration</h1>
 				</div>
 				<div class="credence">
 					<a href="{{ url_for('credence') }}">
-						<img src="{{ url_for('static', filename='credence/img/logo/credence.png') }}">
+						<img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705246505/Asteration/image/Logo/credence_bgev66.png">
 						<h1>Credence</h1>
 					</a>
 				</div>
@@ -86,6 +83,8 @@
 	
 	</section>
 
+	<section class="stars"></section>
+
 	<div class="back3">
 		<div class="back2">
 			<div class="back">
@@ -96,7 +95,7 @@
                     
                     <div class="footer-content">
                         <div class="column1">
-                            <img src="{{ url_for('static', filename='asteration/img/logo/asteration.png') }}">
+                            <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085664/Asteration/image/Logo/asteration_jottdw.png">
                             <div class="footer-text">
                                 <h5>Asteration</h5>
                                 <p>Kabinet OSIS SMA Ignatius Global School periode 2023/2024</p>

@@ -44,3 +44,6 @@ git commit -m "your message"
 git push origin branch-name
 ```
 7. Go to Github and merge your branch with main
+
+---
+Copyright © 2024 Sekbid Multimedia Website Asteration

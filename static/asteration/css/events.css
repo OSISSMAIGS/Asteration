@@ -86,6 +86,12 @@ img#reveera:hover {
     animation: reveera-hover 0.5s linear;
 }
 
+img#qaliftar:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 25px #6ee406;
+    animation: qaliftar-hover 0.5s linear;
+}
+
 @keyframes aksara-hover {
     0% {
         scale: 1;
@@ -155,6 +161,18 @@ img#reveera:hover {
     100% {
         scale: 1.02;
         box-shadow: 0px 0px 25px #FFB2CC;
+    }
+}
+
+@keyframes qaliftar-hover {
+    0% {
+        scale: 1;
+        box-shadow: 0px 0px white;
+    }
+
+    100% {
+        scale: 1.02;
+        box-shadow: 0px 0px 25px #6ee406;
     }
 }
 

@@ -1,8 +1,8 @@
 :root {
-	--bg: rgb(25, 0, 100);
-	--gradient: rgb(250, 150, 200);
-	--accent: rgb(75, 0, 125);
-	--footer: rgb(150, 0, 75);
+	--bg: rgb(75, 175, 0);
+	--gradient: rgb(250, 250, 0);
+	--accent: rgb(50, 175, 0);
+	--footer: rgb(25, 125, 0);
 }
 
 html, body {

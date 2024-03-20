@@ -19,6 +19,8 @@ py main.py
 http://127.0.0.1:5000/
 ```
 ## Adding Changes
+0. Make sure you are a contributor to this repository
+
 1. Change directory
 ```bash
 cd Asteration

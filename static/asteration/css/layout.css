@@ -60,9 +60,9 @@ html, body {
 	}
 
 	header nav .logo .asteration:hover{
-		color: var(--dark-brown);
+		color: var(--light-brown);
 		text-decoration: none;
-		animation: nav-hover-a 0.2s linear;
+		animation: nav-hover-main 0.2s linear;
 	}
 
 	header nav .logo .asteration img{
@@ -152,9 +152,9 @@ html, body {
 	}
 
 	header nav ul li a:hover{
-		color: var(--dark-brown);
+		color: var(--light-brown);
 		text-decoration: none;
-		animation: nav-hover-a 0.2s linear;
+		animation: nav-hover-main 0.2s linear;
 	}
 
 	header nav .btn-nav {
@@ -194,6 +194,16 @@ html, body {
         z-index: 3;
     }
 	
+	@keyframes nav-hover-main {
+		0% {
+			color: var(--white);
+		}
+
+		100% {
+			color: var(--light-brown);
+		}
+	}
+
 	@keyframes nav-hover-a {
 		0% {
 			color: var(--white);

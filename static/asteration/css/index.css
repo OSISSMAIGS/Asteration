@@ -65,7 +65,7 @@ section.about img {
 /* Responsive Layout */
 @media screen and (max-width : 1100px) {
     section.about img {
-        width: 30%;
+        width: 30%; 
         height: 30%;
     }
 

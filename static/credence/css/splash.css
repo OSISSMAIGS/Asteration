@@ -51,7 +51,7 @@
 
 @media screen and (max-width : 1200px){
 	.logo#splash{
-		--size: 900pt;
+		--size: 400pt;
 		width: var(--size);
 		height: var(--size);
 	}
@@ -59,14 +59,14 @@
 
 @media screen and (max-width : 740px){
     .logo#splash{
-        width: 50rem;
-        height: 50rem;
+        width: 30rem;
+        height: 30rem;
     }
 }
 
 @media screen and (max-width : 590px){
     .logo#splash{
-        width: 35rem;
-        height: 35rem;
+        width: 20rem;
+        height: 20rem;
     }
 }

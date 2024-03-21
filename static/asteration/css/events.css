@@ -88,7 +88,7 @@ img#reveera:hover {
 
 img#qaliftar:hover {
     scale: 1.02;
-    box-shadow: 0px 0px 25px #6ee406;
+    box-shadow: 0px 0px 25px #007d64;
     animation: qaliftar-hover 0.5s linear;
 }
 
@@ -172,7 +172,7 @@ img#qaliftar:hover {
 
     100% {
         scale: 1.02;
-        box-shadow: 0px 0px 25px #6ee406;
+        box-shadow: 0px 0px 25px #007d64;
     }
 }
 

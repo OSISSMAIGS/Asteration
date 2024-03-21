@@ -1,11 +1,12 @@
 :root {
-	--bg: rgb(25, 0, 100);
+	--bg: rgb(50, 25, 100);
 	--gradient: rgb(250, 150, 200);
 	--accent: rgb(75, 0, 125);
 	--footer: rgb(150, 0, 75);
 }
 
 html, body {
+	text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.353);
 	background-color: var(--bg);
     color: white;
     width: 100vw;
@@ -37,6 +38,17 @@ section.gradient-header {
 
 p, li {
     font-size: 110%;
+}
+
+.hidden{
+	transform: translateY(100%);
+    filter: blur(10px);
+}
+
+.show {
+	transform: translateY(0);
+    filter: blur(0);
+    transition: all 0.7s ease-in-out;
 }
 
 @keyframes hovering {
@@ -138,6 +150,7 @@ section.content h2 {
 }
 
 section.content .lists {
+	text-shadow: 0 0 0 rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;

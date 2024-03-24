@@ -24,7 +24,7 @@ def e_reveera():
 def e_lunerast():
     return render_template("asteration/e_lunerast.html")
 
-@app.route("/Asteration/Events/Litiorée")
+@app.route("/Asteration/Events/Litioree")
 def e_litioree():
     return render_template("asteration/e_litioree.html")
 

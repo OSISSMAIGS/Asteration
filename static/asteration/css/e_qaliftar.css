@@ -1,6 +1,7 @@
 :root {
 	--bg: rgb(0, 125, 100);
 	--gradient: rgb(225, 225, 125);
+	--box-hover: rgb(191, 191, 104);
 	--accent: rgb(25, 175, 100);
 	--footer: rgb(25, 125, 75);
 }
@@ -170,6 +171,13 @@ section.content .list {
     margin: 1rem;
 }
 
+section.content .list:hover {
+	animation: box-hover 0.5s linear;
+	animation: box-size 0.3s linear;
+	scale: 1.05;
+	background-color: var(--box-hover);
+}
+
 section.content .list i {
     font-size: 50pt;
     color: var(--accent);
@@ -180,6 +188,27 @@ section.content .list p {
     color: var(--accent);
     margin-bottom: 0;
 }
+
+@keyframes box-hover {
+    0%{
+        background-color: var(--text-color);
+    }
+
+    100%{
+        background-color: var(--box-hover);
+    }
+}
+
+@keyframes box-size {
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.05;
+    }
+
+} 
 
 .event .gambar{
 	display: flex;

@@ -1,6 +1,7 @@
 :root {
 	--bg: rgb(50, 25, 100);
 	--gradient: rgb(250, 150, 200);
+	--box-hover: rgb(215, 113, 164);
 	--accent: rgb(75, 0, 125);
 	--footer: rgb(150, 0, 75);
 }
@@ -170,6 +171,35 @@ section.content .list {
     align-items: center;
     margin: 1rem;
 }
+
+section.content .list:hover {
+	animation: box-hover 0.5s linear;
+	animation: box-size 0.3s linear;
+	scale: 1.05;
+	background-color: var(--box-hover);
+}
+
+
+@keyframes box-hover {
+    0%{
+        background-color: var(--text-color);
+    }
+
+    100%{
+        background-color: var(--box-hover);
+    }
+}
+
+@keyframes box-size {
+    0%{
+        scale: 1;
+    }
+
+    100%{
+        scale: 1.05;
+    }
+
+} 
 
 section.content .list i {
     font-size: 50pt;

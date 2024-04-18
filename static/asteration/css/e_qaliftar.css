@@ -1,13 +1,13 @@
 :root {
-	--bg: rgb(50, 25, 100);
-	--gradient: rgb(250, 150, 200);
-	--box-hover: rgb(215, 113, 164);
-	--accent: rgb(75, 0, 125);
-	--footer: rgb(150, 0, 75);
+	--bg: rgb(0, 125, 100);
+	--gradient: rgb(225, 225, 125);
+	--box-hover: rgb(191, 191, 104);
+	--accent: rgb(25, 175, 100);
+	--footer: rgb(25, 125, 75);
 }
 
 html, body {
-	text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.353);
+    text-shadow: 0px 0px 18px var(--gradient);
 	background-color: var(--bg);
     color: white;
     width: 100vw;
@@ -151,7 +151,6 @@ section.content h2 {
 }
 
 section.content .lists {
-	text-shadow: 0 0 0 rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -179,6 +178,16 @@ section.content .list:hover {
 	background-color: var(--box-hover);
 }
 
+section.content .list i {
+    font-size: 50pt;
+    color: var(--accent);
+}
+
+section.content .list p {
+    font-weight: bold;
+    color: var(--accent);
+    margin-bottom: 0;
+}
 
 @keyframes box-hover {
     0%{
@@ -200,17 +209,6 @@ section.content .list:hover {
     }
 
 } 
-
-section.content .list i {
-    font-size: 50pt;
-    color: var(--accent);
-}
-
-section.content .list p {
-    font-weight: bold;
-    color: var(--accent);
-    margin-bottom: 0;
-}
 
 .event .gambar{
 	display: flex;

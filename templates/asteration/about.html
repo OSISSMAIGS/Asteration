@@ -1,19 +1,63 @@
 {% extends "asteration/layout.html" %}
 
 {% block css_js %}
-	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/coming_soon.css') }}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='asteration/css/about.css') }}">
 {% endblock css_js %}
 
 {% block title %}About Us{% endblock title %}
 
 {% block main %}
-	<section class="coming-soon">
-		<div class="logo-cs">
+	<section class="we-are-asteration">
+		<p id="left">WE ARE<br>ASTERATION</p>
+		<img id="right" src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1705085664/Asteration/image/Logo/asteration_jottdw.png">
+	</section>
 
-		</div>
-		<div class="content">
-			<h1 class="text-shadow">Coming Soon</h1>
-			<p class="text-shadow">This page is still in progress</p>
+	<section class="daftar-isi">
+		<p>
+			<a href="#">TOP 3</a> |
+			<a href="#">SEKRETARIS</a> |
+			<a href="#">BENDAHARA</a> |
+			<a href="#">BELA NEGARA</a> |
+			<a href="#mm-web">MULTIMEDIA WEBSITE</a> |
+			<a href="#">MULTIMEDIA ON-FIELD</a> |
+			<a href="#">SEKRETARIAT</a> |
+			<a href="#">DOKUMENTASI</a> |
+			<a href="#">KREATIF</a> |
+			<a href="#">HUMAS DAN PUBLIKASI</a> |
+			<a href="#">KETUHANAN YANG MAHA ESA</a> |
+			<a href="#">BAHASA</a> |
+			<a href="#">APRESIASI SENI DAN OLAHRAGA</a> |
+			<a href="#">KOMUNIKASI</a> |
+			<a href="#">VIDEO EDITOR</a> |
+			<a href="#">ILLUSTRATOR</a> |
+			<a href="#">SCRIPT WRITER</a> |
+			<a href="#">ACTRESS</a>
+		</p>
+	</section>
+
+	<section class="foto-sekbid" id="mm-web">
+		<img src="{{ url_for('static', filename='asteration/foto_about_us/mm_web.png') }}">
+
+		<div class="personal-card">
+			<div class="each-info">
+				<a href="https://www.instagram.com/ard16._/">
+					<img src="{{ url_for('static', filename='asteration/foto_about_us/dapa.png') }}">
+					<h2><i class="bi bi-instagram"></i></h2>
+				</a>
+				<div class="nomor-jersey">16</div>
+				<hr>
+				<div class="info">
+					<p id="name">Ahmad Rizki Daffaa</p>
+					<p id="panggilan"><em>/bang dapa/</em></p>
+					<p id="jabatan">Anggota</p>
+				</div>
+			</div>
+			<div class="each-info">
+				<!-- <img src="{{ url_for('static', filename='asteration/foto_about_us/dapa.png') }}"> -->
+			</div>
+			<div class="each-info">
+				<!-- <img src="{{ url_for('static', filename='asteration/foto_about_us/dapa.png') }}"> -->
+			</div>
 		</div>
 	</section>
 {% endblock main %}

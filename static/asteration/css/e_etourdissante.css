@@ -10,12 +10,14 @@
     position: absolute;
     z-index: 99;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
 .firework.firework-bottom {
 	position: absolute;
     z-index: 99;
     min-height: 200vh;
+    max-width: 100vw;
 }
 .explosion {
 	position: absolute;
@@ -158,14 +160,14 @@ html, body {
 	text-shadow: 1px 1.5px black;
 	background-color: var(--bg);
     color: white;
-    width: 100vw;
+    max-width: 100vw;
 }
 
 header nav {
 	background: linear-gradient(to right, var(--bg) 20%, var(--accent));
 	position:  fixed;
 	top: 0;
-	width: 100vw;
+	max-width: 100vw;
 	z-index: 200;
 }
 

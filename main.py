@@ -12,6 +12,10 @@ def asteration():
 def asteration_events():
     return render_template("asteration/events.html")
 
+@app.route("/Asteration/Events/Étourdissante")
+def e_etourdissante():
+    return render_template("asteration/e_etourdissante.html")
+
 @app.route("/Asteration/Events/Qaliftar")
 def e_qaliftar():
     return render_template("asteration/e_qaliftar.html")

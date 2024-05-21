@@ -15,7 +15,7 @@ def asteration_events():
 @app.route("/Asteration/Events/Etourdissante")
 def e_etourdissante():
     return render_template("asteration/e_etourdissante.html")
-
+  
 @app.route("/Asteration/Events/Qaliftar")
 def e_qaliftar():
     return render_template("asteration/e_qaliftar.html")

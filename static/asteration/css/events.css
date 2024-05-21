@@ -97,7 +97,6 @@ img#etourdissante:hover {
     box-shadow: 0px 0px 25px #19324b;
     animation: etourdissante-hover 0.5s linear;
 }
-
 @keyframes aksara-hover {
     0% {
         scale: 1;
@@ -193,7 +192,6 @@ img#etourdissante:hover {
         box-shadow: 0px 0px 25px #19324b;
     }
 }
-
 section.event img, section.event.past div.image-container a img {
     width: 30vw;
     height: 100%;

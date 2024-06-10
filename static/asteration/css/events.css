@@ -92,6 +92,11 @@ img#qaliftar:hover {
     animation: qaliftar-hover 0.5s linear;
 }
 
+img#etourdissante:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 25px #19324b;
+    animation: etourdissante-hover 0.5s linear;
+}
 @keyframes aksara-hover {
     0% {
         scale: 1;
@@ -176,6 +181,17 @@ img#qaliftar:hover {
     }
 }
 
+@keyframes etourdissante-hover {
+    0% {
+        scale: 1;
+        box-shadow: 0px 0px white;
+    }
+
+    100% {
+        scale: 1.02;
+        box-shadow: 0px 0px 25px #19324b;
+    }
+}
 section.event img, section.event.past div.image-container a img {
     width: 30vw;
     height: 100%;

@@ -301,7 +301,7 @@ footer .copyright {
 
 @media screen and (max-width : 590px) {
 	header nav ul.menu-nav{
-		background-color: var(--gradient-color);
+		background-color: var(--bg-color);
 	}
 
 	.event .gambar .image-container img {

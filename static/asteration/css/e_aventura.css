@@ -1,34 +1,40 @@
 :root {
-	--bg: rgb(50, 25, 100);
-	--gradient: rgb(250, 150, 200);
-	--box-hover: rgb(215, 113, 164);
-	--accent: rgb(75, 0, 125);
-	--footer: rgb(150, 0, 75);
+	--bg: rgb(56, 163, 69);
+	--bg-color: rgb(64, 130, 81);
+	--gradient-color: rgb(250, 225, 0);
+	--accent-color: rgb(73, 163, 76);
+	--box-hover: var(--gradient-color);
 }
 
+/* *{
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: rgb(50, 0, 200);
+    text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.353); 
+    text-shadow: 0px 0px 18px white; 
+} */
+
 html, body {
-	text-shadow: 1.75px 1.75px rgba(0, 0, 0, 0.353);
-	background-color: var(--bg);
+	background-color: var(--bg-color);
     color: white;
     width: 100vw;
 }
 
 header nav {
-	background: linear-gradient(to right, var(--bg) 20%, var(--accent));
-	position:  fixed;
+	background: linear-gradient(to right, var(--bg-color) 20%, var(--accent-color));
+	position: fixed;
 	top: 0;
 	width: 100vw;
 	z-index: 200;
 }
 
 header nav ul li a:hover{
-	color: var(--gradient);
+	color: var(--gradient-color);
 	text-decoration: none;
 	animation: hovering 0.2s linear;
 }
 
 header nav .logo .asteration:hover{
-	color: var(--gradient);
+	color: var(--gradient-color);
 	text-decoration: none;
 	animation: hovering 0.2s linear;
 }
@@ -58,7 +64,7 @@ p, li {
 	}
 
 	100% {
-		color: var(--gradient);
+		color: var(--gradient-color);
 	}
 }
 
@@ -72,7 +78,7 @@ section.banner{
 	align-items: center;
 	flex-direction: column;
 	margin-top: 50px;
-    background-color: var(--bg);
+    background-color: var(--bg-color);
 }
 
 section.banner img {
@@ -80,14 +86,14 @@ section.banner img {
     height: calc(100vw /1.6);
 }
 
-section.banner .gradient-banner{
+section.banner .gradient-banner {
 	position: absolute;
 	z-index: 10;
 	left: 0;
 	bottom: 0;
 	height: 10rem;
 	width: 100%;
-	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg));
+	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg-color));
 }
 
 section.about {
@@ -96,7 +102,7 @@ section.about {
 	flex-direction: column;
 	width: 90%;
     text-align: center;
-	color: var(--gradient);
+	color: var(--gradient-color);
 }
 
 section.about h1 {
@@ -119,20 +125,14 @@ section.about h1 {
 section.divider {
     width: 100vw;
     height: 5rem;
-    background: linear-gradient(var(--bg), var(--accent));
-}
-
-.footer-divider {
-	position: relative;
-	top: 9rem;
-	width: 115%;
+    background: linear-gradient(var(--bg-color), var(--accent-color));
 }
 
 section.content {
 	display: flex;
 	flex-direction: column;
 	width: 100vw;
-    background-color: var(--accent);
+    background-color: var(--accent-color);
     padding: 2rem 5%;
     box-sizing: border-box;
     align-items: center;
@@ -141,17 +141,16 @@ section.content {
 
 section.content h1 {
 	font-weight: 700;
-    color: var(--gradient);
+    color: var(--gradient-color);
     margin: 0;
 }
 
 section.content h2 {
 	font-weight: 700;
-    color: var(--gradient);
+    color: var(--gradient-color);
 }
 
 section.content .lists {
-	text-shadow: 0 0 0 rgb(255, 255, 255);
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -161,10 +160,10 @@ section.content .lists {
 section.content .list {
     width: 200px;
     height: 200px;
-    background-color: var(--gradient);
+    background-color: var(--gradient-color);
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px var(--gradient);
+    box-shadow: 0px 0px 15px var(--gradient-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,42 +172,41 @@ section.content .list {
 }
 
 section.content .list:hover {
-	animation: box-hover 0.5s linear;
-	animation: box-size 0.3s linear;
-	scale: 1.05;
 	background-color: var(--box-hover);
+	scale: 1.05;
+	animation: box-hover 0.5s linear;
+	animation: box-sizing 0.3s linear;
 }
-
 
 @keyframes box-hover {
-    0%{
-        background-color: var(--text-color);
-    }
+	0% {
+		background-color: var(--gradient-color);
+	}
 
-    100%{
-        background-color: var(--box-hover);
-    }
+	100% {
+		background-color: var(--box-hover);
+	}
 }
 
-@keyframes box-size {
-    0%{
-        scale: 1;
-    }
+@keyframes box-sizing {
+	0% {
+		scale: 1;
+	}
 
-    100%{
-        scale: 1.05;
-    }
-
-} 
+	100% {
+		scale: 1.05;
+	}
+}
 
 section.content .list i {
     font-size: 50pt;
-    color: var(--accent);
+    color: var(--accent-color);
+	/* text-shadow: 0px 0px 18px white; */
 }
 
 section.content .list p {
     font-weight: bold;
-    color: var(--accent);
+    color: var(--accent-color);
     margin-bottom: 0;
 }
 
@@ -258,45 +256,39 @@ section.content .list p {
 }
 
 .overlay h5 b {
-  color: var(--accent);
+  color: lightblue;
 }
 
 .overlay p b {
-	color: var(--gradient);
+	color: skyblue;
 }
 
 footer {
     margin-top: 0;
-	background-color: var(--footer);
+	background-color: var(--bg-color);
 }
 
 footer .gradient {
-	background: linear-gradient(var(--accent), var(--footer));
+	background: linear-gradient(var(--accent-color), var(--bg-color));
 }
 
 footer .footer-content a:hover{
-	color: var(--gradient);
+	color: var(--gradient-color);
 	animation: hovering 0.2s linear;
 }
 
 footer .column2 a h1{
 	margin: 0;
-	color: var(--gradient);
+	color: var(--gradient-color);
 }
 
 footer .column3 a h2{
 	margin: 0;
-	color: var(--gradient);
+	color: var(--gradient-color);
 }
 
 footer .copyright {
-	color: var(--footer);
-}
-
-@media screen and (max-width : 1100px) {
-	.footer-divider {
-		top : 5rem;
-	}
+	color: var(--bg-color);
 }
 
 @media screen and (max-width : 850px) {
@@ -311,12 +303,11 @@ footer .copyright {
 
 @media screen and (max-width : 590px) {
 	header nav ul.menu-nav{
-		background-color: var(--bg);
+		background-color: var(--bg-color);
 	}
 
 	.event .gambar .image-container img {
 		width: 350px;
-		height: 233.33px;
 	}
 
 	.overlay {

@@ -121,3 +121,45 @@
     font-weight: bolder;
     font-size: larger;
 }
+
+@media screen and (max-width : 1025px) {
+    #left {
+        font-size: 8.5rem;
+    }
+
+    #right {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width : 850px) {
+    #left {
+        font-size: 6rem;
+    }
+
+    #right {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width : 590px) {
+	#left {
+        font-size: 5rem;
+        text-align: center;
+        padding-left: 0%;
+    }
+
+    .daftar-isi p {
+        font-size: 4rem;
+    }
+
+    #size-550-border {
+        border: 2px solid azure;
+        border-radius: 20% 20% 50% 50% / 10% 10% 12% 12% ;
+        width: 300px;
+        height: 530px;
+        position: relative;
+        margin: 2rem;
+    }
+    
+}

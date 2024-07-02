@@ -92,6 +92,18 @@ img#qaliftar:hover {
     animation: qaliftar-hover 0.5s linear;
 }
 
+img#etourdissante:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 25px #19324b;
+    animation: etourdissante-hover 0.5s linear;
+}
+
+img#aventura:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 25px #38a345;
+    animation: aventura-hover 0.5s linear;
+}
+
 @keyframes aksara-hover {
     0% {
         scale: 1;
@@ -176,6 +188,30 @@ img#qaliftar:hover {
     }
 }
 
+@keyframes etourdissante-hover {
+    0% {
+        scale: 1;
+        box-shadow: 0px 0px white;
+    }
+
+    100% {
+        scale: 1.02;
+        box-shadow: 0px 0px 25px #19324b;
+    }
+}
+
+@keyframes aventura-hover {
+    0% {
+        scale: 1;
+        box-shadow: 0px 0px white;
+    }
+
+    100% {
+        scale: 1.02;
+        box-shadow: 0px 0px 25px #38a345;
+    }
+}
+
 section.event img, section.event.past div.image-container a img {
     width: 30vw;
     height: 100%;
@@ -222,7 +258,7 @@ section.past {
     align-items: center;
 } */
   
-  .overlay {
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -237,26 +273,25 @@ section.past {
     margin: 15px;
     border-radius: 1rem;
     flex-direction: column;
-  }
-  
-  .image-container:hover .overlay {
+}
+
+.image-container:hover .overlay {
     opacity: 1;
-  }
-  
-  .overlay p {
+}
+
+.overlay p {
     color: white;
     text-align: justify;
     padding: 10px;
-  }
-  
-  .overlay h5 b {
-      color: lightblue;
-  }
-  
-  .overlay p b {
-    color: lightpink;
-  }
+}
 
+.overlay h5 b {
+    color: lightblue;
+}
+
+.overlay p b {
+    color: lightpink;
+}
 
 @media screen and (max-width : 1100px) {
     section.main {

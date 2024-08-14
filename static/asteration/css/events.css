@@ -98,11 +98,19 @@ img#etourdissante:hover {
     animation: etourdissante-hover 0.5s linear;
 }
 
+img#gelora:hover {
+    scale: 1.02;
+    box-shadow: 0px 0px 25px rgb(185, 68, 36);
+    animation: gelora-retry-hover 0.5s linear;
+}
+
+
 img#aventura:hover {
     scale: 1.02;
     box-shadow: 0px 0px 25px #38a345;
     animation: aventura-hover 0.5s linear;
 }
+
 
 @keyframes aksara-hover {
     0% {
@@ -209,6 +217,17 @@ img#aventura:hover {
     100% {
         scale: 1.02;
         box-shadow: 0px 0px 25px #38a345;
+    }
+}
+@keyframes gelora-retry-hover {
+    0% {
+        scale: 1;
+        box-shadow: 0px 0px white;
+    }
+
+    100% {
+        scale: 1.02;
+        box-shadow: 0px 0px 25px #b94424;
     }
 }
 

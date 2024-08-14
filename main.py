@@ -12,6 +12,10 @@ def asteration():
 def asteration_events():
     return render_template("asteration/events.html")
 
+@app.route("/Asteration/Events/Gelora")
+def e_gelora():
+    return render_template("asteration/e_gelora.html")
+
 @app.route("/Asteration/Events/Aventura")
 def e_aventura():
     return render_template("asteration/e_aventura.html")

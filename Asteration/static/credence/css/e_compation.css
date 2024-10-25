@@ -1,0 +1,366 @@
+:root {
+	--bg-color: rgba(230,68,101,1);
+	--accent-color: rgba(255,155,181,1);	
+}
+
+html, body {
+	background-color: var(--bg-color);
+	color: rgb(82, 14, 28);
+}
+
+header nav {
+	background: var(--bg-color);
+}
+
+header .gradient {
+	position: absolute;
+	z-index: 10;
+	height: 2.5rem;
+	width: 100%;
+	background: linear-gradient(to top,rgba(0,0,0,0), var(--bg-color));
+}
+
+header nav ul li a{
+	color: var(--white);
+}
+
+header nav ul li a:hover{
+	color: var(--accent-color);
+	/* text-decoration: none; */
+	animation: hovering 0.2s linear;
+}
+
+@keyframes hovering {
+	0% {
+		color: var(--white);
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+@keyframes nav-hover2 {
+	0% {
+		color: var(--bg-color);
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+section.banner{
+	--size: 100vw;
+	position: relative;
+	width: var(--size);
+	height: calc(var(--size)/1.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background: gray url("https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702552/Credence/img/banner/compation_dosrx5.png") center / cover no-repeat;
+}
+
+section.banner .gradient-banner {
+	position: absolute;
+	z-index: 10;
+	left: 0;
+	bottom: 0;
+	height: 10rem;
+	width: 100%;
+	background: linear-gradient(to bottom,rgba(0,0,0,0), var(--bg-color));
+}
+
+section.about {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 5rem;
+	flex-direction: column;
+	width: 90%;
+}
+
+section.about h1 {
+	font-weight: 700;
+}
+
+section.jadwal {
+	display: flex;
+	margin-left: 5%;
+	flex-direction: column;
+	width: 90%;
+}
+
+section.jadwal h1 {
+	font-weight: 700;
+}
+
+section.jadwal .tabel {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+section.jadwal table {
+	border: 3px solid rgb(82, 14, 28);
+	background-color: var(--accent-color);
+	margin: 1rem;
+}
+
+section.jadwal table .table-back{
+	border: 2px solid rgb(82, 14, 28);
+	background-color: rgb(255, 118, 154);
+}
+
+
+section.jadwal table th, section.jadwal table tr, section.jadwal table td{
+	border: 1px solid rgb(82, 14, 28);
+	padding: 5px;
+	text-align: center;
+}
+
+section.kegiatan {
+	display: flex;
+	margin-left: 5%;
+	margin-top: 2rem;
+	flex-direction: column;
+	width: 90%;
+}
+
+section.kegiatan .daftar-isi{
+	width: 100%;
+
+}
+
+section.kegiatan h1 {
+	font-weight: 700;
+}
+
+
+section.kegiatan .daftar-isi ul {
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width: 80%;
+	justify-content: space-evenly;
+	margin: 0;
+}
+
+
+section.kegiatan ul li a{
+	color: rgb(56, 10, 19);
+}
+
+section.kegiatan ul li a:hover{
+	color: var(--accent-color);
+	text-decoration: none;
+	animation: kegiatan-hover 0.2s linear;
+}
+
+@keyframes kegiatan-hover {
+	0% {
+		color: rgb(56, 10, 19);
+	}
+
+	100% {
+		color: var(--accent-color);
+	}
+}
+
+.kegiatan .content{
+	display: flex;
+	padding: 3% 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kegiatan .content .content-isi {
+    width: 70%;
+    margin-top: 3%;
+    border: 0.3rem solid var(--accent-color);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem var(--accent-color);
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-right: 3rem;
+    padding-bottom: 2rem;
+}
+
+.kegiatan .content .content-isi .top {
+    display: flex;
+    align-items: flex-start;
+}
+
+.kegiatan .content .content-isi .top img{
+    margin: 0;
+	width: 250px;
+	border-radius: 15px;
+}
+
+.kegiatan .content .content-isi .top-text{
+	display: flex;
+	flex-direction: column;
+    margin-left: 5%;
+}
+
+.kegiatan .content .content-isi .top-text h2{
+	font-weight: bold;
+	color: rgb(82, 14, 28);
+	padding-top: 3%;
+}
+
+.kegiatan .content .content-isi .top-text p{
+	color: rgb(82, 14, 28);
+	padding-left: 0;
+	padding-top:2%;
+}
+
+.kegiatan .content .content-isi .top-text a{
+	color: rgb(82, 14, 28);
+}
+
+.kegiatan .content .content-isi .top-text a:hover{
+	color: var(--accent-color);
+	text-decoration: none;
+	animation: kegiatan-hover 0.2s linear;
+}
+
+.kegiatan .content .content-isi .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kegiatan .content .content-isi .bottom button{
+    margin-bottom: 2%;
+    margin-top: 2%;
+    border: none;
+    background-color: rgb(82, 14, 28);
+    color: var(--bg-color);
+}
+
+.kegiatan .content .content-isi .bottom button:hover{
+    background-color: var(--accent-color);
+    color: rgb(82, 14, 28);
+}
+
+.card, .card-body {
+    width: 100%;
+}
+
+
+.kegiatan .content .content-isi .bottom .card{
+	background: var(--bg-color);
+	border: none;
+}
+
+.kegiatan .content .content-isi .bottom .card img{
+	width: 50vw;
+	margin-bottom: 1rem;
+}
+
+.kegiatan .content .content-isi .bottom .card h3{
+	font-weight: bold;
+}
+
+.kegiatan a{
+	color: black;
+}
+
+.kegiatan a:hover {
+	color: var(--accent-color);
+	text-decoration: none;
+	animation: nav-hover2 0.2s linear;
+}
+
+.winners-data{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+@keyframes footer-hover {
+	0% {color: var(--accent-color);}
+	100% {color: var(--bg-color);}
+}
+
+footer {
+	background-color: rgb(154, 35, 59);
+	color: var(--accent-color);
+}
+
+footer .gradient {
+	background: linear-gradient(var(--bg-color), rgb(154, 35, 59));
+}
+
+footer .footer-content a{
+	color: var(--accent-color);
+	text-decoration: none;
+}
+
+footer .footer-content a:hover{
+	color: var(--bg-color);
+	animation: footer-hover 0.2s linear;
+}
+
+footer .column2 a h1{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .column3 a h2{
+	margin: 0;
+	color: var(--accent-color);
+}
+
+footer .copyright {
+	color: var(--bg-color);
+}
+
+@media screen and (max-width : 850px) {
+	section.banner .gradient-banner {
+		height: 5rem;
+	}
+
+	section.kegiatan .daftar-isi{
+        border: 2px solid var(--accent-color);
+        padding: 3% 0;
+	}
+
+
+    .kegiatan .content .content-isi {
+        width: 95%;
+		padding: 1rem;
+		font-size: 90%;
+    }
+
+	.kegiatan .content .content-isi .top{
+		flex-direction: column-reverse;
+	}
+
+    .kegiatan .content .content-isi .top-text{
+		margin-left: 0;
+		align-items: center;
+	}
+
+	.kegiatan .content .content-isi .top img{
+		margin: auto;
+		width: auto;
+		width: 50vw;
+		margin-top: 5%;
+        margin-bottom: 3%;
+	}
+}
+
+@media screen and (max-width : 590px) {
+	header nav ul.menu-nav{
+		background-color: rgb(154, 35, 59)
+	}
+
+	.kegiatan .content .content-isi .top-text{
+		align-items: center;
+	}
+	
+	section.jadwal table {
+		margin: 1rem 0;
+	}
+}

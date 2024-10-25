@@ -1,0 +1,263 @@
+{% extends "credence/layout.html" %}
+
+{% block css_js %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/e_noach.css')}}">
+{% endblock css_js%}
+
+{% block title%}Noach{% endblock title %}
+
+{% block main %}
+<section class="home">
+  
+</section>
+
+<section class="videoembed" id="videoembed">
+        <h1>Check Out Our Video!</h1>
+        <iframe width="600" height="300"
+            src="https://www.youtube.com/embed/EvnGYfcRaZ8">
+        </iframe>
+</section>
+
+<section class="about" id="about">
+    <h1>What Is Malam Perak?</h1>
+
+        <div class="aboutMalamPerak">
+            <div class="aboutMalamPerak-text">
+                <h2>About Malam Perak</h2>
+                <p>Malam Perak is an event, where students and teachers from IGS unite together. They do activities and talk to each other for a night, and then sleep altogether in a room to enjoy the night in school. Unfortunately, this event came to its end when the covid pandemic appears. It is now a long-lost tradition where not everyone may know about.</p>
+            </div>
+            
+        </div>
+
+        <div class="aboutNOACH">
+            <div class="aboutNOACH-text">
+                <h2>About NOACH</h2>
+                <p>NOACH (Night of Adolescent Character Heave) focuses in reusing the concept of Malam Perak and start the regrowth of our long-lost tradition in IGS. We want to bring back this tradition and introduce it to our new arrivals. Let's make this vision real together!</p>
+            </div>
+            
+        </div>
+
+</section>
+
+<div class="divider-content"></div>
+
+<section class="content" id="content">
+    <h1>What are the activities?</h1>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702558/Credence/img/foto/noach/karaoke_qt0l90.jpg">
+        <div class="content-text">
+            <h2>Karaoke</h2>
+            <p>
+                Di karaoke ini, peserta dapat menyumbangkan suaranya untuk bernyanyi kedepan. Peserta juga dapat meminta tim multimedia untuk memainkan lagu yang mau dinyanyikan.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702560/Credence/img/foto/noach/pool_party_ezqwvj.jpg">
+        <div class="content-text">
+            <h2>Pool Party</h2>
+            <p>
+                Party akan dilaksanakan di Lantai 7 & Lantai 8 kegiatan ini dilaksanakan setelah karaoke yang pastinya sangatlah seru dan menarik yang dapat memberikan kesan yang membekas kepada siswa siswi.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702559/Credence/img/foto/noach/masak_b3e0gv.jpg">
+        <div class="content-text">
+            <h2>Masak</h2>
+            <p>
+                Selain dari game, peserta dapat mengembangkan kreativitasnya melalui masak. Tema masakan di malam perak ini adalah Nasi Goreng. dimana nantinya akan dimakan oleh anggota kelompok masing-masing.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702562/Credence/img/foto/noach/solve_the_case_ar7ha3.jpg">
+        <div class="content-text">
+            <h2>Games: Solve The Case</h2>
+            <p>
+                <h5><b>Cara Main:</b></h5>
+                <ol>
+                    <li>
+                        Akan diberikan gelar “Bos Pengkhianat” kepada 3 orang sebagai boss (nantinya akan dibuat 1 video dimana ketiga boss tersebut memberikan Clue Clue yang akan mengarah ke mereka nantinya.)
+                    </li>
+                    <li>
+                        Clue Video Pertama : Introduction, Malam ini kalian harus mencari siapa kami dan kami ada diantara kalian.
+                    </li>
+                    <li>
+                        Setiap selesai Game yang lain, bakal diputar video untuk memberikan clue clue Bos Penghianat selanjutnya. 
+                    </li>
+                    <li>
+                        Clue Video Kedua : Hal hal kebiasaan yang tidak disadari oleh orang lain. (aku suka makan pedes).
+                    </li>
+                    <li>
+                        Untuk para pemenang di game-game yang lain, mereka mendapatkan keuntungan yaitu, mendapatkan clue tambahan.
+                    </li>
+                    <li>
+                        Clue Video Ketiga : Gambar Fisik Boss Penghianat. Setiap 1 boss itu memberikan clue berupa gambar fisik boss utama (Contoh : Rambut kuncir 2).
+                    </li>
+                    <li>
+                        Jika kelompok itu berhasil menemukan Boss Penghianat, maka ia wajib melaporkan kepada panitia Solve the Case dimana ia harus memberikan alasan, jika alasan itu masuk akal dan juga orang yang ditebak juga benar, maka dialah pemenang dari game solve the case ini. 
+                    </li>
+                </ol>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702559/Credence/img/foto/noach/keep_the_glass_jd2pck.jpg">
+        <div class="content-text">
+            <h2>Games: Keep The Glass</h2>
+            <p>
+                <h5><b>Cara Main:</b></h5>
+                <ol>
+                    <li>
+                        Setiap Kelompok akan berikan kain/taplak meja dan juga akan ada sebuah gelas yang akan diisi air. 
+                    </li>
+                    <li>
+                        Peserta harus mempertahankan gelas tersebut sambil berjalan sampai ke garis finish 
+                    </li>
+                </ol>
+                <br>
+                <h5><b>Sistem Penilaian Lomba:</b></h5>
+                <ul>
+                    <li id='sesi'>
+                        Sesi 1 (Penyisihan):
+                        <ul>
+                            3 Kelompok<br>
+                            3 Kelompok<br>
+                            2 Kelompok<br>
+                            2 Kelompok<br>
+                            <b>(Total : 10 Kelompok)</b>
+                        </ul>
+                    </li>
+                    <li id='sesi'>
+                        Sesi 2 (Semi Final):
+                        <ul>
+                            2 Kelompok<br>
+                            2 Kelompok<br>
+                            <b>(Total : 4 Kelompok)</b>
+                        </ul>
+                    </li>
+                    <li id='sesi'>
+                        Sesi 3 (Final):
+                        <ul>
+                            2 Kelompok<br>
+                            <b>(Total : 2 Kelompok)</b>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702560/Credence/img/foto/noach/red_light_green_light_jez3hx.jpg">
+        <div class="content-text">
+            <h2>Games: Red Light Green Light</h2>
+            <p>
+                <h5><b>Cara Main:</b></h5>
+                <ol>
+                    <li>
+                        Pembagian kelompok
+                    </li>
+                    <li>
+                        Setiap kelompok membuat lingkaran dan berpegangan tangan
+                    </li>
+                    <li>
+                        Diputarkan sebuah lagu
+                    </li>
+                    <li>
+                        Setiap kelompok harus maju sampai ke garis finish
+                    </li>
+                    <li>
+                        Ketika lagu mati maka setiap kelompok harus berhenti, jika lagu berhenti tetapi masih ada yang bergerak maka kelompok itu akan didiskualifikasi
+                    </li>
+                </ol>
+                <br>
+                <h5><b>Sistem Penilaian Lomba:</b></h5>
+                <ol>
+                    <li>
+                        Akan diadakan 3 babak, yaitu : Penyisihan, Semi Final dan Final. 
+                    </li>
+                    <li>
+                        Setiap per ronde akan diberikan waktu 5-10 menit.  
+                    </li>
+                    <li>
+                        Dalam ronde penyisihan akan dilaksanakan beberapa kali
+                    </li>
+                </ol>
+                <ul>
+                    <li id='sesi'>
+                        Sesi 1 (Penyisihan):
+                        <ul>
+                            3 Kelompok<br>
+                            3 Kelompok<br>
+                            2 Kelompok<br>
+                            2 Kelompok<br>
+                            <b>(Total : 10 Kelompok)</b>
+                        </ul>
+                    </li>
+                    <li id='sesi'>
+                        Sesi 2 (Semi Final):
+                        <ul>
+                            2 Kelompok<br>
+                            2 Kelompok<br>
+                            <b>(Total : 4 Kelompok)</b>
+                        </ul>
+                    </li>
+                    <li id='sesi'>
+                        Sesi 3 (Final):
+                        <ul>
+                            2 Kelompok<br>
+                            <b>(Total : 2 Kelompok)</b>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702564/Credence/img/foto/noach/tebak_gaya_guse7m.jpg">
+        <div class="content-text">
+            <h2>Games: Tebak Gaya</h2>
+            <p>
+               <h5><b>Cara Main:</b></h5>
+                <ol>
+                    <li>
+                        Permainan ini dimainkan dengan memperagakan kata yang diberitahukan oleh panitia
+                    </li>
+                    <li>
+                        Setiap anggota berbaris, anggota pertama didepan akan menerima kata yang akan dimainkan pertama kali
+                    </li>
+                    <li>
+                        Anggota pertama harus membuat gaya dari kata yang diberikan utk menjelaskan kata tersebut sebaik mungkin, anggota pertama juga memberikan kode angka 1/2 sesuai berapa kata yang diberikan panitia
+                    </li>
+                    <li>
+                        Peragakan ke setiap anggota nya dan hanya boleh diulangi 3x
+                    </li>
+                    <li>
+                        Peragaan gaya nya dilanjutkan hingga ke anggota terakhir yang akan menebak apa kata yang menjelaskan gaya tersebut
+                    </li>
+                    <li>
+                        Tujuan permainan ini adalah membuat tim Anda menebak jawaban yang benar dengan hanya menggunakan gestur. Saat peserta memeragakan katanya, ia tidak boleh berbicara
+                    </li>
+                </ol>
+                <br> 
+                <p>
+                    <i>Contoh :</i> Tim 1 akan mendapatkan kata Rumah untuk diperagakan, maka anggota Tim 1 di barisan paling depan akan membuat gaya yang menjelaskan itu  adalah Rumah, kemudian lanjutkan untuk memperagakan gaya nya ke anggota selanjutnya dengan berikan kode dengan tangan (angka 1) hingga ke anggota terakhir. Anggota terakhir yang menebak kata yang memenuhi gaya yang diperagakan tersebut.
+                </p>
+                <br>
+                <p>
+                    <i>Durasi :</i> 30 menit (15 menit setiap 1 soal)
+                </p>
+            </p>
+        </div>
+    </div>
+
+</section>
+{% endblock main %}

@@ -1,0 +1,91 @@
+{% extends "credence/layout.html" %}
+
+{% block css_js %}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script src="{{ url_for('static', filename='credence/js/e_revoir.js')}}"></script>
+<script>
+
+    // start
+
+    const start = () => {
+        setTimeout(function() {
+            confetti.start()
+        }, 1000); // 1000 is time that after 1 second start the confetti ( 1000 = 1 sec)
+    };
+
+    //  Stop
+
+    const stop = () => {
+        setTimeout(function() {
+            confetti.stop()
+        }, 5000); // 5000 is time that after 5 second stop the confetti ( 5000 = 5 sec)
+    };
+
+    start();
+    // stop();
+</script>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/e_revoir.css')}}">
+{% endblock css_js%}
+
+{% block title%}Revoir{% endblock title %}
+
+{% block main %}
+<section class="home">
+  
+</section>
+
+<!-- <section class="videoembed" id="videoembed">
+        <h1>Check Out Our Video!</h1>
+        <iframe width="600" height="300"
+            src="https://www.youtube.com/embed/EvnGYfcRaZ8">
+        </iframe>
+</section> -->
+
+<section class="about" id="about">
+    <h1>Revoir</h1>
+
+        <div class="aboutMalamPerak">
+            <div class="aboutMalamPerak-text">
+                <p>Revoir adalah kata yang di ambil dari “Au revoir” dalam Bahasa Prancis. Kata ini memiliki arti “Sampai berjumpa lagi”. Secara garis besar, kata ini adalah bentuk ungkapan harapan baik kita terhadap orang yang akan pergi. Kata ini tertuju pada calon alumni sekolah Ignatius Global School. Para calon alumni telah menyelesaikan perjalanan tiga tahun menempuh pendidikan mereka di bangku SMA dan sekarang akan memasuki level selanjutnya ke jenjang yang lebih tinggi. Dengan menggunakan kata “Revoir” dalam acara graduation tahun ini, kami keluarga besar Ignatius Global School memiliki harapan yang terbaik bagi para calon alumni.</p>
+            </div>
+            
+        </div>
+
+</section>
+
+<div class="divider-content"></div>
+
+<section class="content" id="content">
+    <h1>What’S On Revoir ⁉️</h1>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706708518/Credence/img/foto/noach/food-stand_w3fmof.jpg">
+        <div class="content-text">
+            <h2>Food Stand</h2>
+            <p>
+                Di event REVOIR PROM NIGHT akan tersedia berbagai macam stand makanan yang bisa kalian nikmati seperti stand mixue, satai, pempek, dan juga es buah!.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706708520/Credence/img/foto/noach/games_n6neyp.png">
+        <div class="content-text">
+            <h2>Games</h2>
+            <p>
+                Terdapat games-games juga yang akan menghibur kalian di sepanjang malam menjelang, seperti tebak guru dan juga oper pena.
+            </p>
+        </div>
+    </div>
+
+    <div class="content-fill">
+        <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706708518/Credence/img/foto/noach/dj_n3tmi0.png">
+        <div class="content-text">
+            <h2>DJ</h2>
+            <p>
+                Dan di malam yang seru ini juga akan di sertai oleh DJ DAVINA yang akan menghibur kalian di acara kali ini.
+            </p>
+        </div>
+    </div>
+</section>
+{% endblock main %}

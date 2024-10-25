@@ -1,0 +1,50 @@
+{% extends "credence/layout.html" %}
+
+{% block css_js %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/index.css') }}">
+{% endblock css_js %}
+
+{% block title %}Credence | OSIS SMA IGS{% endblock title %}
+
+{% block main %}
+<section class="main">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <a href="{{ url_for('credence_arletter') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702554/Credence/img/banner/carousel1_saqry3.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+                <a href="{{ url_for('credence_events') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702552/Credence/img/banner/carousel2_ctxntt.png" class="d-block w-100" alt="..."></a>
+            </div>
+            <div class="carousel-item">
+                <a href="{{ url_for('credence_about') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702588/Credence/img/foto/kabinet_lzuma6.jpg" class="d-block w-100" alt="..."></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</section>
+
+<section class="about">
+    <div class="about-text">
+        <h1>Credence</h1>
+        <p>
+            Credence adalah nama kabinet OSIS SMA IGS periode 2022/2023. Credence berarti “Kepercayaan” yang di mana di percaya,  dalam OSIS rasa kepercayaan harus di tunjukan. Rasa saling percaya kepada anggota OSIS, guru, siswa/i IGS, dan staff. Di percaya bahwa kabinet credence dapat membangun dan bergerak cepat & maju sesuai dengan teknologi maupun keadaan.
+        </p>
+    </div>
+        
+    <img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702575/Credence/img/logo/credence_mczrns.png">
+        
+</section>
+{% endblock main%}

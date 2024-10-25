@@ -1,0 +1,24 @@
+{% extends "credence/layout.html" %}
+
+{% block css_js %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='credence/css/events.css') }}">
+{% endblock css_js %}
+
+{% block title %}Events{% endblock title %}
+
+{% block main %}
+    <h1 class="past">Our Events</h1>
+
+	<section class="event past">
+		<!-- <a href="{{ url_for('e_noach') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702587/Credence/img/banner/noach_hfix43.png"></a> -->
+        <a href="{{ url_for('e_remoderma') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702604/Credence/img/banner/remoderma_bpwqav.png"></a>
+		<a href="{{ url_for('e_nox_salvatoris') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702596/Credence/img/banner/nox_salvatoris_rvt2xo.png"></a>
+		<a href="{{ url_for('e_moration') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702594/Credence/img/banner/moration_euce2k.png"></a>
+		<a href="{{ url_for('e_altarma') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702549/Credence/img/banner/altarma_klocnb.jpg"></a>
+		<a href="{{ url_for('e_revoir') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702588/Credence/img/banner/revoir_qhwpxs.png"></a>
+		<a href="{{ url_for('e_compation') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702552/Credence/img/banner/compation_dosrx5.png"></a>
+		<a href="{{ url_for('e_renaissance') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702606/Credence/img/banner/renaissance_yx4gsf.png"></a>
+		<a href="{{ url_for('e_cakrawala') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702598/Credence/img/banner/cakrawala_c0nnt2.png"></a>
+		<a href="{{ url_for('e_talent_scouting') }}"><img src="https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702553/Credence/img/banner/talent_scouting_fkdba0.png"></a>
+	</section>
+{% endblock main%}

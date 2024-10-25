@@ -1,0 +1,333 @@
+
+:root{
+    --black : #1f1e1e;
+    --gray : #dedede;
+    --darkgray : #a8a5b8;
+    --darkergray : #817e94;
+    --purple : #18073b;
+    --lightpurple : #2f116b;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Trebuchet MS', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--black);
+}
+
+header nav {
+	background: var(--black);
+}
+
+header nav ul li a:hover{
+	color: var(--darkgray);
+	text-decoration: none;
+	animation: nav-hover2 0.2s linear;
+}
+
+@keyframes nav-hover2 {
+	0% {
+		color: var(--white);
+	}
+
+	100% {
+		color: var(--darkgray);
+	}
+}
+
+/*home*/
+    section.home{
+        --size: 100vw;
+        position: relative;
+        width: var(--size);
+        height: calc(var(--size)/2.35);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: gray url('https://res.cloudinary.com/dhnak6cxo/image/upload/v1706702587/Credence/img/banner/noach_hfix43.png') center / cover no-repeat;;
+    }
+
+    section.home .home-text{
+        margin-bottom: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.home .home-text h1{
+        color: aliceblue;
+        font-size: 4.5em;
+        text-align: center;
+    }
+
+    .home-btn{
+        letter-spacing: 1px;
+        background: white;
+        color: var(--blue);
+        text-decoration: none;
+        border: 2px solid transparent;
+        font-weight: bold;
+        padding: 5px 12px;
+        border-radius: 30px;
+        transition: 2s;
+    }
+
+
+    section.home .home-image img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        pointer-events: none;
+    }
+
+    
+    .home::before{
+        content: " ";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 120px;
+        background: linear-gradient(to top, var(--black), transparent);
+        z-index: 10;
+    }
+
+/* video */
+.videoembed{
+    position: relative;
+    background-color: var(--black);
+    padding-bottom: 10px;   
+}
+
+.videoembed h1{
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--gray);
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+.videoembed iframe{
+    --size: 60vw;
+    width: var(--size);
+    height: calc(var(--size)/1.8);
+    display: block;
+    margin: 0 auto;
+}
+
+/* about */
+
+.about {
+    position: relative;
+    padding-top: 4rem;
+    background-color: var(--black);
+    padding-bottom: 10px;
+}
+
+.about h1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: var(--gray);
+    text-align: center;
+    padding-top:5%;
+}
+
+.about p{
+    color: var(--gray);
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 2%;
+    text-align: justify;
+}
+
+.about .aboutMalamPerak{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+
+.about .aboutMalamPerak .aboutMalamPerak-text h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--gray);
+    padding-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+
+.about .aboutMalamPerak .aboutMalamPerak-text p{
+    font-size: 1.2rem;
+    padding: 1% 15%;
+    /*text-align: justify;*/
+}
+
+.about .aboutNOACH{
+    margin-top: 5%;
+}
+
+.about .aboutNOACH .aboutNOACH-text h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--gray);
+    padding-left: 10%;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.about .aboutNOACH .aboutNOACH-text p{
+    font-size: 1.2rem;
+    padding: 1% 15%;
+}
+
+/* divider */
+.divider-contacts{
+    height: 10rem;
+    background-image: linear-gradient(var(--purple), var(--lightpurple))
+}
+
+.divider-content{
+    height: 10rem;
+    background-image: linear-gradient(var(--black), var(--purple))
+}
+
+/* content */
+    .content {
+        position: relative;
+        background-color: var(--purple);
+        padding-bottom: 0.1%;
+    }
+
+    .content h1{
+        font-weight: bold;
+        color: white;
+        padding-left: 10%;
+        padding-bottom: 10px;
+    }
+
+    .content p{
+        color: white;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top:2%;
+    }
+
+    /* content-fill */
+
+        .content .content-fill{
+            display: flex;
+            padding: 3% 0;
+            width: 100vw;
+            align-items: center;
+        }
+
+        .content .content-fill img{
+            width: 250px;
+            height: 250px;
+            margin-right: 0px;
+            margin-left: 15%;
+            border-radius: 15px;
+        }
+
+        .content .content-fill .content-text{
+            padding-left: 5%;
+            padding-right: 10%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: space-between;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+
+        .content .content-fill .content-text h2{
+            font-weight: bold;
+            color: white;
+            padding-top: 3%;
+        }
+
+        .content .content-fill .content-text p{
+            color: white;
+            padding-left: 0;
+            padding-top:2%;
+            width: 50vw;
+            text-align: justify;
+        }
+
+    footer {
+        margin-top: 0;
+    }
+
+    footer .gradient {
+        background: linear-gradient(var(--purple), var(--blue));
+    }
+
+/* TABLET */
+@media screen and (max-width: 912px) and (min-width: 764px){
+    .content p{
+        font-size: 90%;
+    }
+}
+
+
+/* MOBILE */
+
+    @media screen and (max-width: 763px) {
+
+        header nav ul.menu-nav{
+            background-color: var(--darkergray);
+        }
+
+        /* content */
+            .content{
+                overflow-x: hidden;
+            }
+
+            .content p{
+                font-size: 90%;
+            }
+
+            /* live */
+                .content .content-fill{
+                    flex-direction: column-reverse;
+                    align-items: flex-start;
+                }
+
+                .content .content-fill img{
+                    margin: auto;
+                    width: 60%;
+                    height: 60%;
+                    margin-top: 5%;
+                }
+
+                .content .content-fill .content-text{
+                    padding-left: 4%;
+                    padding-right: 4%;
+                    /* margin: auto; */
+                }
+
+
+                .content .content-fill .content-text p{
+                    padding-right: 0;
+                    width: 100%;
+                }
+
+                .content .content-fill .content-text a{
+                    margin: auto;
+                    margin-top: 10px;
+                }
+    }
+
+    

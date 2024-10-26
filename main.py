@@ -53,13 +53,9 @@ def e_aksara():
     return render_template("asteration/e_aksara.html")
 
 #OTHER
-@app.route("/Asteration/Updates")
-def asteration_updates():
-    return render_template("asteration/updates.html")
-
-@app.route("/Asteration/Clubs")
-def asteration_clubs():
-    return render_template("asteration/clubs.html")
+@app.route("/Asteration/Magazine")
+def asteration_magazine():
+    return render_template("asteration/magazine.html")
 
 @app.route("/Asteration/About")
 def asteration_about():
